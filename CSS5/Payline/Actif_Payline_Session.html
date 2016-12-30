@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://admin.dev.patch.digitick.local/" />
+<title>Actif_Payline_Session</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Actif_Payline_Session</td></tr>
+</thead><tbody>
+<tr>
+	<td>echo</td>
+	<td>## Acces CSS5 + ajout panier</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>http://www.dev.patch.digitick.local/~rcortes/rco-j-1-festival-transport-css5-laeronef-pg51-ei${idEvent}.htm</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>10000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=t${idTarif}</td>
+	<td>label=regexp:\s1</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=submitFinaliser</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>## Connexion</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=dejatel</td>
+	<td>0646406540</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=dejapass</td>
+	<td>dante4747</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=formSubmit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=formEtape2RenommageBilletSubmit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>4000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>## Page de paiement</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=cardNumber</td>
+	<td>4970 1045 7039 7602</td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>name=cardNumber</td>
+	<td> </td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=pl-pm-cards_3-expirationDate</td>
+	<td>12 / 19</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=cvx</td>
+	<td>123</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>## Acces CSS5 (ouverture new fenetre)+ ajout panier</td>
+	<td></td>
+</tr>
+<tr>
+	<td>openWindow</td>
+	<td>http://www.dev.patch.digitick.local/~rcortes/rco-j-1-festival-transport-css5-laeronef-pg51-ei${idEvent}.htm</td>
+	<td>NewWin</td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>NewWin</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>10000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=t${idTarif}</td>
+	<td>label=regexp:\s1</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=submitPanier</td>
+	<td></td>
+</tr>
+<tr>
+	<td>close</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=pl-pm-cards_3-payBtn</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=span.nombreRecapAchat</td>
+	<td>2 places</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.listeErreur &gt; span</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

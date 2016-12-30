@@ -1,0 +1,891 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://admin.dev.patch.digitick.local/" />
+<title>Prog_Payline</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Prog_Payline</td></tr>
+</thead><tbody>
+<tr>
+	<td>echo</td>
+	<td>## Variable + Fonction de date</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>new Date().getDate()</td>
+	<td>Jour</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>new Date().getDate()+1</td>
+	<td>Jour1</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>new Date().getMonth()+1</td>
+	<td>Mois</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>new Date().getMonth()+1</td>
+	<td>Mois1</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>new Date().getFullYear()</td>
+	<td>Annee</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>new Date().getFullYear()+1</td>
+	<td>Annee1</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>function goodJour1()&nbsp;&nbsp;{if ((${Jour1}==30)&amp;&amp;((${Mois1}==4)||(${Mois1}==6)||(${Mois1}==9)||(${Mois1}==11)))	 {JourSuiv=01; return JourSuiv; 	} if ((${Jour1}==30)&amp;&amp;(${Mois1}==2)) 	{ JourSuiv=01; return JourSuiv; 	} if (${Jour1}==31) { JourSuiv=01; return JourSuiv; 	}&nbsp;&nbsp;if (${Jour1}&lt;10)&nbsp;&nbsp;{ Jour1='0'+${Jour1}; return Jour1; 	}&nbsp;&nbsp;else&nbsp;&nbsp;return ${Jour1};&nbsp;&nbsp;}&nbsp;&nbsp;goodJour1();</td>
+	<td>Jour1</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>function goodJour() { if (${Jour} &lt;10) {Jour='0'+${Jour}; return Jour;} else  return ${Jour}; } goodJour();</td>
+	<td>Jour</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>function goodMonth() {if (${Mois}&lt;10) {Mois='0'+${Mois}; return Mois} else return ${Mois}; } goodMonth();</td>
+	<td>Mois</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>function goodMonth1() {if (${Jour1}&lt;${Jour}){MonthSuiv=${Mois1}+1;} else MonthSuiv=${Mois1}; if (MonthSuiv&gt;=13) 	{ MonthSuiv=MonthSuiv-12; } if (MonthSuiv&lt;10){Mois1='0'+MonthSuiv; return Mois1} else return MonthSuiv; }goodMonth1();</td>
+	<td>Mois1</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>function goodYear1() {if (${Mois1}&lt;${Mois}) { return ${Annee1}+1;} else return ${Annee1}; } goodYear1();</td>
+	<td>Annee1</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>## Acces admin</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/~rcortes/index.php4?p=5</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=authLogin</td>
+	<td>rcortes</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=motPasse</td>
+	<td>test123456*</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=Submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=searchField</td>
+	<td>aeronef</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.btOk</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=L'Aéronef</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>## Création Tarif</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//div[@id='menuContent']/div[6]/a/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//ul[@id='leftMenuContent']/li[3]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=selectTypeClient</td>
+	<td>label=1 - Unique</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=selectTarifCategorie</td>
+	<td>label=Unique</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=libelleTarif</td>
+	<td>RCO tarif</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=baseAmount</td>
+	<td>10</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=tous_4</td>
+	<td>1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=tous_1</td>
+	<td>3</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=tous_2</td>
+	<td>5</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.submit01.noborder</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>10000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>## Variable Tarif</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=rechercheLibelleTarif</td>
+	<td>rco tarif</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=recherche</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>css=td.resultId</td>
+	<td>Variable</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>parseInt(/[0-9]+/.exec(storedVars['Variable']))</td>
+	<td>idTarif</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>## Création Tarif</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//ul[@id='leftMenuContent']/li[3]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=selectTypeClient</td>
+	<td>label=1 - Unique</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=selectTarifCategorie</td>
+	<td>label=Unique</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=libelleTarif</td>
+	<td>RCO tarif gratuit</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.submit01.noborder</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>10000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>## Variable Tarif</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=rechercheLibelleTarif</td>
+	<td>rco tarif gratuit</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=recherche</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>css=td.resultId</td>
+	<td>Variable</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>parseInt(/[0-9]+/.exec(storedVars['Variable']))</td>
+	<td>idTarif2</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>## Création Event</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//div[@id='menuContent']/div[3]/a/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//ul[@id='leftMenuContent']/li[8]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=nomEvenement</td>
+	<td>RCO J-1</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=selectgenre</td>
+	<td>label=Festival</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=tauxtva</td>
+	<td>label=2.1 %</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.submit01.noborder</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>## Création Event</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=dateDebut_jma</td>
+	<td>${Jour1}/${Mois}/${Annee}</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=salleId</td>
+	<td>label=L'AERONEF (LILLE) - 274</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=nbPlacesTotal</td>
+	<td>150</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=boutonSelectionTarifs</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=filtreTarifId</td>
+	<td>${idTarif}</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=btnFiltrer</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#tarifsListe${idTarif}&gt; span.tarifLibelle</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ajoutTarif</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input[type=&quot;submit&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>## Modification Etat</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Modifier état</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=input.bt</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>## Variable Event</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=RCO J-1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>id=titleAdmin</td>
+	<td>Event</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>parseInt(/[0-9]+/.exec(storedVars['Event']))</td>
+	<td>idEvent</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=div.menuItemContentSelected</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>## Variable + Fonction de date</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>new Date().getDate()</td>
+	<td>Jour</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>new Date().getDate()+5</td>
+	<td>Jour1</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>new Date().getMonth()+1</td>
+	<td>Mois</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>new Date().getMonth()+1</td>
+	<td>Mois1</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>new Date().getFullYear()</td>
+	<td>Annee</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>new Date().getFullYear()+1</td>
+	<td>Annee1</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>function goodJour1()&nbsp;&nbsp;{if ((${Jour1}==30)&amp;&amp;((${Mois1}==4)||(${Mois1}==6)||(${Mois1}==9)||(${Mois1}==11)))	 {JourSuiv=01; return JourSuiv; 	} if ((${Jour1}==30)&amp;&amp;(${Mois1}==2)) 	{ JourSuiv=01; return JourSuiv; 	} if (${Jour1}==31) { JourSuiv=01; return JourSuiv; 	}&nbsp;&nbsp;if (${Jour1}&lt;10)&nbsp;&nbsp;{ Jour1='0'+${Jour1}; return Jour1; 	}&nbsp;&nbsp;else&nbsp;&nbsp;return ${Jour1};&nbsp;&nbsp;}&nbsp;&nbsp;goodJour1();</td>
+	<td>Jour1</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>function goodJour() { if (${Jour} &lt;10) {Jour='0'+${Jour}; return Jour;} else  return ${Jour}; } goodJour();</td>
+	<td>Jour</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>function goodMonth() {if (${Mois}&lt;10) {Mois='0'+${Mois}; return Mois} else return ${Mois}; } goodMonth();</td>
+	<td>Mois</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>function goodMonth1() {if (${Jour1}&lt;${Jour}){MonthSuiv=${Mois1}+1;} else MonthSuiv=${Mois1}; if (MonthSuiv&gt;=13) 	{ MonthSuiv=MonthSuiv-12; } if (MonthSuiv&lt;10){Mois1='0'+MonthSuiv; return Mois1} else return MonthSuiv; }goodMonth1();</td>
+	<td>Mois1</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>function goodYear1() {if (${Mois1}&lt;${Mois}) { return ${Annee1}+1;} else return ${Annee1}; } goodYear1();</td>
+	<td>Annee1</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>## Création Event</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//ul[@id='leftMenuContent']/li[8]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=nomEvenement</td>
+	<td>RCO J-5</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=selectgenre</td>
+	<td>label=Festival</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=tauxtva</td>
+	<td>label=2.1 %</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.submit01.noborder</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=dateDebut_jma</td>
+	<td>${Jour1}/${Mois}/${Annee}</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=salleId</td>
+	<td>label=L'AERONEF (LILLE) - 274</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=nbPlacesTotal</td>
+	<td>150</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=boutonSelectionTarifs</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=filtreTarifId</td>
+	<td>${idTarif}</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=btnFiltrer</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#tarifsListe${idTarif}&gt; span.tarifLibelle</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ajoutTarif</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=filtreTarifId</td>
+	<td>${idTarif2}</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=btnFiltrer</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#tarifsListe${idTarif2}&gt; span.tarifLibelle</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ajoutTarif</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input[type=&quot;submit&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>## Modification Etat</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Modifier état</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=input.bt</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>## Variable Event</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=RCO J-5</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>id=titleAdmin</td>
+	<td>Event2</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>parseInt(/[0-9]+/.exec(storedVars['Event2']))</td>
+	<td>idEvent2</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=div.menuItemContentSelected</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>## Variable + Fonction de date</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>new Date().getDate()</td>
+	<td>Jour</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>new Date().getDate()+1</td>
+	<td>Jour1</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>new Date().getMonth()+1</td>
+	<td>Mois</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>new Date().getMonth()+2</td>
+	<td>Mois1</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>new Date().getFullYear()</td>
+	<td>Annee</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>new Date().getFullYear()</td>
+	<td>Annee1</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>function goodJour1()&nbsp;&nbsp;{if ((${Jour1}==30)&amp;&amp;((${Mois1}==4)||(${Mois1}==6)||(${Mois1}==9)||(${Mois1}==11)))	 {JourSuiv=01; return JourSuiv; 	} if ((${Jour1}==30)&amp;&amp;(${Mois1}==2)) 	{ JourSuiv=01; return JourSuiv; 	} if (${Jour1}==31) { JourSuiv=01; return JourSuiv; 	}&nbsp;&nbsp;if (${Jour1}&lt;10)&nbsp;&nbsp;{ Jour1='0'+${Jour1}; return Jour1; 	}&nbsp;&nbsp;else&nbsp;&nbsp;return ${Jour1};&nbsp;&nbsp;}&nbsp;&nbsp;goodJour1();</td>
+	<td>Jour1</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>function goodJour() { if (${Jour} &lt;10) {Jour='0'+${Jour}; return Jour;} else  return ${Jour}; } goodJour();</td>
+	<td>Jour</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>function goodMonth() {if (${Mois}&lt;10) {Mois='0'+${Mois}; return Mois} else return ${Mois}; } goodMonth();</td>
+	<td>Mois</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>function goodMonth1() {if (${Jour1}&lt;${Jour}){MonthSuiv=${Mois1}+1;} else MonthSuiv=${Mois1}; if (MonthSuiv&gt;=13) 	{ MonthSuiv=MonthSuiv-12; } if (MonthSuiv&lt;10){Mois1='0'+MonthSuiv; return Mois1} else return MonthSuiv; }goodMonth1();</td>
+	<td>Mois1</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>function goodYear1() {if (${Mois1}&lt;${Mois}) { return ${Annee1}+1;} else return ${Annee1}; } goodYear1();</td>
+	<td>Annee1</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>## Création Event</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//ul[@id='leftMenuContent']/li[8]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=nomEvenement</td>
+	<td>RCO M-1</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=selectgenre</td>
+	<td>label=Festival</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=tauxtva</td>
+	<td>label=2.1 %</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.submit01.noborder</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=dateDebut_jma</td>
+	<td>${Jour}/${Mois1}/${Annee1}</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=salleId</td>
+	<td>label=L'AERONEF (LILLE) - 274</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=nbPlacesTotal</td>
+	<td>150</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=boutonSelectionTarifs</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=filtreTarifId</td>
+	<td>${idTarif}</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=btnFiltrer</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#tarifsListe${idTarif}&gt; span.tarifLibelle</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ajoutTarif</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input[type=&quot;submit&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>## Modification Etat</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Modifier état</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=input.bt</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>## Variable Event</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=RCO M-1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>id=titleAdmin</td>
+	<td>Event3</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>parseInt(/[0-9]+/.exec(storedVars['Event3']))</td>
+	<td>idEvent3</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>## Vidage cache</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//div[@id='menuContent']/div[12]/a/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=cdvLabel</td>
+	<td>aeronef</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=css5_aeronef_web</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=viderCache_4841</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

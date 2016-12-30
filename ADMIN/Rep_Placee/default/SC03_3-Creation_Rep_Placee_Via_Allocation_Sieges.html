@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://admin.testoto.digitick-ppe.com" />
+<title>SCO3_3-Création_Rep_Placée_Via_Allocation_Sièges</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">SCO3_3-Création_Rep_Placée_Via_Allocation_Sièges</td></tr>
+</thead><tbody>
+<tr>
+	<td>storeEval</td>
+	<td>new Date().getFullYear()</td>
+	<td>Year</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>new Date().getFullYear()+1</td>
+	<td>Year1</td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/index.php4?p=5</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>window.document.domain</td>
+	<td>host</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=authLogin</td>
+	<td>qatest2</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=motPasse</td>
+	<td>test123456*</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=Submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//a[@href='http://${host}/?p=201&amp;typeEvt=1']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=searchField</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=searchField</td>
+	<td>Auto_Evenement_RepPl</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.submit01</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Fiche Evénement</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Ajouter</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=dateDebut_jma</td>
+	<td>15/02/${Year1}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=dateFin_jma</td>
+	<td>15/02/${Year1}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=dateDebutVentes_jma</td>
+	<td>02/01/${Year}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=dateFinVentes_jma</td>
+	<td>14/02/${Year1}</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=isPlacee</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=salleId</td>
+	<td>label=SALLE QUALITE DGT (MARSEILLE)</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=planSalleMultipleId</td>
+	<td>label=SALLE QUALITE DGT - 2546</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=premierePartie</td>
+	<td>Auto_Création_Rep_Placée_Via_Allocation_Sièges\@:;123</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=messageOrganisateur</td>
+	<td>Auto_Création_Rep_Placée_Via_Allocation_Sièges\@:;123</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=nbPlacesTotal</td>
+	<td>45</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=boutonSelectionTarifs</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=boutonSelectionTarifs</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=filtreTarifId</td>
+	<td>2126665</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=btnFiltrer</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=#tarifsListe2126665 &gt; span.tarifLibelle</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#tarifsListe2126665 &gt; span.tarifLibelle</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ajoutTarif</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=filtreTarifId</td>
+	<td>2208675</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=btnFiltrer</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=#tarifsListe2208675 &gt; span.tarifLibelle</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#tarifsListe2208675 &gt; span.tarifLibelle</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ajoutTarif</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=tarifQuota2208675</td>
+	<td>36</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=tarifQuota2126665</td>
+	<td>9</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.submit01.noborder</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=roomSection-26244-1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>runScript</td>
+	<td>function getMapRoomSection() {&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for (var inst in Map.instances) {&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return Map.instances[inst].plugins.MapRoomSection;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} }&nbsp;&nbsp;&nbsp;function selectFirstAvailableSeat() {&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var mapRoomSection = getMapRoomSection();&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for (seatId in mapRoomSection.data.seatsData) {&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var seatData = mapRoomSection.data.seatsData[seatId];&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (!seatData.selectable) continue;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mapRoomSection.currentSeatsSelection[seatData.cellId] = true;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mapRoomSection.onSiegeSelEnd();&nbsp;&nbsp;mapRoomSection.frmPaint();&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} }&nbsp;&nbsp;&nbsp;selectFirstAvailableSeat();</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=pricesSelector</td>
+	<td>label=SERIE 1 - Auto</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.allocAction.toSelectedSeats</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>4000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//a[@href='http://${host}/?p=391']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>En création</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>SERIE 1 - Auto</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Allocation sièges</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=roomSection-26244-1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>id=roomSection-26244-1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=roomSection-26244-1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//td[@class='availableOutsideReservoirs']/var</td>
+	<td>1</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=headerDeconnecter</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

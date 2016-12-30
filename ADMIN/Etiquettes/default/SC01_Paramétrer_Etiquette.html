@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://admin.testoto.digitick-ppe.com/" />
+<title>SC01_Paramétrer_Etiquette</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">SC01_Paramétrer_Etiquette</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/?p=5</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=authLogin</td>
+	<td>tcornet</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=motPasse</td>
+	<td>1c3KoNeQu!</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=Submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=searchField</td>
+	<td>qualité</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.btOk</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=QUALITE 1 (Ne pas toucher)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//div[@id='menuContent']/div[4]/a/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//div[@id='leftMenuContent']/a[10]/div/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=+ Ajouter</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=skillDomain_label</td>
+	<td>activité</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=inputAddTag</td>
+	<td>expositions</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.btn.btn-info</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=inputAddTag</td>
+	<td>visites</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.btn.btn-info</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=inputAddTag</td>
+	<td>services</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.btn.btn-info</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.btn.btn-primary</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>c:\.jenkins\workspace\GESTION_INTERVENANTS\Etiquettes\screen11.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Modifier</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=skillDomain_label</td>
+	<td>activités</td>
+</tr>
+<tr>
+	<td>storeValue</td>
+	<td>//input[@value='expositions']/@name</td>
+	<td>skill</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${skill}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=${skill}</td>
+	<td>exposition</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=modalConfirmBtn</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=button.btn.btn-primary</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Supprimer</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=modalConfirmBtn</td>
+	<td></td>
+</tr>
+<tr>
+	<td>refresh</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=headerDeconnecter</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=headerDeconnecter</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

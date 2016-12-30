@@ -1,0 +1,699 @@
+<html>
+<head><style type='text/css'>
+body, table {
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 12;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+}
+
+a {
+    text-decoration: none;
+}
+
+.title {
+    font-style: italic;
+}
+
+.selected {
+    background-color: #ffffcc;
+}
+
+.status_done {
+    background-color: #eeffee;
+}
+
+.status_passed {
+    background-color: #ccffcc;
+}
+
+.status_failed {
+    background-color: #ffcccc;
+}
+
+.breakpoint {
+    background-color: #cccccc;
+    border: 1px solid black;
+}
+</style><title>Test suite results</title></head>
+<body>
+<h1>Test suite results </h1>
+
+<table>
+<tr>
+<td>result:</td>
+<td>passed</td>
+</tr>
+<tr>
+<td>totalTime:</td>
+<td>111</td>
+</tr>
+<tr>
+<td>numTestTotal:</td>
+<td>2</td>
+</tr>
+<tr>
+<td>numTestPasses:</td>
+<td>2</td>
+</tr>
+<tr>
+<td>numTestFailures:</td>
+<td>0</td>
+</tr>
+<tr>
+<td>numCommandPasses:</td>
+<td>0</td>
+</tr>
+<tr>
+<td>numCommandFailures:</td>
+<td>0</td>
+</tr>
+<tr>
+<td>numCommandErrors:</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Selenium Version:</td>
+<td>2.52</td>
+</tr>
+<tr>
+<td>Selenium Revision:</td>
+<td>.0</td>
+</tr>
+<tr>
+<td>
+<table id="suiteTable" class="selenium" border="1" cellpadding="1" cellspacing="1"><tbody>
+<tr class="title status_passed"><td><b>Test Suite</b></td></tr>
+<tr class="  status_passed"><td><a href="#testresult0">CA_SC05-2-Effectuer_Transaction_Mode_Diffusion_Retrait_Guichet</a></td></tr>
+<tr class="  status_passed"><td><a href="#testresult1">CA_SC05-3-Effectuer_Transaction_Mode_Courrier_Recommande</a></td></tr>
+</tbody></table>
+
+
+</td>
+<td>&nbsp;</td>
+</tr>
+</table><table><tr>
+<td><a name="testresult0">CA_SC05-2-Effectuer_Transaction_Mode_Diffusion_Retrait_Guichet.html</a><br/><div>
+<table border="1" cellpadding="1" cellspacing="1">
+<thead>
+<tr class="title status_passed"><td rowspan="1" colspan="3">CA_SC05-2-Effectuer_Transaction_Mode_Diffusion_Retrait_Guichet</td></tr>
+</thead><tbody>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>open</td>
+	<td>index.php4?p=5</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=authLogin</td>
+	<td>qatest1</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>name=motPasse</td>
+	<td>test123456*</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>name=Submit</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>//div[@id='menuContent']/div[13]/a/div[2]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>openWindow</td>
+	<td>http://www.testoto.digitick-ppe.com/ext/billetterie5/?site=qatest5</td>
+	<td>Billetterie</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>selectWindow</td>
+	<td>Billetterie</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>css=dl.evenement2.unelignesurdeux &gt; dd &gt; a.evenementNom &gt; span</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>4000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>select</td>
+	<td>id=t1257338</td>
+	<td>label=regexp:\s1</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=choixAssuranceReponse1</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=submitFinaliser</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=mode15</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=dejatel</td>
+	<td>0644556602 </td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=dejapass</td>
+	<td>test1234*</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>id=formSubmit</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>name=formEtape2RenommageBilletSubmit</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=champ0</td>
+	<td>4012001037141112</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=cvvCB</td>
+	<td>123</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=cgvCB</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>name=formSubmit</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>css=input[type="submit"]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>9000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=input[type="submit"]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>test ok </td>
+	<td>test ok</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>script (déconnexion)</td>
+	<td>script (déconnexion)</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>10000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=Imprimez votre facture</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=Imprimez votre facture</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>css=a.identificationDeconnexion &gt; span</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>close</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>id=headerDeconnecter</td>
+	<td></td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr><tr>
+<td><a name="testresult1">CA_SC05-3-Effectuer_Transaction_Mode_Courrier_Recommande.html</a><br/><div>
+<table border="1" cellpadding="1" cellspacing="1">
+<thead>
+<tr class="title status_passed"><td rowspan="1" colspan="3">CA_SC05-3-Effectuer_Transaction_Mode_Diffusion_Courrier_Recommandé</td></tr>
+</thead><tbody>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>open</td>
+	<td>index.php4?p=5</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=authLogin</td>
+	<td>qatest1</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>name=motPasse</td>
+	<td>test123456*</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>name=Submit</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>4000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[@id='menuContent']/div[13]/a/div[2]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=#cdv5748 &gt; td.cdvHandled_choixPlace &gt; button[type="button"]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>select</td>
+	<td>name=configChoixPlace[5748]</td>
+	<td>label=Semi-automatique (Bloc)</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=jqi_state0_buttonEnregistrer</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=jqi_state0_buttonOk</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>openWindow</td>
+	<td>http://www.testoto.digitick-ppe.com/ext/billetterie5/?site=qatest5</td>
+	<td>Billetterie</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>6000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>selectWindow</td>
+	<td>Billetterie</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=dl.evenement2 &gt; dd &gt; a.evenementNom &gt; span</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>4000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>select</td>
+	<td>id=t1257338</td>
+	<td>label=regexp:\s1</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=choixAssuranceReponse1</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=submitFinaliser</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=mode3</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=dejatel</td>
+	<td>0644556602 </td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=dejapass</td>
+	<td>test1234*</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>id=formSubmit</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>name=nom</td>
+	<td>willy</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>name=prenom</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>name=prenom</td>
+	<td>Gonzalez</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>name=adresse</td>
+	<td>10 rue Gambetta</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>name=codePostal</td>
+	<td>13015</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>name=commune</td>
+	<td>marseille</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>select</td>
+	<td>name=datedenaissance[year]</td>
+	<td>label=1983</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>css=input.btSubmit</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>name=formEtape2RenommageBilletSubmit</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=champ0</td>
+	<td>4012001037141112</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=cvvCB</td>
+	<td>123</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=cgvCB</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>name=formSubmit</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>css=input[type="submit"]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>10000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=input[type="submit"]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>test ok </td>
+	<td>test ok</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>script (déconnexion)</td>
+	<td>script (déconnexion)</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>10000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=Imprimez votre facture</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=Imprimez votre facture</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>css=a.identificationDeconnexion &gt; span</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>close</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>id=headerDeconnecter</td>
+	<td></td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr></table><pre>
+info: Starting test /selenium-server/tests/CA_SC05-2-Effectuer_Transaction_Mode_Diffusion_Retrait_Guichet.html
+info: Executing: |open | index.php4?p=5 |  |
+info: Executing: |type | id=authLogin | qatest1 |
+info: Executing: |type | name=motPasse | test123456* |
+info: Executing: |clickAndWait | name=Submit |  |
+info: Executing: |clickAndWait | //div[@id=&apos;menuContent&apos;]/div[13]/a/div[2] |  |
+info: Executing: |openWindow | http://www.testoto.digitick-ppe.com/ext/billetterie5/?site=qatest5 | Billetterie |
+info: Executing: |pause | 5000 |  |
+info: Executing: |selectWindow | Billetterie |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |clickAndWait | css=dl.evenement2.unelignesurdeux &gt; dd &gt; a.evenementNom &gt; span |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |pause | 4000 |  |
+info: Executing: |select | id=t1257338 | label=regexp:\s1 |
+info: Executing: |click | id=choixAssuranceReponse1 |  |
+info: Executing: |click | id=submitFinaliser |  |
+info: Executing: |pause | 5000 |  |
+info: Executing: |click | id=mode15 |  |
+info: Executing: |type | id=dejatel | 0644556602 |
+info: Executing: |type | id=dejapass | test1234* |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |clickAndWait | id=formSubmit |  |
+info: Executing: |pause | 2000 |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |clickAndWait | name=formEtape2RenommageBilletSubmit |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |pause | 2000 |  |
+info: Executing: |type | id=champ0 | 4012001037141112 |
+info: Executing: |type | id=cvvCB | 123 |
+info: Executing: |click | id=cgvCB |  |
+info: Executing: |pause | 2000 |  |
+info: Executing: |click | name=formSubmit |  |
+info: Executing: |waitForElementPresent | css=input[type=&quot;submit&quot;] |  |
+info: Executing: |pause | 9000 |  |
+info: Executing: |click | css=input[type=&quot;submit&quot;] |  |
+info: Executing: |echo | test ok |  |
+info: Executing: |echo | script (déconnexion) |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |pause | 10000 |  |
+info: Executing: |waitForElementPresent | link=Imprimez votre facture |  |
+info: Executing: |pause | 1000 |  |
+info: Executing: |click | link=Imprimez votre facture |  |
+warn: Link has target &apos;_blank&apos;, which is not supported in Selenium!  Randomizing target to be: selenium_blank53663
+info: Executing: |clickAndWait | css=a.identificationDeconnexion &gt; span |  |
+info: Executing: |close |  |  |
+info: Executing: |selectWindow | null |  |
+info: Executing: |clickAndWait | id=headerDeconnecter |  |
+info: Starting test /selenium-server/tests/CA_SC05-3-Effectuer_Transaction_Mode_Courrier_Recommande.html
+info: Executing: |open | index.php4?p=5 |  |
+info: Executing: |type | id=authLogin | qatest1 |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |type | name=motPasse | test123456* |
+info: Executing: |click | name=Submit |  |
+info: Executing: |pause | 4000 |  |
+info: Executing: |click | //div[@id=&apos;menuContent&apos;]/div[13]/a/div[2] |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |pause | 2000 |  |
+info: Executing: |click | css=#cdv5748 &gt; td.cdvHandled_choixPlace &gt; button[type=&quot;button&quot;] |  |
+info: Executing: |select | name=configChoixPlace[5748] | label=Semi-automatique (Bloc) |
+info: Executing: |click | id=jqi_state0_buttonEnregistrer |  |
+info: Executing: |click | id=jqi_state0_buttonOk |  |
+info: Executing: |openWindow | http://www.testoto.digitick-ppe.com/ext/billetterie5/?site=qatest5 | Billetterie |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |pause | 6000 |  |
+info: Executing: |selectWindow | Billetterie |  |
+info: Executing: |pause | 2000 |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |click | css=dl.evenement2 &gt; dd &gt; a.evenementNom &gt; span |  |
+info: Executing: |pause | 4000 |  |
+info: Executing: |select | id=t1257338 | label=regexp:\s1 |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |click | id=choixAssuranceReponse1 |  |
+info: Executing: |click | id=submitFinaliser |  |
+info: Executing: |pause | 5000 |  |
+info: Executing: |click | id=mode3 |  |
+info: Executing: |type | id=dejatel | 0644556602 |
+info: Executing: |type | id=dejapass | test1234* |
+info: Executing: |clickAndWait | id=formSubmit |  |
+info: Executing: |type | name=nom | willy |
+info: Executing: |click | name=prenom |  |
+info: Executing: |type | name=prenom | Gonzalez |
+info: Executing: |type | name=adresse | 10 rue Gambetta |
+info: Executing: |type | name=codePostal | 13015 |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |type | name=commune | marseille |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |select | name=datedenaissance[year] | label=1983 |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |clickAndWait | css=input.btSubmit |  |
+info: Executing: |pause | 2000 |  |
+info: Executing: |clickAndWait | name=formEtape2RenommageBilletSubmit |  |
+info: Executing: |type | id=champ0 | 4012001037141112 |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |type | id=cvvCB | 123 |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |click | id=cgvCB |  |
+info: Executing: |pause | 2000 |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |click | name=formSubmit |  |
+info: Executing: |waitForElementPresent | css=input[type=&quot;submit&quot;] |  |
+info: Executing: |pause | 10000 |  |
+info: Executing: |click | css=input[type=&quot;submit&quot;] |  |
+info: Executing: |echo | test ok |  |
+info: Executing: |echo | script (déconnexion) |  |
+info: Executing: |pause | 10000 |  |
+info: Executing: |waitForElementPresent | link=Imprimez votre facture |  |
+info: Executing: |pause | 1000 |  |
+info: Executing: |click | link=Imprimez votre facture |  |
+warn: Link has target &apos;_blank&apos;, which is not supported in Selenium!  Randomizing target to be: selenium_blank53905
+info: Executing: |clickAndWait | css=a.identificationDeconnexion &gt; span |  |
+info: Executing: |close |  |  |
+info: Executing: |selectWindow | null |  |
+info: Executing: |clickAndWait | id=headerDeconnecter |  |
+</pre></body></html>

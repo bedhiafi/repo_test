@@ -1,0 +1,453 @@
+<html>
+<head><style type='text/css'>
+body, table {
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 12;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+}
+
+a {
+    text-decoration: none;
+}
+
+.title {
+    font-style: italic;
+}
+
+.selected {
+    background-color: #ffffcc;
+}
+
+.status_done {
+    background-color: #eeffee;
+}
+
+.status_passed {
+    background-color: #ccffcc;
+}
+
+.status_failed {
+    background-color: #ffcccc;
+}
+
+.breakpoint {
+    background-color: #cccccc;
+    border: 1px solid black;
+}
+</style><title>Test suite results</title></head>
+<body>
+<h1>Test suite results </h1>
+
+<table>
+<tr>
+<td>result:</td>
+<td>passed</td>
+</tr>
+<tr>
+<td>totalTime:</td>
+<td>43</td>
+</tr>
+<tr>
+<td>numTestTotal:</td>
+<td>1</td>
+</tr>
+<tr>
+<td>numTestPasses:</td>
+<td>1</td>
+</tr>
+<tr>
+<td>numTestFailures:</td>
+<td>0</td>
+</tr>
+<tr>
+<td>numCommandPasses:</td>
+<td>4</td>
+</tr>
+<tr>
+<td>numCommandFailures:</td>
+<td>0</td>
+</tr>
+<tr>
+<td>numCommandErrors:</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Selenium Version:</td>
+<td>2.52</td>
+</tr>
+<tr>
+<td>Selenium Revision:</td>
+<td>.0</td>
+</tr>
+<tr>
+<td>
+<table id="suiteTable" class="selenium" border="1" cellpadding="1" cellspacing="1"><tbody>
+<tr class="title status_passed"><td><b>Test Suite</b></td></tr>
+<tr class="  status_passed"><td><a href="#testresult0">SC06_2-modifEtat</a></td></tr>
+</tbody></table>
+
+
+</td>
+<td>&nbsp;</td>
+</tr>
+</table><table><tr>
+<td><a name="testresult0">SC06_2-modifEtat.html</a><br/><div>
+<table border="1" cellpadding="1" cellspacing="1">
+<thead>
+<tr class="title status_passed"><td rowspan="1" colspan="3">SCO6_1-Mettre_EVE_EN_Vente</td></tr>
+</thead><tbody>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>storeEval</td>
+	<td>new Date().getFullYear()</td>
+	<td>Year</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>storeEval</td>
+	<td>new Date().getFullYear()+1</td>
+	<td>Year1</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>open</td>
+	<td>index.php4?p=5</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>Login</td>
+	<td>Login</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=authLogin</td>
+	<td>qatest1</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>name=motPasse</td>
+	<td>test123456*</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>name=Submit</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>css=div.menuItemContentSelected</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>//a[@href='http://admin.testoto.digitick-ppe.com/?p=201&amp;typeEvt=1']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>Selection Evenement</td>
+	<td>Selection Evenement</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>id=searchField</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=searchField</td>
+	<td>EVTQA12345</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>css=input.submit01</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>mise hors-ligne</td>
+	<td>mise hors-ligne</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=modifEtat0</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>css=input.bt</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=input.bt</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyText</td>
+	<td>//span[@id='evtEtat0']</td>
+	<td>Ventes inactives</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>Rendre Complet</td>
+	<td>Rendre Complet</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=modifEtat0</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=etat10</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=input.bt</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyText</td>
+	<td>//span[@id='evtEtat0']</td>
+	<td>Complet forcé</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>décalage vente et augmentation quota</td>
+	<td>décalage vente et augmentation quota</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=Fiche Représentations</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=Dimanche 25 Septembre 2016 �&nbsp; 00h00</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>store</td>
+	<td>//td[@class='bordered impt']</td>
+	<td>t_quota</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=Modifier</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>id=dateDebutVentes_jma</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=dateDebutVentes_jma</td>
+	<td>01/01/${Year1}</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=dateFinVentes_jma</td>
+	<td>24/09/${Year1}</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=dateFin_jma</td>
+	<td>25/09/${Year1}</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=dateDebut_jma</td>
+	<td>25/09/${Year1}</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>name=nbPlacesTotal</td>
+	<td>38</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>css=input.submit01.noborder</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>mise en ligne</td>
+	<td>mise en ligne</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=Modifier état</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=input.bt</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyText</td>
+	<td>//span[@class='online']</td>
+	<td>Bientôt en vente</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>remise en vente courante</td>
+	<td>remise en vente courante</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=Modifier</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=dateDebutVentes_jma</td>
+	<td>01/01/${Year}</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>name=nbPlacesTotal</td>
+	<td>300</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>css=input.submit01.noborder</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyText</td>
+	<td>//span[@class='online']</td>
+	<td>Vente en cours</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>Deconnexion</td>
+	<td>Deconnexion</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>id=headerDeconnecter</td>
+	<td></td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr></table><pre>
+info: Starting test /selenium-server/tests/SC06_2-modifEtat.html
+info: Executing: |storeEval | new Date().getFullYear() | Year |
+info: script is: new Date().getFullYear()
+info: Executing: |storeEval | new Date().getFullYear()+1 | Year1 |
+info: script is: new Date().getFullYear()+1
+info: Executing: |open | index.php4?p=5 |  |
+info: Executing: |echo | Login |  |
+info: Executing: |type | id=authLogin | qatest1 |
+info: Executing: |type | name=motPasse | test123456* |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |clickAndWait | name=Submit |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |clickAndWait | css=div.menuItemContentSelected |  |
+info: Executing: |clickAndWait | //a[@href=&apos;http://admin.testoto.digitick-ppe.com/?p=201&amp;typeEvt=1&apos;] |  |
+info: Executing: |echo | Selection Evenement |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |waitForElementPresent | id=searchField |  |
+info: Executing: |type | id=searchField | EVTQA12345 |
+info: Executing: |clickAndWait | css=input.submit01 |  |
+info: Executing: |echo | mise hors-ligne |  |
+info: Executing: |click | id=modifEtat0 |  |
+info: Executing: |pause | 3000 |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |waitForElementPresent | css=input.bt |  |
+info: Executing: |click | css=input.bt |  |
+info: Executing: |pause | 3000 |  |
+info: Executing: |verifyText | //span[@id=&apos;evtEtat0&apos;] | Ventes inactives |
+info: Executing: |echo | Rendre Complet |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |click | id=modifEtat0 |  |
+info: Executing: |pause | 3000 |  |
+info: Executing: |click | id=etat10 |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |click | css=input.bt |  |
+info: Executing: |pause | 3000 |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |verifyText | //span[@id=&apos;evtEtat0&apos;] | Complet forcé |
+info: Executing: |echo | décalage vente et augmentation quota |  |
+info: Executing: |clickAndWait | link=Fiche Représentations |  |
+info: Executing: |clickAndWait | link=Dimanche 25 Septembre 2016 à 00h00 |  |
+info: Executing: |store | //td[@class=&apos;bordered impt&apos;] | t_quota |
+info: Executing: |clickAndWait | link=Modifier |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |waitForElementPresent | id=dateDebutVentes_jma |  |
+info: Executing: |type | id=dateDebutVentes_jma | 01/01/${Year1} |
+info: Executing: |type | id=dateFinVentes_jma | 24/09/${Year1} |
+info: Executing: |type | id=dateFin_jma | 25/09/${Year1} |
+info: Executing: |type | id=dateDebut_jma | 25/09/${Year1} |
+info: Executing: |type | name=nbPlacesTotal | 38 |
+info: Executing: |clickAndWait | css=input.submit01.noborder |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |echo | mise en ligne |  |
+info: Executing: |click | link=Modifier état |  |
+info: Executing: |pause | 3000 |  |
+info: Executing: |click | css=input.bt |  |
+info: Executing: |pause | 3000 |  |
+info: Executing: |verifyText | //span[@class=&apos;online&apos;] | Bientôt en vente |
+info: Executing: |echo | remise en vente courante |  |
+info: Executing: |clickAndWait | link=Modifier |  |
+info: Executing: |type | id=dateDebutVentes_jma | 01/01/${Year} |
+info: Executing: |type | name=nbPlacesTotal | 300 |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |clickAndWait | css=input.submit01.noborder |  |
+info: Executing: |pause | 3000 |  |
+info: Executing: |verifyText | //span[@class=&apos;online&apos;] | Vente en cours |
+info: Executing: |echo | Deconnexion |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |clickAndWait | id=headerDeconnecter |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+</pre></body></html>

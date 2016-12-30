@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://admin.dev.patch.digitick.local/" />
+<title>Carte_Expire_Paiement_Nfois_Payline</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Carte_Expire_Paiement_Nfois_Payline</td></tr>
+</thead><tbody>
+<tr>
+	<td>echo</td>
+	<td>## Acces admin</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/~rcortes/index.php4?p=5</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=authLogin</td>
+	<td>rcortes</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=motPasse</td>
+	<td>test123456*</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=Submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=searchField</td>
+	<td>aeronef</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.btOk</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=L'Aéronef</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>## Onglet Site</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//div[@id='menuContent']/div[14]/a/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeAttribute</td>
+	<td>//div[@class='row']/div[2]/div/div[2]/div/a[@class='btn btn-tools btn-edit ng-scope']@href</td>
+	<td>Edition</td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>http://admin.dev.patch.digitick.local${Edition}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='recurringPayment']/h4/span/i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.bootstrap-switch-handle-off.bootstrap-switch-default</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>//div[@id='collapseRecurringPayment']/div/form/div/div/div[3]/div/select</td>
+	<td>label=4 fois</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>//div[@id='collapseRecurringPayment']/div/form/div/div/div[4]/div/select</td>
+	<td>label=Hebdomadaire</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@type='number']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>//div[@id='collapseRecurringPayment']/div/form/div/div[2]/div/select</td>
+	<td>label=Widget (intégré au site)</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button[@type='submit']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>## Acces CSS5 + ajout panier</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>http://www.dev.patch.digitick.local/~rcortes/rco-m-1-festival-transport-css5-laeronef-pg51-ei${idEvent3}.htm</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=t${idTarif}</td>
+	<td>label=regexp:\s1</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=submitFinaliser</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>## Connexion</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=dejatel</td>
+	<td>0646406540</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=dejapass</td>
+	<td>dante4747</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=formSubmit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=formEtape2RenommageBilletSubmit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>## Page de paiement</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Paiement en 4 fois sans frais</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=cardNumber</td>
+	<td>4970 1045 7039 7602</td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>name=cardNumber</td>
+	<td> </td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=pl-pm-cards_3-expirationDate</td>
+	<td>${Mois1} / ${Annee1}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=cvx</td>
+	<td>231</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=pl-pm-cards_3-payBtn</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='compDialogueContent1']/div[2]/div[2]/span[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=cardNumber</td>
+	<td>4970 1045 7039 7602</td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>name=cardNumber</td>
+	<td> </td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=pl-pm-cards_3-expirationDate</td>
+	<td>02 / 18</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=cvx</td>
+	<td>231</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=pl-pm-cards_3-payBtn</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>## Page de confirmation</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>css=div.listeMessage &gt; span</td>
+	<td>Transaction3</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>parseInt(/[0-9]+/.exec(storedVars['Transaction3']))</td>
+	<td>idTransaction3</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.listeMessage &gt; span</td>
+	<td>Nous vous remercions de votre achat. Votre commande a bien été enregistrée sous le numéro ${idTransaction3}.</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>## Mon compte</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=div.compteBouton &gt; a &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.titleComposants.transactionNormal &gt; span</td>
+	<td>Achat N°${idTransaction3}</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=#compteDeconnexion &gt; span.ongletLibelle</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

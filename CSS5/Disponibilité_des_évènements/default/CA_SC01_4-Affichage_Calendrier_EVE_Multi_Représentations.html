@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://admin.testoto.digitick-ppe.com/" />
+<title>CA_SC01_4-Affichage_Calendrier_EVE_Multi_Représentations</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">CA_SC01_4-Affichage_Calendrier_EVE_Multi_Représentations</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/index.php4?p=5</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>window.document.domain</td>
+	<td>host</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>reg=/[^admin.][\w\.-]*/;reg.exec('${host}')</td>
+	<td>domain</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>Login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=authLogin</td>
+	<td>qatest2</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=motPasse</td>
+	<td>test123456*</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=Submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>Onglet Canaux de Vente</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//div[@id='menuContent']/div[14]/a/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>Configuration css en choix par tarif</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#cdv5748 &gt; td.cdvHandled_choixPlace &gt; button[type=&quot;button&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=configChoixPlace[5748]</td>
+	<td>label=Automatique</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=configChoixPlace_final</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=jqi_state0_buttonEnregistrer</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=jqi_state0_buttonOk</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>Nettoyage du cache</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>openWindow</td>
+	<td>javascript{(&quot;http://www.&quot;+storedVars['domain']+&quot;/ext/billetterie5/?site=qatest5&quot;)}</td>
+	<td>Billetterie</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>openWindow</td>
+	<td>javascript{(&quot;http://ssl.&quot;+storedVars['domain']+&quot;/maintenance/secure/digicache.php?pattern=*_C5748_*&amp;toto&quot;)}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>4000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>Digicache Manager</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeAttribute</td>
+	<td>//div[@id='workbench']@style</td>
+	<td>eval</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>javascript{storedVars['eval']=='display: none;'}</td>
+	<td>test</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['test']=='true'</td>
+	<td>else</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=selectAll</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=input.btn.btn-danger</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>else</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>close</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>Billetterie</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>Ouverture Billetterie</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>refresh</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>Clic evenement</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>javascript{("http://www."storedVars['domain']+"/auto_evenement_reppl-concert-pop-rock-css5-qatest5-pg51-ei312665.html")}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>Clic sur une date du calendrier</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=&gt;&gt;</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=&gt;&gt;</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//div[@id='calendar-100000000']/div[3]/table/tbody/tr[3]/td[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>Selection place</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=t1688638</td>
+	<td>label=regexp:\s1</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=choixAssuranceReponse1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=submitFinaliser</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>Retour Accueil</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Acheter</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Acheter</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Vider le panier</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Vider le panier</td>
+	<td></td>
+</tr>
+<tr>
+	<td>close</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>Deconnexion</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=headerDeconnecter</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

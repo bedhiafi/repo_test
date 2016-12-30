@@ -1,0 +1,1766 @@
+<html>
+<head><style type='text/css'>
+body, table {
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 12;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+}
+
+a {
+    text-decoration: none;
+}
+
+.title {
+    font-style: italic;
+}
+
+.selected {
+    background-color: #ffffcc;
+}
+
+.status_done {
+    background-color: #eeffee;
+}
+
+.status_passed {
+    background-color: #ccffcc;
+}
+
+.status_failed {
+    background-color: #ffcccc;
+}
+
+.breakpoint {
+    background-color: #cccccc;
+    border: 1px solid black;
+}
+</style><title>Test suite results</title></head>
+<body>
+<h1>Test suite results </h1>
+
+<table>
+<tr>
+<td>result:</td>
+<td>passed</td>
+</tr>
+<tr>
+<td>totalTime:</td>
+<td>325</td>
+</tr>
+<tr>
+<td>numTestTotal:</td>
+<td>5</td>
+</tr>
+<tr>
+<td>numTestPasses:</td>
+<td>5</td>
+</tr>
+<tr>
+<td>numTestFailures:</td>
+<td>0</td>
+</tr>
+<tr>
+<td>numCommandPasses:</td>
+<td>1</td>
+</tr>
+<tr>
+<td>numCommandFailures:</td>
+<td>0</td>
+</tr>
+<tr>
+<td>numCommandErrors:</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Selenium Version:</td>
+<td>2.52</td>
+</tr>
+<tr>
+<td>Selenium Revision:</td>
+<td>.0</td>
+</tr>
+<tr>
+<td>
+<table id="suiteTable" class="selenium" border="1" cellpadding="1" cellspacing="1"><tbody>
+<tr class="title status_passed"><td><b>Test Suite</b></td></tr>
+<tr class="  status_passed"><td><a href="#testresult0">SC05_1-Reservoir_Evenement_Bloquer_Places</a></td></tr>
+<tr class="  status_passed"><td><a href="#testresult1">SC05_2_Retirer_Places_Reservoir_version_test</a></td></tr>
+<tr class="  status_passed"><td><a href="#testresult2">SC05_6_Mettre_place_Reservoir</a></td></tr>
+<tr class="  status_passed"><td><a href="#testresult3">SC05_3_Deplacer_Places_Reservoir_Autre_version2</a></td></tr>
+<tr class="  status_passed"><td><a href="#testresult4">SC05_5_Desactiver_Reservoir</a></td></tr>
+</tbody></table>
+
+
+</td>
+<td>&nbsp;</td>
+</tr>
+</table><table><tr>
+<td><a name="testresult0">SC05_1-Reservoir_Evenement_Bloquer_Places.html</a><br/><div>
+<table border="1" cellpadding="1" cellspacing="1">
+<thead>
+<tr class="title status_passed"><td rowspan="1" colspan="3">SC05_1-Reservoir_Evénement_Bloquer_Places3</td></tr>
+</thead><tbody>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>open</td>
+	<td>index.php4?p=5</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=authLogin</td>
+	<td>qatest1</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>name=motPasse</td>
+	<td>test123456*</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>name=Submit</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>//div[@id='menuContent']/div[13]/a/div[2]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=gesion_5748</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>css=select.selectEvt.choix</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>select</td>
+	<td>css=select.selectEvt.choix</td>
+	<td>label=Auto_Siege_2</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>4000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>id=reservoirs-313974</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=reservoirs-313974</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=#reservoirsManager_313974 &gt; div.zoneHeader.subTitleSubZone &gt; div.actions &gt; button.addReservoir</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=new_reservoir_name</td>
+	<td>Auto_Reservoir_2</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>xpath=(//button[@type='button'])[43]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>name=commit</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=popup_ok</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>id=roomSection-26240-0</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>mouseOver</td>
+	<td>id=roomSection-26240-0</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=roomSection-26240-0</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=reservoirsManager_313974-MapRoom-MapRoomSection-canvasHolder-canvas-canvas</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=reservoirsManager_313974-MapRoom-MapRoomSection-canvasHolder-canvas-canvas</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=reservoirsManager_313974-MapRoom-MapRoomSection-canvasHolder-canvas-canvas</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=reservoirsManager_313974-MapRoom-MapRoomSection-canvasHolder-canvas-canvas</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=reservoirsManager_313974-MapRoom-MapRoomSection-canvasHolder-canvas-canvas</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=div.roomSectionAllocation &gt; div.header &gt; button.toggle.open</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=addSeat-reservoir</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=button.allocation.enableAllocation</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=button.edit</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>css=span.enabling</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>4000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>name=commit</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>4000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>id=headerDeconnecter</td>
+	<td></td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr><tr>
+<td><a name="testresult1">SC05_2_Retirer_Places_Reservoir_version_test.html</a><br/><div>
+<table border="1" cellpadding="1" cellspacing="1">
+<thead>
+<tr class="title status_passed"><td rowspan="1" colspan="3">SC05_2_Retirer_Places_Réservoir_version_test</td></tr>
+</thead><tbody>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>open</td>
+	<td>index.php4?p=5</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=authLogin</td>
+	<td>qatest1</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>name=motPasse</td>
+	<td>test123456*</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>name=Submit</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>//div[@id='menuContent']/div[13]/a/div[2]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=gesion_5748</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>css=select.selectEvt.choix</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>select</td>
+	<td>css=select.selectEvt.choix</td>
+	<td>label=Auto_Siege_2</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=reservoirs-313974</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>css=button.allocation.enableAllocation</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=button.allocation.enableAllocation</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>4000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>id=roomSection-26240-0</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>mouseOver</td>
+	<td>id=roomSection-26240-0</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=roomSection-26240-0</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>6000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=reservoirsManager_313974-MapRoom-MapRoomSection-canvasHolder-canvas-canvas</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=reservoirsManager_313974-MapRoom-MapRoomSection-canvasHolder-canvas-canvas</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=reservoirsManager_313974-MapRoom-MapRoomSection-canvasHolder-canvas-canvas</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=reservoirsManager_313974-MapRoom-MapRoomSection-canvasHolder-canvas-canvas</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=reservoirsManager_313974-MapRoom-MapRoomSection-canvasHolder-canvas-canvas</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=reservoirsManager_313974-MapRoom-MapRoomSection-canvasHolder-canvas-canvas</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=div.roomSectionAllocation &gt; div.header &gt; button.toggle.close</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=div.roomSectionAllocation &gt; div.header &gt; button.toggle.open</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=removeSeat-reservoir</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=button.allocation.enableAllocation</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=button.delete</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>xpath=(//button[@type='button'])[49]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>xpath=(//button[@type='button'])[49]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>id=headerDeconnecter</td>
+	<td></td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr><tr>
+<td><a name="testresult2">SC05_6_Mettre_place_Reservoir.html</a><br/><div>
+<table border="1" cellpadding="1" cellspacing="1">
+<thead>
+<tr class="title status_passed"><td rowspan="1" colspan="3">SC05_6_Mettre_place_Réservoir</td></tr>
+</thead><tbody>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>store</td>
+	<td>3000</td>
+	<td>pause1</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>store</td>
+	<td>2000</td>
+	<td>pause2</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>open</td>
+	<td>index.php4?p=5</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=authLogin</td>
+	<td>qatest1</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>name=motPasse</td>
+	<td>test123456*</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>name=Submit</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>${pause1}</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>//div[@id='menuContent']/div[13]/a/div[2]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>id=gesion_5748</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>css=select.selectEvt.choix</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>select</td>
+	<td>css=select.selectEvt.choix</td>
+	<td>label=Auto_Siege_2</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=reservoirs-313974</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=reservoirsManager_313974-MapRoom-MapRoomSection-brush</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=#reservoirsManager_313974 &gt; div.zoneHeader.subTitleSubZone &gt; div.actions &gt; button.addReservoir</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=new_reservoir_name</td>
+	<td>test</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>xpath=(//button[@type='button'])[43]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>name=commit</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=popup_cancel</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>//div[@id='menuContent']/div[4]/a/div[2]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>//a[@href='http://admin.testoto.digitick-ppe.com/?p=201&amp;typeEvt=1']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>${pause1}</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=searchField</td>
+	<td>auto_siege_2</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>css=input.submit01</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>${pause1}</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=Fiche Représentations</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=Allocation sièges</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>${pause1}</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>mouseOver</td>
+	<td>id=roomSection-26244-1</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=roomSection-26244-1</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>${pause1}</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=Réservoirs</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>${pause2}</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=mapRoom_default-2-MapRoomSection-canvasHolder-canvas-canvas</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=mapRoom_default-2-MapRoomSection-canvasHolder-canvas-canvas</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=mapRoom_default-2-MapRoomSection-canvasHolder-canvas-canvas</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>${pause1}</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>xpath=(//button[@type='button'])[16]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=ui-multiselect-reservoir-option-0</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[@id='reservoirs']/div/div/ul/li/label/span</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>xpath=(//button[@type='button'])[16]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=ui-multiselect-reservoir-option-0</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[@id='reservoirs']/div/div/ul/li/label/span[2]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>${pause1}</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=div.reservoir &gt; button.allocAction.toSelectedSeats</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=mapRoom_default-2-MapRoomSection-canvasHolder-canvas-canvas</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=mapRoom_default-2-MapRoomSection-canvasHolder-canvas-canvas</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=mapRoom_default-2-MapRoomSection-canvasHolder-canvas-canvas</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=mapRoom_default-2-MapRoomSection-canvasHolder-canvas-canvas</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>${pause1}</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>id=headerDeconnecter</td>
+	<td></td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr><tr>
+<td><a name="testresult3">SC05_3_Deplacer_Places_Reservoir_Autre_version2.html</a><br/><div>
+<table border="1" cellpadding="1" cellspacing="1">
+<thead>
+<tr class="title status_passed"><td rowspan="1" colspan="3">SC05_3_Déplacer_Places_Réservoir_Autre_version2</td></tr>
+</thead><tbody>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>open</td>
+	<td>index.php4?p=5</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=authLogin</td>
+	<td>qatest1</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>name=motPasse</td>
+	<td>test123456*</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>name=Submit</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>//div[@id='menuContent']/div[13]/a/div[2]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=gesion_5748</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>css=select.selectEvt.choix</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>select</td>
+	<td>css=select.selectEvt.choix</td>
+	<td>label=Auto_Siege_2</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=reservoirs-313974</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=button.delete</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>xpath=(//button[@type='button'])[49]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=#reservoirsManager_313974 &gt; div.zoneHeader.subTitleSubZone &gt; div.actions &gt; button.addReservoir</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=new_reservoir_name</td>
+	<td>Auto_Reservoir_3</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>xpath=(//button[@type='button'])[43]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>storeText</td>
+	<td>//td[@class='id sorting_1']/var</td>
+	<td>res</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>${res}</td>
+	<td>231980</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>css=div.menuItemContentSelected</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>7000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=gesion_5766</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>css=select.selectEvt.choix</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>select</td>
+	<td>css=select.selectEvt.choix</td>
+	<td>label=Auto_Siege_2</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=reservoirs-313974</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=#reservoirsManager_313974 &gt; div.zoneHeader.subTitleSubZone &gt; div.actions &gt; button.addReservoir</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=new_reservoir_name</td>
+	<td>Auto_3</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>4000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>xpath=(//button[@type='button'])[42]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>name=commit</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=popup_ok</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>mouseOver</td>
+	<td>id=roomSection-26244-1</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=roomSection-26244-1</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=reservoirsManager_313974-MapRoom-MapRoomSection-canvasHolder-canvas-canvas</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=reservoirsManager_313974-MapRoom-MapRoomSection-canvasHolder-canvas-canvas</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=div.roomSectionAllocation &gt; div.header &gt; button.toggle.open</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=addSeat-reservoir</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>10000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=reservoirsManager_313974-MapRoom-MapRoomSection-canvasHolder-canvas-canvas</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=div.roomSectionAllocation &gt; div.header &gt; button.toggle.open</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=moveSeat-reservoir</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>select</td>
+	<td>css=select.selectCanalDeVente</td>
+	<td>label=5748 - css5_qatest5</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=option[value="5748"]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=res${res}</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=ul.selectReservoir &gt; li &gt; label</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>xpath=(//button[@type='button'])[48]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=button.delete</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>xpath=(//button[@type='button'])[50]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=Liste</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>id=gesion_5748</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>select</td>
+	<td>css=select.selectEvt.choix</td>
+	<td>label=Auto_Siege_2</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=reservoirs-313974</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=reservoirsManager_313974-MapRoom-MapRoomSection-brush</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=button.delete</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>xpath=(//button[@type='button'])[49]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>id=headerDeconnecter</td>
+	<td></td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr><tr>
+<td><a name="testresult4">SC05_5_Desactiver_Reservoir.html</a><br/><div>
+<table border="1" cellpadding="1" cellspacing="1">
+<thead>
+<tr class="title status_passed"><td rowspan="1" colspan="3">SC05_5_Désactiver_Réservoir</td></tr>
+</thead><tbody>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>open</td>
+	<td>index.php4?p=5</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=authLogin</td>
+	<td>qatest1</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>name=motPasse</td>
+	<td>test123456*</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>name=Submit</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>//div[@id='menuContent']/div[13]/a/div[2]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=gesion_5766</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>css=select.selectEvt.choix</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>select</td>
+	<td>css=select.selectEvt.choix</td>
+	<td>label=Auto_Siege_2</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>id=reservoirs-313974</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=reservoirs-313974</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>7000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=#reservoirsManager_313974 &gt; div.zoneHeader.subTitleSubZone &gt; div.actions &gt; button.addReservoir</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=new_reservoir_name</td>
+	<td>Test_desactivation</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>xpath=(//button[@type='button'])[42]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>name=commit</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=popup_ok</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>6000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>id=roomSection-26240-0</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>mouseOver</td>
+	<td>id=roomSection-26240-0</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=roomSection-26240-0</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=reservoirsManager_313974-MapRoom-MapRoomSection-canvasHolder-canvas-canvas</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=reservoirsManager_313974-MapRoom-MapRoomSection-canvasHolder-canvas-canvas</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=reservoirsManager_313974-MapRoom-MapRoomSection-canvasHolder-canvas-canvas</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=div.roomSectionAllocation &gt; div.header &gt; button.toggle.open</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=addSeat-reservoir</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=button.edit</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=span.enabling</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>name=commit</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyElementNotPresent</td>
+	<td>css=button.allocation.enableAllocation</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=button.delete</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>xpath=(//button[@type='button'])[48]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>id=headerDeconnecter</td>
+	<td></td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr></table><pre>
+info: Starting test /selenium-server/tests/SC05_1-Reservoir_Evenement_Bloquer_Places.html
+info: Executing: |open | index.php4?p=5 |  |
+info: Executing: |type | id=authLogin | qatest1 |
+info: Executing: |type | name=motPasse | test123456* |
+info: Executing: |clickAndWait | name=Submit |  |
+info: Executing: |clickAndWait | //div[@id=&apos;menuContent&apos;]/div[13]/a/div[2] |  |
+info: Executing: |click | id=gesion_5748 |  |
+info: Executing: |pause | 5000 |  |
+info: Executing: |waitForElementPresent | css=select.selectEvt.choix |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |select | css=select.selectEvt.choix | label=Auto_Siege_2 |
+info: Executing: |pause | 4000 |  |
+info: Executing: |waitForElementPresent | id=reservoirs-313974 |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |click | id=reservoirs-313974 |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |pause | 5000 |  |
+info: Executing: |click | css=#reservoirsManager_313974 &gt; div.zoneHeader.subTitleSubZone &gt; div.actions &gt; button.addReservoir |  |
+info: Executing: |pause | 5000 |  |
+info: Executing: |type | id=new_reservoir_name | Auto_Reservoir_2 |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |pause | 5000 |  |
+info: Executing: |click | xpath=(//button[@type=&apos;button&apos;])[43] |  |
+info: Executing: |pause | 5000 |  |
+info: Executing: |click | name=commit |  |
+info: Executing: |pause | 5000 |  |
+info: Executing: |click | id=popup_ok |  |
+info: Executing: |pause | 5000 |  |
+info: Executing: |waitForElementPresent | id=roomSection-26240-0 |  |
+info: Executing: |mouseOver | id=roomSection-26240-0 |  |
+info: Executing: |click | id=roomSection-26240-0 |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |pause | 5000 |  |
+info: Executing: |click | id=reservoirsManager_313974-MapRoom-MapRoomSection-canvasHolder-canvas-canvas |  |
+info: Executing: |click | id=reservoirsManager_313974-MapRoom-MapRoomSection-canvasHolder-canvas-canvas |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |click | id=reservoirsManager_313974-MapRoom-MapRoomSection-canvasHolder-canvas-canvas |  |
+info: Executing: |click | id=reservoirsManager_313974-MapRoom-MapRoomSection-canvasHolder-canvas-canvas |  |
+info: Executing: |click | id=reservoirsManager_313974-MapRoom-MapRoomSection-canvasHolder-canvas-canvas |  |
+info: Executing: |pause | 5000 |  |
+info: Executing: |click | css=div.roomSectionAllocation &gt; div.header &gt; button.toggle.open |  |
+info: Executing: |pause | 5000 |  |
+info: Executing: |click | id=addSeat-reservoir |  |
+info: Executing: |pause | 2000 |  |
+info: Executing: |click | css=button.allocation.enableAllocation |  |
+info: Executing: |pause | 2000 |  |
+info: Executing: |click | css=button.edit |  |
+info: Executing: |waitForElementPresent | css=span.enabling |  |
+info: Executing: |pause | 4000 |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |click | name=commit |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |pause | 4000 |  |
+info: Executing: |clickAndWait | id=headerDeconnecter |  |
+info: Starting test /selenium-server/tests/SC05_2_Retirer_Places_Reservoir_version_test.html
+info: Executing: |open | index.php4?p=5 |  |
+info: Executing: |type | id=authLogin | qatest1 |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |type | name=motPasse | test123456* |
+info: Executing: |clickAndWait | name=Submit |  |
+info: Executing: |clickAndWait | //div[@id=&apos;menuContent&apos;]/div[13]/a/div[2] |  |
+info: Executing: |click | id=gesion_5748 |  |
+info: Executing: |pause | 5000 |  |
+info: Executing: |waitForElementPresent | css=select.selectEvt.choix |  |
+info: Executing: |select | css=select.selectEvt.choix | label=Auto_Siege_2 |
+info: Executing: |pause | 2000 |  |
+info: Executing: |click | id=reservoirs-313974 |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |pause | 5000 |  |
+info: Executing: |waitForElementPresent | css=button.allocation.enableAllocation |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |click | css=button.allocation.enableAllocation |  |
+info: Executing: |pause | 4000 |  |
+info: Executing: |waitForElementPresent | id=roomSection-26240-0 |  |
+info: Executing: |mouseOver | id=roomSection-26240-0 |  |
+info: Executing: |click | id=roomSection-26240-0 |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |pause | 6000 |  |
+info: Executing: |click | id=reservoirsManager_313974-MapRoom-MapRoomSection-canvasHolder-canvas-canvas |  |
+info: Executing: |click | id=reservoirsManager_313974-MapRoom-MapRoomSection-canvasHolder-canvas-canvas |  |
+info: Executing: |click | id=reservoirsManager_313974-MapRoom-MapRoomSection-canvasHolder-canvas-canvas |  |
+info: Executing: |click | id=reservoirsManager_313974-MapRoom-MapRoomSection-canvasHolder-canvas-canvas |  |
+info: Executing: |click | id=reservoirsManager_313974-MapRoom-MapRoomSection-canvasHolder-canvas-canvas |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |click | id=reservoirsManager_313974-MapRoom-MapRoomSection-canvasHolder-canvas-canvas |  |
+info: Executing: |click | css=div.roomSectionAllocation &gt; div.header &gt; button.toggle.close |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |click | css=div.roomSectionAllocation &gt; div.header &gt; button.toggle.open |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |click | id=removeSeat-reservoir |  |
+info: Executing: |click | css=button.allocation.enableAllocation |  |
+info: Executing: |pause | 2000 |  |
+info: Executing: |click | css=button.delete |  |
+info: Executing: |waitForElementPresent | xpath=(//button[@type=&apos;button&apos;])[49] |  |
+info: Executing: |click | xpath=(//button[@type=&apos;button&apos;])[49] |  |
+info: Executing: |clickAndWait | id=headerDeconnecter |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Starting test /selenium-server/tests/SC05_6_Mettre_place_Reservoir.html
+info: Executing: |store | 3000 | pause1 |
+info: Executing: |store | 2000 | pause2 |
+info: Executing: |open | index.php4?p=5 |  |
+info: Executing: |type | id=authLogin | qatest1 |
+info: Executing: |type | name=motPasse | test123456* |
+info: Executing: |clickAndWait | name=Submit |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |pause | ${pause1} |  |
+info: Executing: |clickAndWait | //div[@id=&apos;menuContent&apos;]/div[13]/a/div[2] |  |
+info: Executing: |clickAndWait | id=gesion_5748 |  |
+info: Executing: |pause | 2000 |  |
+info: Executing: |waitForElementPresent | css=select.selectEvt.choix |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |select | css=select.selectEvt.choix | label=Auto_Siege_2 |
+info: Executing: |pause | 3000 |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |click | id=reservoirs-313974 |  |
+info: Executing: |pause | 3000 |  |
+info: Executing: |click | id=reservoirsManager_313974-MapRoom-MapRoomSection-brush |  |
+info: Executing: |click | css=#reservoirsManager_313974 &gt; div.zoneHeader.subTitleSubZone &gt; div.actions &gt; button.addReservoir |  |
+info: Executing: |pause | 3000 |  |
+info: Executing: |type | id=new_reservoir_name | test |
+info: Executing: |pause | 3000 |  |
+info: Executing: |click | xpath=(//button[@type=&apos;button&apos;])[43] |  |
+info: Executing: |pause | 3000 |  |
+info: Executing: |click | name=commit |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |pause | 3000 |  |
+info: Executing: |click | id=popup_cancel |  |
+info: Executing: |pause | 3000 |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |clickAndWait | //div[@id=&apos;menuContent&apos;]/div[4]/a/div[2] |  |
+info: Executing: |clickAndWait | //a[@href=&apos;http://admin.testoto.digitick-ppe.com/?p=201&amp;typeEvt=1&apos;] |  |
+info: Executing: |pause | ${pause1} |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |type | id=searchField | auto_siege_2 |
+info: Executing: |clickAndWait | css=input.submit01 |  |
+info: Executing: |pause | ${pause1} |  |
+info: Executing: |clickAndWait | link=Fiche Représentations |  |
+info: Executing: |clickAndWait | link=Allocation sièges |  |
+info: Executing: |pause | ${pause1} |  |
+info: Executing: |mouseOver | id=roomSection-26244-1 |  |
+info: Executing: |click | id=roomSection-26244-1 |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |pause | ${pause1} |  |
+info: Executing: |click | link=Réservoirs |  |
+info: Executing: |pause | ${pause2} |  |
+info: Executing: |click | id=mapRoom_default-2-MapRoomSection-canvasHolder-canvas-canvas |  |
+info: Executing: |click | id=mapRoom_default-2-MapRoomSection-canvasHolder-canvas-canvas |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |click | id=mapRoom_default-2-MapRoomSection-canvasHolder-canvas-canvas |  |
+info: Executing: |pause | ${pause1} |  |
+info: Executing: |click | xpath=(//button[@type=&apos;button&apos;])[16] |  |
+info: Executing: |click | id=ui-multiselect-reservoir-option-0 |  |
+info: Executing: |click | //div[@id=&apos;reservoirs&apos;]/div/div/ul/li/label/span |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |click | xpath=(//button[@type=&apos;button&apos;])[16] |  |
+info: Executing: |click | id=ui-multiselect-reservoir-option-0 |  |
+info: Executing: |click | //div[@id=&apos;reservoirs&apos;]/div/div/ul/li/label/span[2] |  |
+info: Executing: |pause | ${pause1} |  |
+info: Executing: |click | css=div.reservoir &gt; button.allocAction.toSelectedSeats |  |
+info: Executing: |click | id=mapRoom_default-2-MapRoomSection-canvasHolder-canvas-canvas |  |
+info: Executing: |click | id=mapRoom_default-2-MapRoomSection-canvasHolder-canvas-canvas |  |
+info: Executing: |click | id=mapRoom_default-2-MapRoomSection-canvasHolder-canvas-canvas |  |
+info: Executing: |click | id=mapRoom_default-2-MapRoomSection-canvasHolder-canvas-canvas |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |pause | ${pause1} |  |
+info: Executing: |clickAndWait | id=headerDeconnecter |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Starting test /selenium-server/tests/SC05_3_Deplacer_Places_Reservoir_Autre_version2.html
+info: Executing: |open | index.php4?p=5 |  |
+info: Executing: |type | id=authLogin | qatest1 |
+info: Executing: |type | name=motPasse | test123456* |
+info: Executing: |clickAndWait | name=Submit |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |clickAndWait | //div[@id=&apos;menuContent&apos;]/div[13]/a/div[2] |  |
+info: Executing: |click | id=gesion_5748 |  |
+info: Executing: |pause | 5000 |  |
+info: Executing: |waitForElementPresent | css=select.selectEvt.choix |  |
+info: Executing: |select | css=select.selectEvt.choix | label=Auto_Siege_2 |
+info: Executing: |pause | 5000 |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |click | id=reservoirs-313974 |  |
+info: Executing: |pause | 2000 |  |
+info: Executing: |click | css=button.delete |  |
+info: Executing: |pause | 2000 |  |
+info: Executing: |click | xpath=(//button[@type=&apos;button&apos;])[49] |  |
+info: Executing: |pause | 2000 |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |click | css=#reservoirsManager_313974 &gt; div.zoneHeader.subTitleSubZone &gt; div.actions &gt; button.addReservoir |  |
+info: Executing: |type | id=new_reservoir_name | Auto_Reservoir_3 |
+info: Executing: |pause | 5000 |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |click | xpath=(//button[@type=&apos;button&apos;])[43] |  |
+info: Executing: |pause | 3000 |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |storeText | //td[@class=&apos;id sorting_1&apos;]/var | res |
+info: Executing: |echo | ${res} |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |clickAndWait | css=div.menuItemContentSelected |  |
+info: Executing: |pause | 7000 |  |
+info: Executing: |click | id=gesion_5766 |  |
+info: Executing: |pause | 2000 |  |
+info: Executing: |waitForElementPresent | css=select.selectEvt.choix |  |
+info: Executing: |select | css=select.selectEvt.choix | label=Auto_Siege_2 |
+info: Executing: |pause | 5000 |  |
+info: Executing: |click | id=reservoirs-313974 |  |
+info: Executing: |pause | 2000 |  |
+info: Executing: |click | css=#reservoirsManager_313974 &gt; div.zoneHeader.subTitleSubZone &gt; div.actions &gt; button.addReservoir |  |
+info: Executing: |type | id=new_reservoir_name | Auto_3 |
+info: Executing: |pause | 4000 |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |click | xpath=(//button[@type=&apos;button&apos;])[42] |  |
+info: Executing: |pause | 3000 |  |
+info: Executing: |click | name=commit |  |
+info: Executing: |pause | 3000 |  |
+info: Executing: |click | id=popup_ok |  |
+info: Executing: |pause | 5000 |  |
+info: Executing: |mouseOver | id=roomSection-26244-1 |  |
+info: Executing: |click | id=roomSection-26244-1 |  |
+info: Executing: |pause | 5000 |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |click | id=reservoirsManager_313974-MapRoom-MapRoomSection-canvasHolder-canvas-canvas |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |click | id=reservoirsManager_313974-MapRoom-MapRoomSection-canvasHolder-canvas-canvas |  |
+info: Executing: |click | css=div.roomSectionAllocation &gt; div.header &gt; button.toggle.open |  |
+info: Executing: |click | id=addSeat-reservoir |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |pause | 10000 |  |
+info: Executing: |click | id=reservoirsManager_313974-MapRoom-MapRoomSection-canvasHolder-canvas-canvas |  |
+info: Executing: |click | css=div.roomSectionAllocation &gt; div.header &gt; button.toggle.open |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |click | id=moveSeat-reservoir |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |pause | 5000 |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |select | css=select.selectCanalDeVente | label=5748 - css5_qatest5 |
+info: Executing: |click | css=option[value=&quot;5748&quot;] |  |
+info: Executing: |pause | 3000 |  |
+info: Executing: |click | id=res${res} |  |
+info: Executing: |click | css=ul.selectReservoir &gt; li &gt; label |  |
+info: Executing: |pause | 3000 |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |click | xpath=(//button[@type=&apos;button&apos;])[48] |  |
+info: Executing: |click | css=button.delete |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |pause | 3000 |  |
+info: Executing: |click | xpath=(//button[@type=&apos;button&apos;])[50] |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |pause | 3000 |  |
+info: Executing: |clickAndWait | link=Liste |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |clickAndWait | id=gesion_5748 |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |pause | 3000 |  |
+info: Executing: |select | css=select.selectEvt.choix | label=Auto_Siege_2 |
+info: Executing: |pause | 3000 |  |
+info: Executing: |click | id=reservoirs-313974 |  |
+info: Executing: |click | id=reservoirsManager_313974-MapRoom-MapRoomSection-brush |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |pause | 3000 |  |
+info: Executing: |click | css=button.delete |  |
+info: Executing: |pause | 3000 |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |click | xpath=(//button[@type=&apos;button&apos;])[49] |  |
+info: Executing: |pause | 3000 |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |clickAndWait | id=headerDeconnecter |  |
+info: Starting test /selenium-server/tests/SC05_5_Desactiver_Reservoir.html
+info: Executing: |open | index.php4?p=5 |  |
+info: Executing: |type | id=authLogin | qatest1 |
+info: Executing: |type | name=motPasse | test123456* |
+info: Executing: |clickAndWait | name=Submit |  |
+info: Executing: |clickAndWait | //div[@id=&apos;menuContent&apos;]/div[13]/a/div[2] |  |
+info: Executing: |click | id=gesion_5766 |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |pause | 2000 |  |
+info: Executing: |waitForElementPresent | css=select.selectEvt.choix |  |
+info: Executing: |select | css=select.selectEvt.choix | label=Auto_Siege_2 |
+info: Executing: |pause | 3000 |  |
+info: Executing: |waitForElementPresent | id=reservoirs-313974 |  |
+info: Executing: |click | id=reservoirs-313974 |  |
+info: Executing: |pause | 7000 |  |
+info: Executing: |click | css=#reservoirsManager_313974 &gt; div.zoneHeader.subTitleSubZone &gt; div.actions &gt; button.addReservoir |  |
+info: Executing: |pause | 3000 |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |type | id=new_reservoir_name | Test_desactivation |
+info: Executing: |pause | 3000 |  |
+info: Executing: |click | xpath=(//button[@type=&apos;button&apos;])[42] |  |
+info: Executing: |pause | 3000 |  |
+info: Executing: |click | name=commit |  |
+info: Executing: |pause | 3000 |  |
+info: Executing: |click | id=popup_ok |  |
+info: Executing: |pause | 6000 |  |
+info: Executing: |waitForElementPresent | id=roomSection-26240-0 |  |
+info: Executing: |mouseOver | id=roomSection-26240-0 |  |
+info: Executing: |click | id=roomSection-26240-0 |  |
+info: Executing: |pause | 2000 |  |
+info: Executing: |click | id=reservoirsManager_313974-MapRoom-MapRoomSection-canvasHolder-canvas-canvas |  |
+info: Executing: |click | id=reservoirsManager_313974-MapRoom-MapRoomSection-canvasHolder-canvas-canvas |  |
+info: Executing: |click | id=reservoirsManager_313974-MapRoom-MapRoomSection-canvasHolder-canvas-canvas |  |
+info: Executing: |click | css=div.roomSectionAllocation &gt; div.header &gt; button.toggle.open |  |
+info: Executing: |click | id=addSeat-reservoir |  |
+info: Executing: |pause | 3000 |  |
+info: Executing: |click | css=button.edit |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |pause | 3000 |  |
+info: Executing: |click | css=span.enabling |  |
+info: Executing: |pause | 2000 |  |
+info: Executing: |click | name=commit |  |
+info: Executing: |pause | 3000 |  |
+info: Executing: |verifyElementNotPresent | css=button.allocation.enableAllocation |  |
+info: Executing: |click | css=button.delete |  |
+info: Executing: |pause | 2000 |  |
+info: Executing: |click | xpath=(//button[@type=&apos;button&apos;])[48] |  |
+info: Executing: |clickAndWait | id=headerDeconnecter |  |
+</pre></body></html>

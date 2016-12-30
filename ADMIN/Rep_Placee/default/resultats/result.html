@@ -1,0 +1,1105 @@
+<html>
+<head><style type='text/css'>
+body, table {
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 12;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+}
+
+a {
+    text-decoration: none;
+}
+
+.title {
+    font-style: italic;
+}
+
+.selected {
+    background-color: #ffffcc;
+}
+
+.status_done {
+    background-color: #eeffee;
+}
+
+.status_passed {
+    background-color: #ccffcc;
+}
+
+.status_failed {
+    background-color: #ffcccc;
+}
+
+.breakpoint {
+    background-color: #cccccc;
+    border: 1px solid black;
+}
+</style><title>Test suite results</title></head>
+<body>
+<h1>Test suite results </h1>
+
+<table>
+<tr>
+<td>result:</td>
+<td>failed</td>
+</tr>
+<tr>
+<td>totalTime:</td>
+<td>87</td>
+</tr>
+<tr>
+<td>numTestTotal:</td>
+<td>4</td>
+</tr>
+<tr>
+<td>numTestPasses:</td>
+<td>1</td>
+</tr>
+<tr>
+<td>numTestFailures:</td>
+<td>3</td>
+</tr>
+<tr>
+<td>numCommandPasses:</td>
+<td>9</td>
+</tr>
+<tr>
+<td>numCommandFailures:</td>
+<td>1</td>
+</tr>
+<tr>
+<td>numCommandErrors:</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Selenium Version:</td>
+<td>2.52</td>
+</tr>
+<tr>
+<td>Selenium Revision:</td>
+<td>.0</td>
+</tr>
+<tr>
+<td>
+<table id="suiteTable" class="selenium" border="1" cellpadding="1" cellspacing="1"><tbody>
+<tr class="title    status_failed"><td><b>Test Suite</b></td></tr>
+<tr class="  status_failed"><td><a href="#testresult0">SC03_1-Creation_Rep_Placee_Modele_Cat</a></td></tr>
+<tr class="  status_failed"><td><a href="#testresult1">SC03_3-Creation_Rep_Placee_Via_Allocation_Sieges</a></td></tr>
+<tr class="  status_failed"><td><a href="#testresult2">SC03_2-Ajout_Tarif_CAT_ASSOCIA_Canaux_Vente</a></td></tr>
+<tr class="  status_passed"><td><a href="#testresult3">SC03_4-Modification_REP_Placee</a></td></tr>
+</tbody></table>
+
+
+</td>
+<td>&nbsp;</td>
+</tr>
+</table><table><tr>
+<td><a name="testresult0">SC03_1-Creation_Rep_Placee_Modele_Cat.html</a><br/><div>
+<table border="1" cellpadding="1" cellspacing="1">
+<thead>
+<tr class="title status_failed"><td rowspan="1" colspan="3">SCO3_1-Création_Rep_Placée_Modêle_Cat</td></tr>
+</thead><tbody>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>storeEval</td>
+	<td>new Date().getFullYear()</td>
+	<td>Year</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>storeEval</td>
+	<td>new Date().getFullYear()+1</td>
+	<td>Year1</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>open</td>
+	<td>/index.php4?p=5</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=authLogin</td>
+	<td>qatest1</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>name=motPasse</td>
+	<td>test123456*</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>name=Submit</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>id=searchField</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=searchField</td>
+	<td>Auto_Evenement_Reppl</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>css=input.submit01</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=Fiche Evénement</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=Ajouter</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=dateDebut_jma</td>
+	<td>13/02/${Year1}</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=dateFin_jma</td>
+	<td>13/02/${Year1}</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=dateDebutVentes_jma</td>
+	<td>02/01/${Year}</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=dateFinVentes_jma</td>
+	<td>12/02/${Year1}</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>select</td>
+	<td>name=salleId</td>
+	<td>label=SALLE QUALITE DGT (MARSEILLE)</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=isPlacee</td>
+	<td></td>
+</tr>
+<tr class="  status_failed" style="cursor: pointer;">
+	<td>select</td>
+	<td>name=planSalleMultipleId</td>
+	<td>Option&nbsp;with&nbsp;label&nbsp;'SALLE&nbsp;QUALITE&nbsp;DGT&nbsp;-&nbsp;2546'&nbsp;not&nbsp;found</td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>type</td>
+	<td>name=premierePartie</td>
+	<td>Auto_Création_Rep_Placée_Modêle_Cat</td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>type</td>
+	<td>name=messageOrganisateur</td>
+	<td>Auto_Création_Rep_Placée_Modêle_Cat/@?&amp;12</td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>select</td>
+	<td>name=modeleCategorie</td>
+	<td>label=TESTPLACE2 - 1004</td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>css=input.submit01.noborder</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=Détails</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>verifyTextPresent</td>
+	<td>En création</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=Afficher</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>verifyTextPresent</td>
+	<td>Lundi 13 Février ${Year1} �&nbsp; 23h55</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>verifyTextPresent</td>
+	<td>Auto_Création_Rep_Placée_Modêle_Cat</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>verifyTextPresent</td>
+	<td>Auto_Création_Rep_Placée_Modêle_Cat/@?&amp;12</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>verifyTextPresent</td>
+	<td>Oui</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>verifyTextPresent</td>
+	<td>Digitick 10 chiffres / Code 128</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>verifyTextPresent</td>
+	<td>En création</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>id=headerDeconnecter</td>
+	<td></td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr><tr>
+<td><a name="testresult1">SC03_3-Creation_Rep_Placee_Via_Allocation_Sieges.html</a><br/><div>
+<table border="1" cellpadding="1" cellspacing="1">
+<thead>
+<tr class="title status_failed"><td rowspan="1" colspan="3">SCO3_3-Création_Rep_Placée_Via_Allocation_Sièges</td></tr>
+</thead><tbody>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>storeEval</td>
+	<td>new Date().getFullYear()</td>
+	<td>Year</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>storeEval</td>
+	<td>new Date().getFullYear()+1</td>
+	<td>Year1</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>open</td>
+	<td>index.php4?p=5</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=authLogin</td>
+	<td>qatest1</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>name=motPasse</td>
+	<td>test123456*</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>name=Submit</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>id=searchField</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=searchField</td>
+	<td>Auto_Evenement_RepPl</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>css=input.submit01</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=Fiche Evénement</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=Ajouter</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=dateDebut_jma</td>
+	<td>15/02/${Year1}</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=dateFin_jma</td>
+	<td>15/02/${Year1}</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=dateDebutVentes_jma</td>
+	<td>02/01/${Year}</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=dateFinVentes_jma</td>
+	<td>14/02/${Year1}</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=isPlacee</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>select</td>
+	<td>name=salleId</td>
+	<td>label=SALLE QUALITE DGT (MARSEILLE)</td>
+</tr>
+<tr class="  status_failed" style="cursor: pointer;">
+	<td>select</td>
+	<td>name=planSalleMultipleId</td>
+	<td>Option&nbsp;with&nbsp;label&nbsp;'SALLE&nbsp;QUALITE&nbsp;DGT&nbsp;-&nbsp;2546'&nbsp;not&nbsp;found</td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>type</td>
+	<td>name=premierePartie</td>
+	<td>Auto_Création_Rep_Placée_Via_Allocation_Sièges\@:;123</td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>type</td>
+	<td>name=messageOrganisateur</td>
+	<td>Auto_Création_Rep_Placée_Via_Allocation_Sièges\@:;123</td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>type</td>
+	<td>name=nbPlacesTotal</td>
+	<td>45</td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=boutonSelectionTarifs</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=filtreTarifId</td>
+	<td>1688634</td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=btnFiltrer</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=#tarifsListe1688634 &gt; span.tarifLibelle</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=ajoutTarif</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=filtreTarifId</td>
+	<td>1688638</td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=btnFiltrer</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>pause</td>
+	<td>1500</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=#tarifsListe1688638 &gt; span.tarifLibelle</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=ajoutTarif</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=tarifQuota1688634</td>
+	<td>36</td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=tarifQuota1688638</td>
+	<td>9</td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>css=input.submit01.noborder</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>pause</td>
+	<td>1500</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=roomSection-26244-1</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>runScript</td>
+	<td>function getMapRoomSection() {&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for (var inst in Map.instances) {&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return Map.instances[inst].plugins.MapRoomSection;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} }&nbsp;&nbsp;&nbsp;function selectFirstAvailableSeat() {&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var mapRoomSection = getMapRoomSection();&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for (seatId in mapRoomSection.data.seatsData) {&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var seatData = mapRoomSection.data.seatsData[seatId];&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (!seatData.selectable) continue;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mapRoomSection.currentSeatsSelection[seatData.cellId] = true;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mapRoomSection.onSiegeSelEnd();&nbsp;&nbsp;mapRoomSection.frmPaint();&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} }&nbsp;&nbsp;&nbsp;selectFirstAvailableSeat();</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>select</td>
+	<td>id=pricesSelector</td>
+	<td>label=auto_tom0</td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=button.allocAction.toSelectedSeats</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>css=img[alt="�?"]</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>verifyTextPresent</td>
+	<td>En création</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>verifyTextPresent</td>
+	<td>auto_tom0</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>pause</td>
+	<td>1500</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=Allocation sièges</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>id=roomSection-26244-1</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>mouseOver</td>
+	<td>id=roomSection-26244-1</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=roomSection-26244-1</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>verifyText</td>
+	<td>//td[@class='availableOutsideReservoirs']/var</td>
+	<td>1</td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>id=headerDeconnecter</td>
+	<td></td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr><tr>
+<td><a name="testresult2">SC03_2-Ajout_Tarif_CAT_ASSOCIA_Canaux_Vente.html</a><br/><div>
+<table border="1" cellpadding="1" cellspacing="1">
+<thead>
+<tr class="title status_failed"><td rowspan="1" colspan="3">SCO3_2-Ajout_Tarif_CAT_ASSOCIA_Canaux_Vente</td></tr>
+</thead><tbody>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>open</td>
+	<td>index.php4?p=5</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=authLogin</td>
+	<td>qatest1</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>name=motPasse</td>
+	<td>test123456*</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>name=Submit</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>//a[@href='http://admin.testoto.digitick-ppe.com/?p=201&amp;typeEvt=1']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>id=searchField</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=searchField</td>
+	<td>auto_evenement_reppl</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>css=input.submit01</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=Fiche Représentations</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=Dimanche 13 Août 2017 �&nbsp; 00h00</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=Tarifs par catégorie</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>select</td>
+	<td>id=selectTypeClient-5</td>
+	<td>label=Nouveau...</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>name=newTypeClient</td>
+	<td>Tarif_Auto_CodePromo_SC03</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=button.submit01</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=div.tarif-cat-button.isNotSet &gt; button</td>
+	<td></td>
+</tr>
+<tr class="  status_failed" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>id=baseAmount</td>
+	<td>Timed&nbsp;out&nbsp;after&nbsp;30000ms</td>
+</tr>
+<tr class="  status_failed" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=baseAmount</td>
+	<td>Element&nbsp;id=baseAmount&nbsp;not&nbsp;found</td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=#price-editor &gt; div.zoneBody &gt; form &gt; button.submit01</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=div.tarif-cat-button.isNotSet &gt; button</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>id=baseAmount</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=baseAmount</td>
+	<td>5</td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=#price-editor &gt; div.zoneBody &gt; form &gt; button.submit01</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=div.tarif-cat-button.isNotSet &gt; button</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>id=baseAmount</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=baseAmount</td>
+	<td>7</td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=#price-editor &gt; div.zoneBody &gt; form &gt; button.submit01</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=button.submit02</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=Lundi 13 Février 2017 �&nbsp; 00h00</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=Détails</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>verifyTextPresent</td>
+	<td>Ventes inactives</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>verifyTextPresent</td>
+	<td>Tarif_Auto_CodePromo_SC03</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>css=td.idTarif &gt; a</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>verifyAttribute</td>
+	<td>//tr[@class='totalsByChannel']/td[@colspan='2']/div[@class='activationButton']/div@class</td>
+	<td>bootstrap-switch bootstrap-switch-wrapper bootstrap-switch-mini bootstrap-switch-inverse bootstrap-switch-on</td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>openWindow</td>
+	<td>http://admin.testoto.digitick-ppe.com/index.php4?p=571&amp;type=1&amp;idtarif=1688647</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>pause</td>
+	<td>4000</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>selectWindow</td>
+	<td>Administration digitick</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>verifyAttribute</td>
+	<td>//tr[@class='totalsByChannel']/td[@colspan='2']/div[@class='activationButton']/div@class</td>
+	<td>bootstrap-switch bootstrap-switch-wrapper bootstrap-switch-mini bootstrap-switch-inverse bootstrap-switch-on</td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>close</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>id=headerDeconnecter</td>
+	<td></td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr><tr>
+<td><a name="testresult3">SC03_4-Modification_REP_Placee.html</a><br/><div>
+<table border="1" cellpadding="1" cellspacing="1">
+<thead>
+<tr class="title status_passed"><td rowspan="1" colspan="3">SCO3_4-Modification_REP_Placée</td></tr>
+</thead><tbody>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>open</td>
+	<td>index.php4?p=5</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=authLogin</td>
+	<td>qatest1</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>name=motPasse</td>
+	<td>test123456*</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>name=Submit</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>css=div.menuItemContentSelected</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>//a[@href='http://admin.testoto.digitick-ppe.com/?p=201&amp;typeEvt=1']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>id=searchField</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=searchField</td>
+	<td>Auto_Evenement_RepPl</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>css=input.submit01</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=Fiche Représentations</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=Dimanche 13 Août 2017 �&nbsp; 00h00</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyTextPresent</td>
+	<td>1681225</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyTextPresent</td>
+	<td>1681219</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyTextPresent</td>
+	<td>1681221</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyTextPresent</td>
+	<td>1681223</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=Modifier</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=dateDebut_jma</td>
+	<td>18/08/2016</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=dateFin_jma</td>
+	<td>19/08/2016</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=dateFinVentes_jma</td>
+	<td>12/08/2016</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=allocationSieges</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>css=input.submit01.noborder</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=input.submit01.noborder</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>6000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=Détails</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>10000</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyTextPresent</td>
+	<td>Ventes inactives</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyTextPresent</td>
+	<td>1681219</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyTextPresent</td>
+	<td>1681221</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyTextPresent</td>
+	<td>1681223</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyTextPresent</td>
+	<td>1681225</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>id=headerDeconnecter</td>
+	<td></td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr></table><pre>
+info: Starting test /selenium-server/tests/SC03_1-Creation_Rep_Placee_Modele_Cat.html
+info: Executing: |storeEval | new Date().getFullYear() | Year |
+info: script is: new Date().getFullYear()
+info: Executing: |storeEval | new Date().getFullYear()+1 | Year1 |
+info: script is: new Date().getFullYear()+1
+info: Executing: |open | /index.php4?p=5 |  |
+info: Executing: |type | id=authLogin | qatest1 |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |type | name=motPasse | test123456* |
+info: Executing: |clickAndWait | name=Submit |  |
+info: Executing: |waitForElementPresent | id=searchField |  |
+info: Executing: |type | id=searchField | Auto_Evenement_Reppl |
+info: Executing: |clickAndWait | css=input.submit01 |  |
+info: Executing: |clickAndWait | link=Fiche Evénement |  |
+info: Executing: |clickAndWait | link=Ajouter |  |
+info: Executing: |type | id=dateDebut_jma | 13/02/${Year1} |
+info: Executing: |type | id=dateFin_jma | 13/02/${Year1} |
+info: Executing: |type | id=dateDebutVentes_jma | 02/01/${Year} |
+info: Executing: |type | id=dateFinVentes_jma | 12/02/${Year1} |
+info: Executing: |select | name=salleId | label=SALLE QUALITE DGT (MARSEILLE) |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |click | id=isPlacee |  |
+info: Executing: |select | name=planSalleMultipleId | label=SALLE QUALITE DGT - 2546 |
+error: Option with label &apos;SALLE QUALITE DGT - 2546&apos; not found
+warn: currentTest.recordFailure: Option with label &apos;SALLE QUALITE DGT - 2546&apos; not found
+info: Starting test /selenium-server/tests/SC03_3-Creation_Rep_Placee_Via_Allocation_Sieges.html
+info: Executing: |storeEval | new Date().getFullYear() | Year |
+info: script is: new Date().getFullYear()
+info: Executing: |storeEval | new Date().getFullYear()+1 | Year1 |
+info: script is: new Date().getFullYear()+1
+info: Executing: |open | index.php4?p=5 |  |
+info: Executing: |type | id=authLogin | qatest1 |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |type | name=motPasse | test123456* |
+info: Executing: |clickAndWait | name=Submit |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |waitForElementPresent | id=searchField |  |
+info: Executing: |type | id=searchField | Auto_Evenement_RepPl |
+info: Executing: |clickAndWait | css=input.submit01 |  |
+info: Executing: |clickAndWait | link=Fiche Evénement |  |
+info: Executing: |clickAndWait | link=Ajouter |  |
+info: Executing: |type | id=dateDebut_jma | 15/02/${Year1} |
+info: Executing: |type | id=dateFin_jma | 15/02/${Year1} |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |type | id=dateDebutVentes_jma | 02/01/${Year} |
+info: Executing: |type | id=dateFinVentes_jma | 14/02/${Year1} |
+info: Executing: |click | id=isPlacee |  |
+info: Executing: |select | name=salleId | label=SALLE QUALITE DGT (MARSEILLE) |
+info: Executing: |select | name=planSalleMultipleId | label=SALLE QUALITE DGT - 2546 |
+error: Option with label &apos;SALLE QUALITE DGT - 2546&apos; not found
+warn: currentTest.recordFailure: Option with label &apos;SALLE QUALITE DGT - 2546&apos; not found
+info: Starting test /selenium-server/tests/SC03_2-Ajout_Tarif_CAT_ASSOCIA_Canaux_Vente.html
+info: Executing: |open | index.php4?p=5 |  |
+info: Executing: |type | id=authLogin | qatest1 |
+info: Executing: |type | name=motPasse | test123456* |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |clickAndWait | name=Submit |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |clickAndWait | //a[@href=&apos;http://admin.testoto.digitick-ppe.com/?p=201&amp;typeEvt=1&apos;] |  |
+info: Executing: |waitForElementPresent | id=searchField |  |
+info: Executing: |type | id=searchField | auto_evenement_reppl |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |clickAndWait | css=input.submit01 |  |
+info: Executing: |clickAndWait | link=Fiche Représentations |  |
+info: Executing: |clickAndWait | link=Dimanche 13 Août 2017 à 00h00 |  |
+info: Executing: |clickAndWait | link=Tarifs par catégorie |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |select | id=selectTypeClient-5 | label=Nouveau... |
+info: Executing: |type | name=newTypeClient | Tarif_Auto_CodePromo_SC03 |
+info: Executing: |click | css=button.submit01 |  |
+info: Executing: |click | css=div.tarif-cat-button.isNotSet &gt; button |  |
+info: Executing: |waitForElementPresent | id=baseAmount |  |
+warn: currentTest.recordFailure: Timed out after 30000ms
+info: Executing: |type | id=baseAmount | 5 |
+error: Element id=baseAmount not found
+warn: currentTest.recordFailure: Element id=baseAmount not found
+info: Starting test /selenium-server/tests/SC03_4-Modification_REP_Placee.html
+info: Executing: |open | index.php4?p=5 |  |
+info: Executing: |type | id=authLogin | qatest1 |
+info: Executing: |type | name=motPasse | test123456* |
+info: Executing: |clickAndWait | name=Submit |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |clickAndWait | css=div.menuItemContentSelected |  |
+info: Executing: |clickAndWait | //a[@href=&apos;http://admin.testoto.digitick-ppe.com/?p=201&amp;typeEvt=1&apos;] |  |
+info: Executing: |waitForElementPresent | id=searchField |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |type | id=searchField | Auto_Evenement_RepPl |
+info: Executing: |clickAndWait | css=input.submit01 |  |
+info: Executing: |pause | 2000 |  |
+info: Executing: |clickAndWait | link=Fiche Représentations |  |
+info: Executing: |clickAndWait | link=Dimanche 13 Août 2017 à 00h00 |  |
+info: Executing: |verifyTextPresent | 1681225 |  |
+info: Executing: |verifyTextPresent | 1681219 |  |
+info: Executing: |verifyTextPresent | 1681221 |  |
+info: Executing: |verifyTextPresent | 1681223 |  |
+info: Executing: |clickAndWait | link=Modifier |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |type | id=dateDebut_jma | 18/08/2016 |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |type | id=dateFin_jma | 19/08/2016 |
+info: Executing: |type | id=dateFinVentes_jma | 12/08/2016 |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |pause | 2000 |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |click | id=allocationSieges |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |pause | 1000 |  |
+info: Executing: |waitForElementPresent | css=input.submit01.noborder |  |
+info: Executing: |click | css=input.submit01.noborder |  |
+info: Executing: |pause | 6000 |  |
+info: Executing: |clickAndWait | link=Détails |  |
+info: Executing: |pause | 10000 |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |verifyTextPresent | Ventes inactives |  |
+info: Executing: |verifyTextPresent | 1681219 |  |
+info: Executing: |verifyTextPresent | 1681221 |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |verifyTextPresent | 1681223 |  |
+info: Executing: |verifyTextPresent | 1681225 |  |
+info: Executing: |clickAndWait | id=headerDeconnecter |  |
+</pre></body></html>

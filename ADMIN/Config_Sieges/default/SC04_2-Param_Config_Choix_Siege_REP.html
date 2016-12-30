@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://admin.testoto.digitick-ppe.com/" />
+<title>SCO4_2-Param_Config_Choix_Siège_REP</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">SCO4_2-Param_Config_Choix_Siège_REP</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/index.php4?p=5</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>window.document.domain</td>
+	<td>host</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>Login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=authLogin</td>
+	<td>qatest2</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=motPasse</td>
+	<td>test123456*</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=Submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>Representation de l'evenement Auto_evenement_reppl</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//a[@href='http://${host}/?p=201&amp;typeEvt=1']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=searchField</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=searchField</td>
+	<td>Auto_evenement_reppl</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.submit01</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Fiche Représentations</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Vendredi 18 Août 2017 à 00h00</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>Config Vente</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Config. Ventes</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.new</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=choix_place_form[1][types]</td>
+	<td>label=Semi-automatique (Bloc)</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=button.submit01</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@class='notice success autofold']</td>
+	<td>Les configurations ont bien été mises à jour.</td>
+</tr>
+<tr>
+	<td>verifyAttribute</td>
+	<td>//select[@name='choix_place_form[0][types]']/option[@value='4']/@selected</td>
+	<td>selected</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>10000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>initialisation : nettoyage de la règle dans la config vente</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//button[@type='button'])[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=button.submit01</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>Deconnexion</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=headerDeconnecter</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

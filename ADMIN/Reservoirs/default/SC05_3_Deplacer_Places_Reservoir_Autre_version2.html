@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://admin.testoto.digitick-ppe.com" />
+<title>SC05_3_Déplacer_Places_Réservoir_Autre_version2</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">SC05_3_Déplacer_Places_Réservoir_Autre_version2</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/index.php4?p=5</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=authLogin</td>
+	<td>qatest2</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=motPasse</td>
+	<td>test123456*</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=Submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//div[@id='menuContent']/div[14]/a/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=gesion_5748</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=select.selectEvt.choix</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>css=select.selectEvt.choix</td>
+	<td>label=AUTO_SIEGE_2</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[@for='reservoirs-431145']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.delete</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//button[@type='button'])[49]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#reservoirsManager_431145 &gt; div.zoneHeader.subTitleSubZone &gt; div.actions &gt; button.addReservoir</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=new_reservoir_name</td>
+	<td>Auto_Reservoir_3</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//button[@type='button'])[43]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>//td[@class='id sorting_1']/var</td>
+	<td>res</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${res}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=div.menuItemContentSelected</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>7000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=gesion_5766</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=select.selectEvt.choix</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>css=select.selectEvt.choix</td>
+	<td>label=AUTO_SIEGE_2</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[@for='reservoirs-431145']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#reservoirsManager_431145 &gt; div.zoneHeader.subTitleSubZone &gt; div.actions &gt; button.addReservoir</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=new_reservoir_name</td>
+	<td>Auto_3</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>4000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//button[@type='button'])[43]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=commit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=popup_ok</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>id=roomSection-26244-1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=roomSection-26244-1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=#reservoirsManager_431145-MapRoom-MapRoomSection-MapRoomSectionMiscTools &gt; div.header &gt; button.toggle.open</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#reservoirsManager_431145-MapRoom-MapRoomSection-MapRoomSectionMiscTools &gt; div.header &gt; button.toggle.open</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#reservoirsManager_431145-MapRoom-MapRoomSection-MapRoomSectionMiscTools &gt; ul &gt; li.selectAll &gt; label.select</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.roomSectionAllocation &gt; div.header &gt; button.toggle.open</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=addSeat-reservoir</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>10000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=reservoirsManager_431145-MapRoom-MapRoomSection-canvasHolder-canvas-canvas</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=moveSeat-reservoir</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>css=select.selectCanalDeVente</td>
+	<td>label=5748 - css5_qatest5</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=option[value=&quot;5748&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[@for='res${res}']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=ul.selectReservoir &gt; li &gt; label</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//button[@type='button'])[49]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=button.delete</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.delete</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//button[@type='button'])[51]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Liste</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=gesion_5748</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>css=select.selectEvt.choix</td>
+	<td>label=AUTO_SIEGE_2</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[@for='reservoirs-431145']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.delete</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//button[@type='button'])[46]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=headerDeconnecter</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

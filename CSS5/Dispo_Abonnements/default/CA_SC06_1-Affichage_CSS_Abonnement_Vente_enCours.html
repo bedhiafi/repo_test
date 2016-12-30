@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://admin.testoto.digitick-ppe.com/" />
+<title>CA_SC06_1-Affichage_CSS_Abonnement_Vente_enCours</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">CA_SC06_1-Affichage_CSS_Abonnement_Vente_enCours</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/index.php4?p=5</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>d=new Date(); parseInt(d.getFullYear())+1;</td>
+	<td>Year</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>window.document.domain</td>
+	<td>host</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>reg=/[^admin.][\w\.-]*/;reg.exec('${host}')</td>
+	<td>domain</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=authLogin</td>
+	<td>qatest2</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=motPasse</td>
+	<td>test123456*</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=Submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>javascript{(&quot;http://admin.&quot;+storedVars['domain']+&quot;/?p=201&amp;typeEvt=2&quot;)}</td>
+	<td>link</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//a[@href='${link}']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=searchField</td>
+	<td>Auto_Produit</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.submit01</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Fiche Vente Abo.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>4000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Modifier</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=dateDebutVentes_h</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=dateDebut_jma</td>
+	<td>13/08/${Year}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=dateFin_jma</td>
+	<td>14/08/${Year}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=dateFinVentes_jma</td>
+	<td>12/08/${Year}</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=dateDebutVentes_h</td>
+	<td>label=00</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=dateDebutVentes_m</td>
+	<td>label=00</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=modeleCategorie</td>
+	<td>label=Auto - 1465</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=abonnementId</td>
+	<td>label=Auto_Abonnement</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=input.submit01.noborder</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>4000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=selectTypeClient-5</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=selectTypeClient-5</td>
+	<td>label=Auto - 14465</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.submit01</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//button[@type='submit'])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//tr[@class='odd isEmptyRow']/td[3]/div[@class='tarif-cat-button isNotSet']/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//tr[@class='odd isEmptyRow']/td[3]/div[@class='tarif-cat-button isNotSet']/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=baseAmount</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=baseAmount</td>
+	<td>1</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.bootstrap-switch-handle-off.bootstrap-switch-default</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=form &gt; button.submit01</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//tr[@class='odd isEmptyRow']/td[4]/div[@class='tarif-cat-button isNotSet']/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//tr[@class='odd isEmptyRow']/td[4]/div[@class='tarif-cat-button isNotSet']/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=baseAmount</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=baseAmount</td>
+	<td>1</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.bootstrap-switch-handle-off.bootstrap-switch-default</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=form &gt; button.submit01</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//tr[@class='odd isEmptyRow']/td[5]/div[@class='tarif-cat-button isNotSet']/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//tr[@class='odd isEmptyRow']/td[5]/div[@class='tarif-cat-button isNotSet']/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=baseAmount</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=baseAmount</td>
+	<td>1</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.bootstrap-switch-handle-off.bootstrap-switch-default</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=form &gt; button.submit01</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.submit02</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Détails</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>7000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Modifier état</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Modifier état</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=input.bt</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=input.bt</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//div[@id='menuContent']/div[13]/a/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>openWindow</td>
+	<td>javascript{(&quot;http://www.&quot;+storedVars['domain']+&quot;/ext/billetterie5/?site=qatest5&quot;)}</td>
+	<td>Billetterie</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>openWindow</td>
+	<td>javascript{(&quot;http://ssl.&quot;+storedVars['domain']+&quot;/maintenance/secure/digicache.php?pattern=*_C5748_*&amp;toto&quot;)}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>Digicache Manager</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeAttribute</td>
+	<td>//div[@id='workbench']@style</td>
+	<td>eval</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>javascript{storedVars['eval']=='display: none;'}</td>
+	<td>test</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['test']=='true'</td>
+	<td>else</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=selectAll</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=input.btn.btn-danger</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>else</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>close</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>Billetterie</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>openWindow</td>
+	<td>javascript{(&quot;http://www.&quot;+storedVars['domain']+&quot;/auto_produitabo-concert-palais-des-sports-jean-michel-geoffroy-dijon-du-13-au-14-aout-2017-css5-qatest5-pg101-ri2761601.html&quot;)}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>refresh</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>4000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeElementPresent</td>
+	<td>//div[@id='mapRoom_default-2-topContainer']/div[2]/div</td>
+	<td>Choisissez votre bloc sur le plan</td>
+</tr>
+<tr>
+	<td>close</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>close</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=headerDeconnecter</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

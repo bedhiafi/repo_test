@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://www.dev.patch.digitick.local/" />
+<title>Inactif_Payline</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Inactif_Payline</td></tr>
+</thead><tbody>
+<tr>
+	<td>echo</td>
+	<td>## Acces CSS5 + ajout panier</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>http://www.dev.patch.digitick.local/~rcortes/rco-j-1-festival-transport-css5-laeronef-pg51-ei${idEvent}.html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=t${idTarif}</td>
+	<td>label=regexp:\s1</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=submitFinaliser</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>## Connexion</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=dejatel</td>
+	<td>0646406540</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=dejapass</td>
+	<td>dante4747</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=formSubmit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=formEtape2RenommageBilletSubmit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>## Page de paiement</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>id=nouvelleCB.5.0</td>
+	<td>Le paiement est sécurisé par 3-D Secure. Après la saisie des informations figurant sur votre carte bancaire, vous serez redirigé vers une page sur laquelle il vous sera demandé d'indiquer un code de sécurité pour valider votre paiement.</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=formSubmit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=span.erreur_numero</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=champ0</td>
+	<td>1111222233334444</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=cvvCB</td>
+	<td>123</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=cgvCB</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=formSubmit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>25000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>## Page de confirmation</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.listeMessage &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>css=div.listeMessage &gt; span</td>
+	<td>Transaction</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>parseInt(/[0-9]+/.exec(storedVars['Transaction']))</td>
+	<td>idTransaction</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>## Mon compte</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=div.compteBouton &gt; a &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.titleComposants.transactionNormal &gt; span</td>
+	<td>Achat N°${idTransaction}</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=#compteDeconnexion &gt; span.ongletLibelle</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

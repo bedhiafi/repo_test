@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://admin.testoto.digitick-ppe.com" />
+<title>SCO3_1-Création_Rep_Placée_Modêle_Cat</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">SCO3_1-Création_Rep_Placée_Modêle_Cat</td></tr>
+</thead><tbody>
+<tr>
+	<td>storeEval</td>
+	<td>new Date().getFullYear()</td>
+	<td>Year</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>new Date().getFullYear()+1</td>
+	<td>Year1</td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/index.php4?p=5</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>window.document.domain</td>
+	<td>host</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=authLogin</td>
+	<td>qatest2</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=motPasse</td>
+	<td>test123456*</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=Submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//a[@href='http://${host}/?p=201&typeEvt=1']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=searchField</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=searchField</td>
+	<td>Auto_Evenement_Reppl</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.submit01</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Fiche Evénement</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Ajouter</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=dateDebut_jma</td>
+	<td>13/02/${Year1}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=dateFin_jma</td>
+	<td>13/02/${Year1}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=dateDebutVentes_jma</td>
+	<td>02/01/${Year}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=dateFinVentes_jma</td>
+	<td>12/02/${Year1}</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=salleId</td>
+	<td>label=SALLE QUALITE DGT (MARSEILLE)</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=isPlacee</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=planSalleMultipleId</td>
+	<td>label=SALLE QUALITE DGT - 2546</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=premierePartie</td>
+	<td>Auto_Création_Rep_Placée_Modêle_Cat</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=messageOrganisateur</td>
+	<td>Auto_Création_Rep_Placée_Modêle_Cat/@?&amp;12</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=modeleCategorie</td>
+	<td>label=TESTPLACE2 - 1004</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.submit01.noborder</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Détails</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>En création</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Afficher</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Lundi 13 Février ${Year1} à 23h55</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Auto_Création_Rep_Placée_Modêle_Cat</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Auto_Création_Rep_Placée_Modêle_Cat/@?&amp;12</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Oui</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Digitick 10 chiffres / Code 128</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>En création</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=headerDeconnecter</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

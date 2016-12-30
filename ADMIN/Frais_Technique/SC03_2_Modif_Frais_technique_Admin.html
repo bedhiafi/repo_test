@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://admin.testoto.digitick-ppe.com/" />
+<title>SC03_2_Modif_Frais_technique_Admin</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">SC03_2_Modif_Frais_technique_Admin</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/index.php4?p=5</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=motPasse</td>
+	<td>1c3KoNeQu!</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=authLogin</td>
+	<td>tcornet</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=Submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=searchField</td>
+	<td>qualité</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.btOk</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=QUALITE 1 (Ne pas toucher)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//div[@id='menuContent']/div[7]/a/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//ul[@id='leftMenuContent']/li[3]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='blocAdmin']/div[5]/div/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=technicalFees_1_1</td>
+	<td>0.01</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=technicalFees_2_1</td>
+	<td>0.01</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=technicalFees_1_2</td>
+	<td>0.01</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=technicalFees_2_2</td>
+	<td>0.01</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=selectTypeClient</td>
+	<td>label=1 - Unique</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=selectTarifCategorie</td>
+	<td>label=Unique</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=libelleTarif</td>
+	<td>Unique - tech</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.submit01.noborder</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=rechercheLibelleTarif</td>
+	<td>tech</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=recherche</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=img[alt=&quot;M&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='blocAdmin']/div[5]/div/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyAttribute</td>
+	<td>//input[@id='technicalFees_1_1']@value</td>
+	<td>0.01</td>
+</tr>
+<tr>
+	<td>verifyAttribute</td>
+	<td>//input[@id='technicalFees_1_2']@value</td>
+	<td>0.01</td>
+</tr>
+<tr>
+	<td>verifyAttribute</td>
+	<td>//input[@id='technicalFees_2_1']@value</td>
+	<td>0.01</td>
+</tr>
+<tr>
+	<td>verifyAttribute</td>
+	<td>//input[@id='technicalFees_2_2']@value</td>
+	<td>0.01</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=annuler</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=rechercheLibelleTarif</td>
+	<td>tech</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=recherche</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=img[alt=&quot;Supprimer&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input[type=&quot;submit&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Fermer la fenêtre</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=headerDeconnecter</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

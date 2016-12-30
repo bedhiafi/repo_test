@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://admin.testoto.digitick-ppe.com" />
+<title>SC02_1-Création_REP_NON_Placée_Groupe_Tarif</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">SC02_1-Création_REP_NON_Placée_Groupe_Tarif</td></tr>
+</thead><tbody>
+<tr>
+	<td>storeEval</td>
+	<td>new Date().getFullYear()+1</td>
+	<td>Year1</td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/index.php4?p=5</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>window.document.domain</td>
+	<td>host</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=authLogin</td>
+	<td>qatest2</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=motPasse</td>
+	<td>test123456*</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=Submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//a[@href='http://${host}/?p=201&amp;typeEvt=1']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=searchField</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=searchField</td>
+	<td>AUTO_EVENEMENT_REPNON</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.submit01</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Fiche Evénement</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Ajouter</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=a.dp-choose-date</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=a.dp-choose-date</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=dateDebut_jma</td>
+	<td>21/11/${Year1}</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=&gt;&gt;</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='dp-popup']/div[3]/table/tbody/tr[3]/td[6]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=salleId</td>
+	<td>label=SALLE QUALITE DGT (MARSEILLE)</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=premierePartie</td>
+	<td>Auto_Création_REP_NON_Placée</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=messageOrganisateur</td>
+	<td>TexteInfo1234567890.&amp;é&quot;'(-è_çà)=~#<br />QA {[|`^@]}^$*ù!:;, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris posuere,&lt;b&gt; ?./§%µ£¨¤/+-ß.</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=nbPlacesTotal</td>
+	<td>200</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=boutonSelectionTarifs</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=filtreTarifId</td>
+	<td>2126665</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=btnFiltrer</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#tarifsListe2126665 &gt; span.tarifLibelle</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ajoutTarif</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=filtreTarifId</td>
+	<td>2208675</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=btnFiltrer</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#tarifsListe2208675 &gt; span.tarifLibelle</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ajoutTarif</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=tarifQuota2126665</td>
+	<td>10</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=tarifQuota2208675</td>
+	<td>60</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=saisieGroupe</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=groupeNom0</td>
+	<td>groupeTarif</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=groupeTotal0</td>
+	<td>15</td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>//span[@class='colonneGroupe3 insertion']/input[@id='groupeNom0']</td>
+	<td> </td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[@class='colonneGroupe3 insertion']/a[@id='ajoutGroupe']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#tarifDispo2126665 &gt; span.colonneTarif2 &gt; a.chooseGroupe</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeAttribute</td>
+	<td>//div[@id='panelGroupe']/a[2]@class</td>
+	<td>groupe</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${groupe}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=a.${groupe}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.submit01.noborder</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Groupe tarif : groupeTarif</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=headerDeconnecter</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

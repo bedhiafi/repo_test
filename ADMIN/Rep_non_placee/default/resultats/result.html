@@ -1,0 +1,1190 @@
+<html>
+<head><style type='text/css'>
+body, table {
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 12;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+}
+
+a {
+    text-decoration: none;
+}
+
+.title {
+    font-style: italic;
+}
+
+.selected {
+    background-color: #ffffcc;
+}
+
+.status_done {
+    background-color: #eeffee;
+}
+
+.status_passed {
+    background-color: #ccffcc;
+}
+
+.status_failed {
+    background-color: #ffcccc;
+}
+
+.breakpoint {
+    background-color: #cccccc;
+    border: 1px solid black;
+}
+</style><title>Test suite results</title></head>
+<body>
+<h1>Test suite results </h1>
+
+<table>
+<tr>
+<td>result:</td>
+<td>failed</td>
+</tr>
+<tr>
+<td>totalTime:</td>
+<td>29</td>
+</tr>
+<tr>
+<td>numTestTotal:</td>
+<td>3</td>
+</tr>
+<tr>
+<td>numTestPasses:</td>
+<td>0</td>
+</tr>
+<tr>
+<td>numTestFailures:</td>
+<td>3</td>
+</tr>
+<tr>
+<td>numCommandPasses:</td>
+<td>0</td>
+</tr>
+<tr>
+<td>numCommandFailures:</td>
+<td>2</td>
+</tr>
+<tr>
+<td>numCommandErrors:</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Selenium Version:</td>
+<td>2.52</td>
+</tr>
+<tr>
+<td>Selenium Revision:</td>
+<td>.0</td>
+</tr>
+<tr>
+<td>
+<table id="suiteTable" class="selenium" border="1" cellpadding="1" cellspacing="1"><tbody>
+<tr class="title    status_failed"><td><b>Test Suite</b></td></tr>
+<tr class="  status_failed"><td><a href="#testresult0">SC02_1-Creation_REP_NON_Placee_Groupe_Tarif</a></td></tr>
+<tr class="  status_failed"><td><a href="#testresult1">SC02_2-Modification_REP_NON_Place</a></td></tr>
+<tr class="  status_failed"><td><a href="#testresult2">SC02_Planning</a></td></tr>
+</tbody></table>
+
+
+</td>
+<td>&nbsp;</td>
+</tr>
+</table><table><tr>
+<td><a name="testresult0">SC02_1-Creation_REP_NON_Placee_Groupe_Tarif.html</a><br/><div>
+<table border="1" cellpadding="1" cellspacing="1">
+<thead>
+<tr class="title status_failed"><td rowspan="1" colspan="3">SC02_1-Création_REP_NON_Placée_Groupe_Tarif</td></tr>
+</thead><tbody>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>storeEval</td>
+	<td>new Date().getFullYear()+1</td>
+	<td>Year1</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>open</td>
+	<td>index.php4?p=5</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=authLogin</td>
+	<td>qatest1</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>name=motPasse</td>
+	<td>test123456*</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>name=Submit</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>//a[@href='http://admin.testoto.digitick-ppe.com/?p=201&amp;typeEvt=1']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>id=searchField</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=searchField</td>
+	<td>AUTO_EVENEMENT_REPNON</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>css=input.submit01</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=Fiche Evénement</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=Ajouter</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=a.dp-choose-date &gt; img</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=dateDebut_jma</td>
+	<td>21/11/${Year1}</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=&gt;&gt;</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[@id='dp-popup']/div[3]/table/tbody/tr[3]/td[6]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>select</td>
+	<td>name=salleId</td>
+	<td>label=SALLE QUALITE DGT (MARSEILLE)</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>name=premierePartie</td>
+	<td>Auto_Création_REP_NON_Placée</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>name=messageOrganisateur</td>
+	<td>TexteInfo1234567890.&amp;é"'(-è_ç�&nbsp;)=~#<br>QA {[|`^@]}^$*ù!:;, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris posuere,&lt;b&gt; ?./§%µ£¨¤/+-�?.</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>name=nbPlacesTotal</td>
+	<td>200</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=boutonSelectionTarifs</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=filtreTarifId</td>
+	<td>1688634</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>1500</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=btnFiltrer</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr class="  status_failed" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=#tarifsListe1688634 &gt; span.tarifLibelle</td>
+	<td>Element&nbsp;css=#tarifsListe1688634&nbsp;&gt;&nbsp;span.tarifLibelle&nbsp;not&nbsp;found</td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=ajoutTarif</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=filtreTarifId</td>
+	<td>1688638</td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=btnFiltrer</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>pause</td>
+	<td>1500</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=#tarifsListe1688638 &gt; span.tarifLibelle</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=ajoutTarif</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=tarifQuota1688634</td>
+	<td>10</td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=tarifQuota1688638</td>
+	<td>60</td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=saisieGroupe</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=groupeNom0</td>
+	<td>groupeTarif</td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=groupeTotal0</td>
+	<td>15</td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>typeKeys</td>
+	<td>//span[@class='colonneGroupe3 insertion']/input[@id='groupeNom0']</td>
+	<td>\32</td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>click</td>
+	<td>//span[@class='colonneGroupe3 insertion']/a[@id='ajoutGroupe']</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=#tarifDispo1688640 &gt; span.colonneTarif2 &gt; a.chooseGroupe</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>storeAttribute</td>
+	<td>//div[@id='groupesDisponibles']/div[2]@id</td>
+	<td>groupe</td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>storeEval</td>
+	<td>storedVars['groupe'].match(/\d+/)</td>
+	<td>groupe</td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>echo</td>
+	<td>${groupe}</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=a.groupe${groupe}</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>css=input.submit01.noborder</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>verifyTextPresent</td>
+	<td>Groupe tarif : groupeTarif</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>id=headerDeconnecter</td>
+	<td></td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr><tr>
+<td><a name="testresult1">SC02_2-Modification_REP_NON_Place.html</a><br/><div>
+<table border="1" cellpadding="1" cellspacing="1">
+<thead>
+<tr class="title status_failed"><td rowspan="1" colspan="3">SC02_2-Modification_REP_NON_Placée</td></tr>
+</thead><tbody>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>open</td>
+	<td>index.php4?p=5</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>Login</td>
+	<td>Login</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=authLogin</td>
+	<td>qatest1</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>name=motPasse</td>
+	<td>test123456*</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>name=Submit</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>selection evenement</td>
+	<td>selection evenement</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>//a[@href='http://admin.testoto.digitick-ppe.com/?p=201&amp;typeEvt=1']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>id=searchField</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=searchField</td>
+	<td>AUTO_EVENEMENT_REPNONPL</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>css=input.submit01</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>Selection Representations</td>
+	<td>Selection Representations</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=Fiche Représentations</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=Dimanche 13 Août 2017 �&nbsp; 00h00</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>Modification de la rep --modif quota--</td>
+	<td>Modification de la rep --modif quota--</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=Modifier</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>name=nbPlacesTotal</td>
+	<td>1000</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=tarifQuota1681067</td>
+	<td>50</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=tarifQuota1681013</td>
+	<td>60</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=tarifQuota1681069</td>
+	<td>80</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=tarifQuota1681057</td>
+	<td>90</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>Validation de la modification</td>
+	<td>Validation de la modification</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>css=input.submit01.noborder</td>
+	<td></td>
+</tr>
+<tr class="  status_failed" style="cursor: pointer;">
+	<td>verifyText</td>
+	<td>//tr[2]/td[@class='nbPlacesTotal']</td>
+	<td>Actual&nbsp;value&nbsp;'200'&nbsp;did&nbsp;not&nbsp;match&nbsp;'50'</td>
+</tr>
+<tr class="  status_failed" style="cursor: pointer;">
+	<td>verifyText</td>
+	<td>//tr[3]/td[@class='nbPlacesTotal']</td>
+	<td>Actual&nbsp;value&nbsp;'200'&nbsp;did&nbsp;not&nbsp;match&nbsp;'60'</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>Deconnexion</td>
+	<td>Deconnexion</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>id=headerDeconnecter</td>
+	<td></td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr><tr>
+<td><a name="testresult2">SC02_Planning.html</a><br/><div>
+<table border="1" cellpadding="1" cellspacing="1">
+<thead>
+<tr class="title status_failed"><td rowspan="1" colspan="3">SC02_Planning</td></tr>
+</thead><tbody>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>open</td>
+	<td>index.php4?p=5</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>Login</td>
+	<td>Login</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=authLogin</td>
+	<td>qatest1</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>name=motPasse</td>
+	<td>test123456*</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>name=Submit</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>Selection Evenement</td>
+	<td>Selection Evenement</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>id=searchField</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=searchField</td>
+	<td>Auto</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>css=input.submit01</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>Creation Rep Type</td>
+	<td>Creation Rep Type</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=Fiche Evénement</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=Ajouter rep. type</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>name=nomRepType</td>
+	<td>Auto_Creation_rep_type</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>select</td>
+	<td>id=duree_h</td>
+	<td>label=03</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>select</td>
+	<td>id=debutVente_h</td>
+	<td>label=08</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>name=nbJoursDeb</td>
+	<td>4</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=_daysId</td>
+	<td>18</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>select</td>
+	<td>name=salleId</td>
+	<td>label=SALLE QUALITE DGT (MARSEILLE)</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>name=premierePartie</td>
+	<td>Auto_Création_Rep_Type</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>name=messageOrganisateur</td>
+	<td>Auto_Création_Rep_Type</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>name=nbPlacesTotal</td>
+	<td>500</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>Selection Tarifs</td>
+	<td>Selection Tarifs</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=boutonSelectionTarifs</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=filtreTarifId</td>
+	<td>1688634</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>1500</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=btnFiltrer</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr class="  status_failed" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=#tarifsListe1688634 &gt; span.tarifLibelle</td>
+	<td>Element&nbsp;css=#tarifsListe1688634&nbsp;&gt;&nbsp;span.tarifLibelle&nbsp;not&nbsp;found</td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=ajoutTarif</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=filtreTarifId</td>
+	<td>1688638</td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=btnFiltrer</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>pause</td>
+	<td>1500</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=#tarifsListe1688638 &gt; span.tarifLibelle</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=ajoutTarif</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=tarifQuota1688634</td>
+	<td>10</td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=tarifQuota1688638</td>
+	<td>60</td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>echo</td>
+	<td>Validation de la creation de la rep type</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>css=input.submit01.noborder</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>css=div.menuItemContentSelected</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>echo</td>
+	<td>Creation journee type</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>//a[@href='http://admin.testoto.digitick-ppe.com/?p=1107']</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=Nouvelle journée type</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=jt_templateName</td>
+	<td>Auto_Création_Journée_Type</td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=jt_cmtp_full</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=jt_cmtp_monday</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=jt_cmtp_wednesday</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=jt_cmtp_friday</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>echo</td>
+	<td>Selection evenement et rep type concernes</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>select</td>
+	<td>name=jt_evenement</td>
+	<td>label=Auto_Evenement_RepNonPl</td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>select</td>
+	<td>name=jt_representationType</td>
+	<td>label=Auto_Creation_rep_type</td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=jt_addRepTemplateStartHours</td>
+	<td>10</td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=jt_addRepTemplateStartMinutes</td>
+	<td>00</td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>echo</td>
+	<td>Validation de la creation de la journee type</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=button.submit01</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>name=submitted</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>verifyTextPresent</td>
+	<td>Auto_Création_Journée_Type</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>echo</td>
+	<td>Creation Planning</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>css=div.menuItemContentSelected</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>//a[@href='http://admin.testoto.digitick-ppe.com/?p=1103']</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=Nouveau planning</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=planningNom</td>
+	<td>Auto_Création_Planning</td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=selectDateDebut</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=#dp-popup &gt; div.dp-nav-next &gt; a.dp-nav-next-month</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=#dp-popup &gt; div.dp-nav-next &gt; a.dp-nav-next-month</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=#dp-popup &gt; div.dp-nav-next &gt; a.dp-nav-next-month</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=#dp-popup &gt; div.dp-nav-next &gt; a.dp-nav-next-month</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=#dp-popup &gt; div.dp-nav-next &gt; a.dp-nav-next-month</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=#dp-popup &gt; div.dp-nav-next &gt; a.dp-nav-next-month</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[@id='dp-popup']/div[3]/table/tbody/tr[2]/td</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=selectDateFin</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[@id='dp-popup']/div[3]/table/tbody/tr[2]/td[3]</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=jour_2</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=jour_4</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=jour_6</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=jour_0</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=&gt;</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=&gt;</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=&gt;</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=&gt;</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=&gt;</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>storeAttribute</td>
+	<td>//table[@class='jCalendar']/tbody/tr[1]/td[7]@id</td>
+	<td>date1</td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>storeAttribute</td>
+	<td>//table[@class='jCalendar']/tbody/tr[2]/td[1]@id</td>
+	<td>date2</td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>echo</td>
+	<td>${date1}</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>echo</td>
+	<td>${date2}</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=${date1}</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=${date2}</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=selectionnerDates</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=#liJourneeType1895 &gt; label &gt; span.labelJourneeType</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=checkboxJourneeType1895</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=appliquerJourneeType</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=enregistrerPlanning</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=popup_ok</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=button.toggleDisplay.hide</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=enregistrerPlanning</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=popup_ok</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=miseEnVenteButton</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>echo</td>
+	<td>Enregistrement planning</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=enregistrerPlanning</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>echo</td>
+	<td>verification de la creation via la rep</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>css=div.menuItemContentSelected</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=searchField</td>
+	<td>auto_evenement_repnonpl</td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>css=input.submit01</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=a.link.nomEvenement</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>pause</td>
+	<td>10000</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>storeText</td>
+	<td>//div[@id='listeRepaVenir']/table/tbody/tr[3]/td/a[@class='link infoRep']</td>
+	<td>rep</td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=${rep}</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>store</td>
+	<td>javascript{ if (parseInt(/[0-9]+/.exec(storedVars['rep'])) &lt; 10)&nbsp;&nbsp;storedVars['rep'].replace(/(\s)/,"$10"); else&nbsp;&nbsp;storedVars['rep'] }</td>
+	<td>rep</td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>verifyTextPresent</td>
+	<td>${rep}</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>echo</td>
+	<td>Deconnexion</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>id=headerDeconnecter</td>
+	<td></td>
+</tr>
+</tbody></table>
+
+</div></td>
+<td>&nbsp;</td>
+</tr></table><pre>
+info: Starting test /selenium-server/tests/SC02_1-Creation_REP_NON_Placee_Groupe_Tarif.html
+info: Executing: |storeEval | new Date().getFullYear()+1 | Year1 |
+info: script is: new Date().getFullYear()+1
+info: Executing: |open | index.php4?p=5 |  |
+info: Executing: |type | id=authLogin | qatest1 |
+info: Executing: |type | name=motPasse | test123456* |
+info: Executing: |clickAndWait | name=Submit |  |
+info: Executing: |clickAndWait | //a[@href=&apos;http://admin.testoto.digitick-ppe.com/?p=201&amp;typeEvt=1&apos;] |  |
+info: Executing: |waitForElementPresent | id=searchField |  |
+info: Executing: |type | id=searchField | AUTO_EVENEMENT_REPNON |
+info: Executing: |clickAndWait | css=input.submit01 |  |
+info: Executing: |clickAndWait | link=Fiche Evénement |  |
+info: Executing: |clickAndWait | link=Ajouter |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |click | css=a.dp-choose-date &gt; img |  |
+info: Executing: |type | id=dateDebut_jma | 21/11/${Year1} |
+info: Executing: |click | link=&gt;&gt; |  |
+info: Executing: |click | //div[@id=&apos;dp-popup&apos;]/div[3]/table/tbody/tr[3]/td[6] |  |
+info: Executing: |select | name=salleId | label=SALLE QUALITE DGT (MARSEILLE) |
+info: Executing: |type | name=premierePartie | Auto_Création_REP_NON_Placée |
+info: Executing: |type | name=messageOrganisateur | TexteInfo1234567890.&amp;é&quot;&apos;(-è_çà)=~#
+QA {[|`^@]}^$*ù!:;, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris posuere,&lt;b&gt; ?./§%µ£¨¤/+-�?. |
+info: Executing: |type | name=nbPlacesTotal | 200 |
+info: Executing: |click | id=boutonSelectionTarifs |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |type | id=filtreTarifId | 1688634 |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |pause | 1500 |  |
+info: Executing: |click | id=btnFiltrer |  |
+info: Executing: |pause | 1000 |  |
+info: Executing: |click | css=#tarifsListe1688634 &gt; span.tarifLibelle |  |
+error: Element css=#tarifsListe1688634 &gt; span.tarifLibelle not found
+warn: currentTest.recordFailure: Element css=#tarifsListe1688634 &gt; span.tarifLibelle not found
+info: Starting test /selenium-server/tests/SC02_2-Modification_REP_NON_Place.html
+info: Executing: |open | index.php4?p=5 |  |
+info: Executing: |echo | Login |  |
+info: Executing: |type | id=authLogin | qatest1 |
+info: Executing: |type | name=motPasse | test123456* |
+info: Executing: |clickAndWait | name=Submit |  |
+info: Executing: |echo | selection evenement |  |
+info: Executing: |clickAndWait | //a[@href=&apos;http://admin.testoto.digitick-ppe.com/?p=201&amp;typeEvt=1&apos;] |  |
+info: Executing: |waitForElementPresent | id=searchField |  |
+info: Executing: |type | id=searchField | AUTO_EVENEMENT_REPNONPL |
+info: Executing: |clickAndWait | css=input.submit01 |  |
+info: Executing: |echo | Selection Representations |  |
+info: Executing: |clickAndWait | link=Fiche Représentations |  |
+info: Executing: |clickAndWait | link=Dimanche 13 Août 2017 à 00h00 |  |
+info: Executing: |echo | Modification de la rep --modif quota-- |  |
+info: Executing: |clickAndWait | link=Modifier |  |
+info: Executing: |type | name=nbPlacesTotal | 1000 |
+info: Executing: |type | id=tarifQuota1681067 | 50 |
+info: Executing: |type | id=tarifQuota1681013 | 60 |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |type | id=tarifQuota1681069 | 80 |
+info: Executing: |type | id=tarifQuota1681057 | 90 |
+info: Executing: |echo | Validation de la modification |  |
+info: Executing: |clickAndWait | css=input.submit01.noborder |  |
+info: Executing: |verifyText | //tr[2]/td[@class=&apos;nbPlacesTotal&apos;] | 50 |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+warn: currentTest.recordFailure: Actual value &apos;200&apos; did not match &apos;50&apos;
+info: Executing: |verifyText | //tr[3]/td[@class=&apos;nbPlacesTotal&apos;] | 60 |
+warn: currentTest.recordFailure: Actual value &apos;200&apos; did not match &apos;60&apos;
+info: Executing: |echo | Deconnexion |  |
+info: Executing: |clickAndWait | id=headerDeconnecter |  |
+info: Starting test /selenium-server/tests/SC02_Planning.html
+info: Executing: |open | index.php4?p=5 |  |
+info: Executing: |echo | Login |  |
+info: Executing: |type | id=authLogin | qatest1 |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |type | name=motPasse | test123456* |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |clickAndWait | name=Submit |  |
+info: Executing: |echo | Selection Evenement |  |
+info: Executing: |waitForElementPresent | id=searchField |  |
+info: Executing: |type | id=searchField | Auto |
+info: Executing: |clickAndWait | css=input.submit01 |  |
+info: Executing: |echo | Creation Rep Type |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |clickAndWait | link=Fiche Evénement |  |
+info: Executing: |clickAndWait | link=Ajouter rep. type |  |
+info: Executing: |type | name=nomRepType | Auto_Creation_rep_type |
+info: Executing: |select | id=duree_h | label=03 |
+info: Executing: |select | id=debutVente_h | label=08 |
+info: Executing: |type | name=nbJoursDeb | 4 |
+info: Executing: |type | id=_daysId | 18 |
+info: Executing: |select | name=salleId | label=SALLE QUALITE DGT (MARSEILLE) |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |type | name=premierePartie | Auto_Création_Rep_Type |
+info: Executing: |type | name=messageOrganisateur | Auto_Création_Rep_Type |
+info: Executing: |type | name=nbPlacesTotal | 500 |
+info: Executing: |echo | Selection Tarifs |  |
+info: Executing: |click | id=boutonSelectionTarifs |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |type | id=filtreTarifId | 1688634 |
+info: Executing: |pause | 1500 |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |click | id=btnFiltrer |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |pause | 1000 |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |click | css=#tarifsListe1688634 &gt; span.tarifLibelle |  |
+error: Element css=#tarifsListe1688634 &gt; span.tarifLibelle not found
+warn: currentTest.recordFailure: Element css=#tarifsListe1688634 &gt; span.tarifLibelle not found
+</pre></body></html>

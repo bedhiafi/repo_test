@@ -1,0 +1,785 @@
+<html>
+<head><style type='text/css'>
+body, table {
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 12;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+}
+
+a {
+    text-decoration: none;
+}
+
+.title {
+    font-style: italic;
+}
+
+.selected {
+    background-color: #ffffcc;
+}
+
+.status_done {
+    background-color: #eeffee;
+}
+
+.status_passed {
+    background-color: #ccffcc;
+}
+
+.status_failed {
+    background-color: #ffcccc;
+}
+
+.breakpoint {
+    background-color: #cccccc;
+    border: 1px solid black;
+}
+</style><title>Test suite results</title></head>
+<body>
+<h1>Test suite results </h1>
+
+<table>
+<tr>
+<td>result:</td>
+<td>passed</td>
+</tr>
+<tr>
+<td>totalTime:</td>
+<td>76</td>
+</tr>
+<tr>
+<td>numTestTotal:</td>
+<td>6</td>
+</tr>
+<tr>
+<td>numTestPasses:</td>
+<td>6</td>
+</tr>
+<tr>
+<td>numTestFailures:</td>
+<td>0</td>
+</tr>
+<tr>
+<td>numCommandPasses:</td>
+<td>4</td>
+</tr>
+<tr>
+<td>numCommandFailures:</td>
+<td>0</td>
+</tr>
+<tr>
+<td>numCommandErrors:</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Selenium Version:</td>
+<td>2.52</td>
+</tr>
+<tr>
+<td>Selenium Revision:</td>
+<td>.0</td>
+</tr>
+<tr>
+<td>
+<table id="suiteTable" class="selenium" border="1" cellpadding="1" cellspacing="1"><tbody>
+<tr class="title status_passed"><td><b>Test Suite</b></td></tr>
+<tr class="  status_passed"><td><a href="#testresult0">CA_SC10_1_1-Lien_direct-Connecter_Compte</a></td></tr>
+<tr class="  status_passed"><td><a href="#testresult1">CA_SC10_2-1-Lien_direct_recupere_Mot_de_Passe_Oublie</a></td></tr>
+<tr class="  status_passed"><td><a href="#testresult2">CA_SC10_3_1-Lien_direct-Modifier_Mot_De_Passe</a></td></tr>
+<tr class="  status_passed"><td><a href="#testresult3">CA_SC10_4_0-Lien_direct_Modifier_Info_sans_Modif_Mot_De_Passe</a></td></tr>
+<tr class="  status_passed"><td><a href="#testresult4">CA_SC10_5_0-Lien_direct_Recherche_Transac_Imprim_Billet_Facture_Transac_Activ</a></td></tr>
+<tr class="  status_passed"><td><a href="#testresult5">CA_SC10_6_0-Lien_direct_Consulter_Transactions_Soldees</a></td></tr>
+</tbody></table>
+
+
+</td>
+<td>&nbsp;</td>
+</tr>
+</table><table><tr>
+<td><a name="testresult0">CA_SC10_1_1-Lien_direct-Connecter_Compte.html</a><br/><div>
+<table border="1" cellpadding="1" cellspacing="1">
+<thead>
+<tr class="title status_passed"><td rowspan="1" colspan="3">CA_SC10_1-Se-Connecter_Compte</td></tr>
+</thead><tbody>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>open</td>
+	<td>http://www.testoto.digitick-ppe.com/ext/billetterie5/?site=qatest5</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=dejatel</td>
+	<td>0611122233</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=dejapass</td>
+	<td>d1g1sm1t</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>id=formSubmit</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>css=#compteDeconnexion &gt; span.ongletLibelle</td>
+	<td></td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr><tr>
+<td><a name="testresult1">CA_SC10_2-1-Lien_direct_recupere_Mot_de_Passe_Oublie.html</a><br/><div>
+<table border="1" cellpadding="1" cellspacing="1">
+<thead>
+<tr class="title status_passed"><td rowspan="1" colspan="3">CA_SC10_2-Récupéré_Mot_de_Passe_Oublié</td></tr>
+</thead><tbody>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>open</td>
+	<td>http://www.testoto.digitick-ppe.com/ext/billetterie5/?site=qatest5</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>id=lienMdp</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>name=tel</td>
+	<td>0611122233</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=option[value="121"]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>select</td>
+	<td>name=formatPaysId</td>
+	<td>label=France</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>name=formSubmit</td>
+	<td></td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr><tr>
+<td><a name="testresult2">CA_SC10_3_1-Lien_direct-Modifier_Mot_De_Passe.html</a><br/><div>
+<table border="1" cellpadding="1" cellspacing="1">
+<thead>
+<tr class="title status_passed"><td rowspan="1" colspan="3">CA_SC10_3-Modifier_Mot_De_Passe</td></tr>
+</thead><tbody>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>open</td>
+	<td>http://www.testoto.digitick-ppe.com/ext/billetterie5/?site=qatest5</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=dejatel</td>
+	<td>0611122233</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=dejapass</td>
+	<td>d1g1sm1t</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>id=formSubmit</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>css=#monCompte &gt; span.ongletLibelle</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>//a[@id='monCompte']/span[2]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=passwd</td>
+	<td>test123456*</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=passConfirm</td>
+	<td>test123456*</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>id=formCompteInformationSubmit</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>css=#compteDeconnexion &gt; span.ongletLibelle</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=dejatel</td>
+	<td>0611122233</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=dejapass</td>
+	<td>test123456*</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>id=formSubmit</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>initialisation du mot de passe</td>
+	<td>initialisation du mot de passe</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>css=#monCompte &gt; span.ongletLibelle</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>//a[@id='monCompte']/span[2]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=passwd</td>
+	<td>d1g1sm1t</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=passConfirm</td>
+	<td>d1g1sm1t</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>id=formCompteInformationSubmit</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>css=#compteDeconnexion &gt; span.ongletLibelle</td>
+	<td></td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr><tr>
+<td><a name="testresult3">CA_SC10_4_0-Lien_direct_Modifier_Info_sans_Modif_Mot_De_Passe.html</a><br/><div>
+<table border="1" cellpadding="1" cellspacing="1">
+<thead>
+<tr class="title status_passed"><td rowspan="1" colspan="3">CA_SC10_4-Modifier_Info_sans_Modif_Mot_De_Passe</td></tr>
+</thead><tbody>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>open</td>
+	<td>http://www.testoto.digitick-ppe.com/ext/billetterie5/?site=qatest5</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=dejatel</td>
+	<td>0611122233</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=dejapass</td>
+	<td>d1g1sm1t</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>id=formSubmit</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>css=#monCompte &gt; span.ongletLibelle</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>//a[@id='monCompte']/span[2]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=adresse</td>
+	<td>zaza@oya.fr</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=complementAdresse</td>
+	<td>8965 rue victoire</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=codePostal</td>
+	<td>13006</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=ville</td>
+	<td>Marseille</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>id=formCompteInformationSubmit</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>css=#compteDeconnexion &gt; span.ongletLibelle</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=dejatel</td>
+	<td>0611122233</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=dejapass</td>
+	<td>d1g1sm1t</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>id=formSubmit</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>css=#monCompte &gt; span.ongletLibelle</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>//a[@id='monCompte']/span[2]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=adresse</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=complementAdresse</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=codePostal</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=ville</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>id=formCompteInformationSubmit</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyText</td>
+	<td>//div[@class='content bloc3']/input[1]/@value</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyText</td>
+	<td>//div[@class='content bloc3']/input[2]/@value</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyText</td>
+	<td>//div[@class='content bloc3']/input[3]/@value</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyText</td>
+	<td>//div[@class='content bloc3']/input[4]/@value</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>css=#compteDeconnexion &gt; span.ongletLibelle</td>
+	<td></td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr><tr>
+<td><a name="testresult4">CA_SC10_5_0-Lien_direct_Recherche_Transac_Imprim_Billet_Facture_Transac_Activ.html</a><br/><div>
+<table border="1" cellpadding="1" cellspacing="1">
+<thead>
+<tr class="title status_passed"><td rowspan="1" colspan="3">CA_SC10_5-Recherche_Transac_Imprim_Billet_Facture_Transac_Activ</td></tr>
+</thead><tbody>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>open</td>
+	<td>http://www.testoto.digitick-ppe.com/ext/billetterie5/?site=qatest5</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=dejatel</td>
+	<td>0611122233</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=dejapass</td>
+	<td>d1g1sm1t</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>id=formSubmit</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>selectAndWait</td>
+	<td>id=tri</td>
+	<td>label=Date de la visite</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>id=rechercheSubmit</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=Ma facture</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=Ma facture</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>close</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>xpath=(//a[contains(text(),'Imprimez votre billet')])[2]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>close</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>css=#compteDeconnexion &gt; span.ongletLibelle</td>
+	<td></td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr><tr>
+<td><a name="testresult5">CA_SC10_6_0-Lien_direct_Consulter_Transactions_Soldees.html</a><br/><div>
+<table border="1" cellpadding="1" cellspacing="1">
+<thead>
+<tr class="title status_passed"><td rowspan="1" colspan="3">CA_SC10_6-Consulter_Transactions_Soldees</td></tr>
+</thead><tbody>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>open</td>
+	<td>http://www.testoto.digitick-ppe.com/ext/billetterie5/?site=qatest5</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=dejatel</td>
+	<td>0611122233</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=dejapass</td>
+	<td>d1g1sm1t</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>id=formSubmit</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>css=#monCompte &gt; span.ongletLibelle</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>id=transactionsSoldees</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>css=#compteDeconnexion &gt; span.ongletLibelle</td>
+	<td></td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr></table><pre>
+info: Starting test /selenium-server/tests/CA_SC10_1_1-Lien_direct-Connecter_Compte.html
+info: Executing: |open | http://www.testoto.digitick-ppe.com/ext/billetterie5/?site=qatest5 |  |
+info: Executing: |pause | 2000 |  |
+info: Executing: |type | id=dejatel | 0611122233 |
+info: Executing: |type | id=dejapass | d1g1sm1t |
+info: Executing: |clickAndWait | id=formSubmit |  |
+info: Executing: |pause | 3000 |  |
+info: Executing: |selectWindow | null |  |
+info: Executing: |clickAndWait | css=#compteDeconnexion &gt; span.ongletLibelle |  |
+info: Starting test /selenium-server/tests/CA_SC10_2-1-Lien_direct_recupere_Mot_de_Passe_Oublie.html
+info: Executing: |open | http://www.testoto.digitick-ppe.com/ext/billetterie5/?site=qatest5 |  |
+info: Executing: |pause | 2000 |  |
+info: Executing: |clickAndWait | id=lienMdp |  |
+info: Executing: |pause | 3000 |  |
+info: Executing: |type | name=tel | 0611122233 |
+info: Executing: |click | css=option[value=&quot;121&quot;] |  |
+info: Executing: |select | name=formatPaysId | label=France |
+info: Executing: |clickAndWait | name=formSubmit |  |
+info: Starting test /selenium-server/tests/CA_SC10_3_1-Lien_direct-Modifier_Mot_De_Passe.html
+info: Executing: |open | http://www.testoto.digitick-ppe.com/ext/billetterie5/?site=qatest5 |  |
+info: Executing: |pause | 2000 |  |
+info: Executing: |type | id=dejatel | 0611122233 |
+info: Executing: |type | id=dejapass | d1g1sm1t |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |clickAndWait | id=formSubmit |  |
+info: Executing: |pause | 2000 |  |
+info: Executing: |clickAndWait | css=#monCompte &gt; span.ongletLibelle |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |clickAndWait | //a[@id=&apos;monCompte&apos;]/span[2] |  |
+info: Executing: |type | id=passwd | test123456* |
+info: Executing: |type | id=passConfirm | test123456* |
+info: Executing: |clickAndWait | id=formCompteInformationSubmit |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |clickAndWait | css=#compteDeconnexion &gt; span.ongletLibelle |  |
+info: Executing: |pause | 2000 |  |
+info: Executing: |type | id=dejatel | 0611122233 |
+info: Executing: |type | id=dejapass | test123456* |
+info: Executing: |clickAndWait | id=formSubmit |  |
+info: Executing: |pause | 5000 |  |
+info: Executing: |echo | initialisation du mot de passe |  |
+info: Executing: |clickAndWait | css=#monCompte &gt; span.ongletLibelle |  |
+info: Executing: |clickAndWait | //a[@id=&apos;monCompte&apos;]/span[2] |  |
+info: Executing: |type | id=passwd | d1g1sm1t |
+info: Executing: |type | id=passConfirm | d1g1sm1t |
+info: Executing: |clickAndWait | id=formCompteInformationSubmit |  |
+info: Executing: |clickAndWait | css=#compteDeconnexion &gt; span.ongletLibelle |  |
+info: Starting test /selenium-server/tests/CA_SC10_4_0-Lien_direct_Modifier_Info_sans_Modif_Mot_De_Passe.html
+info: Executing: |open | http://www.testoto.digitick-ppe.com/ext/billetterie5/?site=qatest5 |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |pause | 2000 |  |
+info: Executing: |type | id=dejatel | 0611122233 |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |type | id=dejapass | d1g1sm1t |
+info: Executing: |clickAndWait | id=formSubmit |  |
+info: Executing: |clickAndWait | css=#monCompte &gt; span.ongletLibelle |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |clickAndWait | //a[@id=&apos;monCompte&apos;]/span[2] |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |type | id=adresse | zaza@oya.fr |
+info: Executing: |type | id=complementAdresse | 8965 rue victoire |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |type | id=codePostal | 13006 |
+info: Executing: |type | id=ville | Marseille |
+info: Executing: |clickAndWait | id=formCompteInformationSubmit |  |
+info: Executing: |clickAndWait | css=#compteDeconnexion &gt; span.ongletLibelle |  |
+info: Executing: |pause | 3000 |  |
+info: Executing: |type | id=dejatel | 0611122233 |
+info: Executing: |selectWindow | null |  |
+info: Executing: |type | id=dejapass | d1g1sm1t |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |clickAndWait | id=formSubmit |  |
+info: Executing: |clickAndWait | css=#monCompte &gt; span.ongletLibelle |  |
+info: Executing: |clickAndWait | //a[@id=&apos;monCompte&apos;]/span[2] |  |
+info: Executing: |type | id=adresse |  |
+info: Executing: |type | id=complementAdresse |  |
+info: Executing: |type | id=codePostal |  |
+info: Executing: |type | id=ville |  |
+info: Executing: |clickAndWait | id=formCompteInformationSubmit |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |verifyText | //div[@class=&apos;content bloc3&apos;]/input[1]/@value |  |
+info: Executing: |verifyText | //div[@class=&apos;content bloc3&apos;]/input[2]/@value |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |verifyText | //div[@class=&apos;content bloc3&apos;]/input[3]/@value |  |
+info: Executing: |verifyText | //div[@class=&apos;content bloc3&apos;]/input[4]/@value |  |
+info: Executing: |clickAndWait | css=#compteDeconnexion &gt; span.ongletLibelle |  |
+info: Starting test /selenium-server/tests/CA_SC10_5_0-Lien_direct_Recherche_Transac_Imprim_Billet_Facture_Transac_Activ.html
+info: Executing: |open | http://www.testoto.digitick-ppe.com/ext/billetterie5/?site=qatest5 |  |
+info: Executing: |pause | 2000 |  |
+info: Executing: |type | id=dejatel | 0611122233 |
+info: Executing: |type | id=dejapass | d1g1sm1t |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |clickAndWait | id=formSubmit |  |
+info: Executing: |pause | 2000 |  |
+info: Executing: |selectAndWait | id=tri | label=Date de la visite |
+info: Executing: |clickAndWait | id=rechercheSubmit |  |
+info: Executing: |pause | 3000 |  |
+info: Executing: |waitForElementPresent | link=Ma facture |  |
+info: Executing: |click | link=Ma facture |  |
+warn: Link has target &apos;_blank&apos;, which is not supported in Selenium!  Randomizing target to be: selenium_blank68118
+info: Executing: |pause | 3000 |  |
+info: Executing: |close |  |  |
+info: Executing: |selectWindow | null |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |click | xpath=(//a[contains(text(),&apos;Imprimez votre billet&apos;)])[2] |  |
+warn: Link has target &apos;_blank&apos;, which is not supported in Selenium!  Randomizing target to be: selenium_blank81154
+info: Executing: |pause | 3000 |  |
+info: Executing: |close |  |  |
+info: Executing: |selectWindow | null |  |
+info: Executing: |clickAndWait | css=#compteDeconnexion &gt; span.ongletLibelle |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Starting test /selenium-server/tests/CA_SC10_6_0-Lien_direct_Consulter_Transactions_Soldees.html
+info: Executing: |open | http://www.testoto.digitick-ppe.com/ext/billetterie5/?site=qatest5 |  |
+info: Executing: |pause | 2000 |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |type | id=dejatel | 0611122233 |
+info: Executing: |type | id=dejapass | d1g1sm1t |
+info: Executing: |clickAndWait | id=formSubmit |  |
+info: Executing: |clickAndWait | css=#monCompte &gt; span.ongletLibelle |  |
+info: Executing: |clickAndWait | id=transactionsSoldees |  |
+info: Executing: |pause | 5000 |  |
+info: Executing: |clickAndWait | css=#compteDeconnexion &gt; span.ongletLibelle |  |
+</pre></body></html>

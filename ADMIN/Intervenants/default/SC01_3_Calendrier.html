@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://admin.testoto.digitick-ppe.com/" />
+<title>SC01_3_Calendrier</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">SC01_3_Calendrier</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/?p=5</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>var d= new Date(); parseInt(d.getFullYear())+1;</td>
+	<td>Year</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=motPasse</td>
+	<td>1c3KoNeQu!</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=authLogin</td>
+	<td>tcornet</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=Submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=searchField</td>
+	<td>qualité</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.btOk</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=QUALITE 1 (Ne pas toucher)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='menuContent']/div[15]/a/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//ul[@id='leftMenuContent']/li[5]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>4000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=attendantSelector</td>
+	<td></td>
+</tr>
+<tr>
+	<td>addSelection</td>
+	<td>id=attendantSelector</td>
+	<td>label=MUDAS Robert</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=startDate</td>
+	<td>20/09/${Year}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=endDate</td>
+	<td>30/09/${Year}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=startHour</td>
+	<td>00</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=startMinute</td>
+	<td>00</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=endHour</td>
+	<td>23</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=endMinute</td>
+	<td>59</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=input.btn.btn-primary</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#addAvailabilityModal &gt; div.modal-dialog &gt; div.modal-content &gt; div.modal-footer &gt; #modalConfirmBtn</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='calendarControllerObject']/div/table/tbody/tr/td[3]/span[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='calendarControllerObject']/div/table/tbody/tr/td[3]/span[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=a.leftMenuItemSelected &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=headerDeconnecter</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

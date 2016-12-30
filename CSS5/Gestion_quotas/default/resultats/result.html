@@ -1,0 +1,830 @@
+<html>
+<head><style type='text/css'>
+body, table {
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 12;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+}
+
+a {
+    text-decoration: none;
+}
+
+.title {
+    font-style: italic;
+}
+
+.selected {
+    background-color: #ffffcc;
+}
+
+.status_done {
+    background-color: #eeffee;
+}
+
+.status_passed {
+    background-color: #ccffcc;
+}
+
+.status_failed {
+    background-color: #ffcccc;
+}
+
+.breakpoint {
+    background-color: #cccccc;
+    border: 1px solid black;
+}
+</style><title>Test suite results</title></head>
+<body>
+<h1>Test suite results </h1>
+
+<table>
+<tr>
+<td>result:</td>
+<td>passed</td>
+</tr>
+<tr>
+<td>totalTime:</td>
+<td>145</td>
+</tr>
+<tr>
+<td>numTestTotal:</td>
+<td>2</td>
+</tr>
+<tr>
+<td>numTestPasses:</td>
+<td>2</td>
+</tr>
+<tr>
+<td>numTestFailures:</td>
+<td>0</td>
+</tr>
+<tr>
+<td>numCommandPasses:</td>
+<td>3</td>
+</tr>
+<tr>
+<td>numCommandFailures:</td>
+<td>0</td>
+</tr>
+<tr>
+<td>numCommandErrors:</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Selenium Version:</td>
+<td>2.52</td>
+</tr>
+<tr>
+<td>Selenium Revision:</td>
+<td>.0</td>
+</tr>
+<tr>
+<td>
+<table id="suiteTable" class="selenium" border="1" cellpadding="1" cellspacing="1"><tbody>
+<tr class="title status_passed"><td><b>Test Suite</b></td></tr>
+<tr class="  status_passed"><td><a href="#testresult0">CA_SC09_1-Gestion_Quotas_Min_Max_Grille</a></td></tr>
+<tr class="  status_passed"><td><a href="#testresult1">CA_SC09_2-VÃ©rifier_Mise_A_jour_Quota_Restant_Transaction</a></td></tr>
+</tbody></table>
+
+
+</td>
+<td>&nbsp;</td>
+</tr>
+</table><table><tr>
+<td><a name="testresult0">CA_SC09_1-Gestion_Quotas_Min_Max_Grille.html</a><br/><div>
+<table border="1" cellpadding="1" cellspacing="1">
+<thead>
+<tr class="title status_passed"><td rowspan="1" colspan="3">CA_SC09_1-Gestion_Quotas_Min_Max_Grille</td></tr>
+</thead><tbody>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>open</td>
+	<td>index.php4?p=5</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=authLogin</td>
+	<td>qatest1</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>name=motPasse</td>
+	<td>test123456*</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>name=Submit</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>//div[@id='menuContent']/div[4]/a/div[2]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>//a[@href='http://admin.testoto.digitick-ppe.com/?p=201&amp;typeEvt=1']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=searchField</td>
+	<td>EVTQA12345</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>css=input.submit01</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>css=a.link.nomEvenement</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=Lundi 25 Septembre 2017 Ã&nbsp; 00h00</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=Modifier</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=dateDebutVentes_jma</td>
+	<td>19/06/2014</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>name=nbPlacesTotal</td>
+	<td>39</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>css=input.submit01.noborder</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>//div[@id='menuContent']/div[13]/a/div[2]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=#cdv5748 &gt; td.cdvHandled_nbPlace &gt; a &gt; img[alt="edit"]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>name=nb_place_form[5748][max_transaction][quantite]</td>
+	<td>5</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=jqi_state0_buttonEnregistrer</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=jqi_state0_buttonOk</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=#cdv5748 &gt; td.cdvHandled_choixPlace &gt; button[type="button"]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=jqi_state0_buttonEnregistrer</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=jqi_state0_buttonOk</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>openWindow</td>
+	<td>http://www.testoto.digitick-ppe.com/ext/billetterie5/?site=qatest5</td>
+	<td>Billetterie</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>6000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>selectWindow</td>
+	<td>Billetterie</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>css=dl.evenement2 &gt; dd &gt; a.evenementNom &gt; span</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>2500</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>select</td>
+	<td>id=t1041998</td>
+	<td>label=regexp:\s1</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>select</td>
+	<td>id=t1041480</td>
+	<td>label=regexp:\s1</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>select</td>
+	<td>id=t1257338</td>
+	<td>label=regexp:\s1</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=choixAssuranceReponse1</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>id=submitFinaliser</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>1500</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyTextPresent</td>
+	<td>Il ne reste que</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>close</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=#cdv5748 &gt; td.cdvHandled_nbPlace &gt; a &gt; img[alt="edit"]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>name=nb_place_form[5748][max_transaction][quantite]</td>
+	<td>10</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=jqi_state0_buttonEnregistrer</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=jqi_state0_buttonOk</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=#cdv5748 &gt; td.cdvHandled_choixPlace &gt; button[type="button"]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=jqi_state0_buttonEnregistrer</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=jqi_state0_buttonOk</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>//div[@id='menuContent']/div[4]/a/div[2]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=searchField</td>
+	<td>EVTQA12345</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>css=input.submit01</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>css=a.link.nomEvenement</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=Lundi 25 Septembre 2017 Ã&nbsp; 00h00</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=Modifier</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>name=nbPlacesTotal</td>
+	<td>300</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>css=input.submit01.noborder</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>id=headerDeconnecter</td>
+	<td></td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr><tr>
+<td><a name="testresult1">CA_SC09_2-VÃ©rifier_Mise_A_jour_Quota_Restant_Transaction.html</a><br/><div>
+<table border="1" cellpadding="1" cellspacing="1">
+<thead>
+<tr class="title status_passed"><td rowspan="1" colspan="3">CA_SC09_2-VÃ©rifier_Mise_A_jour_Quota_Restant_Transaction</td></tr>
+</thead><tbody>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>open</td>
+	<td>index.php4?p=5</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=authLogin</td>
+	<td>qatest1</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>name=motPasse</td>
+	<td>test123456*</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>name=Submit</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>//div[@id='menuContent']/div[4]/a/div[2]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>//a[@href='http://admin.testoto.digitick-ppe.com/?p=201&amp;typeEvt=1']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=searchField</td>
+	<td>EVTQA12345</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>css=input.submit01</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>css=a.link.nomEvenement</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=Lundi 25 Septembre 2017 Ã&nbsp; 00h00</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=Modifier</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=tarifQuota1041998</td>
+	<td>20</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=tarifQuota1041480</td>
+	<td>20</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>css=input.submit01.noborder</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>//div[@id='menuContent']/div[13]/a/div[2]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>openWindow</td>
+	<td>http://www.testoto.digitick-ppe.com/ext/billetterie5/?site=qatest5</td>
+	<td>Billetterie</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>2500</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>selectWindow</td>
+	<td>Billetterie</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>css=dl.evenement2 &gt; dd &gt; a.evenementNom &gt; span</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>2500</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>select</td>
+	<td>id=t1041998</td>
+	<td>label=regexp:\s2</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>select</td>
+	<td>id=t1041480</td>
+	<td>label=regexp:\s2</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=choixAssuranceReponse1</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>id=submitFinaliser</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>4000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=nouveautel</td>
+	<td>0688821878</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=nouveaupass</td>
+	<td>test1234*</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=nouveaupassconfirm</td>
+	<td>test1234*</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=nouveaumail</td>
+	<td>test@test.qa</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=nouveaunom</td>
+	<td>test</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=nouveauprenom</td>
+	<td>auto</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>xpath=(//input[@id='formSubmit'])[2]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>4000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>name=formEtape2RenommageBilletSubmit</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=champ0</td>
+	<td>4012001037141112</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=cvvCB</td>
+	<td>456</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=cgvCB</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>name=formSubmit</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>25000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>css=input[type="submit"]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=input[type="submit"]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=a.identificationDeconnexion &gt; span</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>close</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>//div[@id='menuContent']/div[4]/a/div[2]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=searchField</td>
+	<td>EVTQA12345</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>css=input.submit01</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>css=a.link.nomEvenement</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=Lundi 25 Septembre 2017 Ã&nbsp; 00h00</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=Modifier</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>2500</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyText</td>
+	<td>//div[@id='tarifDispo1041998']/span[@class='colonneTarif6']</td>
+	<td>2 / 0</td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyText</td>
+	<td>//div[@id='tarifDispo1041480']/span[@class='colonneTarif6']</td>
+	<td>4 / 0</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=tarifQuota1041998</td>
+	<td>0</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=tarifQuota1041480</td>
+	<td>0</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>css=input.submit01.noborder</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>id=headerDeconnecter</td>
+	<td></td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr></table><pre>
+info: Starting test /selenium-server/tests/CA_SC09_1-Gestion_Quotas_Min_Max_Grille.html
+info: Executing: |open | index.php4?p=5 |  |
+info: Executing: |type | id=authLogin | qatest1 |
+info: Executing: |type | name=motPasse | test123456* |
+info: Executing: |clickAndWait | name=Submit |  |
+info: Executing: |clickAndWait | //div[@id=&apos;menuContent&apos;]/div[4]/a/div[2] |  |
+info: Executing: |clickAndWait | //a[@href=&apos;http://admin.testoto.digitick-ppe.com/?p=201&amp;typeEvt=1&apos;] |  |
+info: Executing: |type | id=searchField | EVTQA12345 |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |clickAndWait | css=input.submit01 |  |
+info: Executing: |clickAndWait | css=a.link.nomEvenement |  |
+info: Executing: |clickAndWait | link=Lundi 25 Septembre 2017 Ã  00h00 |  |
+info: Executing: |clickAndWait | link=Modifier |  |
+info: Executing: |type | id=dateDebutVentes_jma | 19/06/2014 |
+info: Executing: |type | name=nbPlacesTotal | 39 |
+info: Executing: |clickAndWait | css=input.submit01.noborder |  |
+info: Executing: |clickAndWait | //div[@id=&apos;menuContent&apos;]/div[13]/a/div[2] |  |
+info: Executing: |click | css=#cdv5748 &gt; td.cdvHandled_nbPlace &gt; a &gt; img[alt=&quot;edit&quot;] |  |
+info: Executing: |type | name=nb_place_form[5748][max_transaction][quantite] | 5 |
+info: Executing: |click | id=jqi_state0_buttonEnregistrer |  |
+info: Executing: |click | id=jqi_state0_buttonOk |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |pause | 2000 |  |
+info: Executing: |click | css=#cdv5748 &gt; td.cdvHandled_choixPlace &gt; button[type=&quot;button&quot;] |  |
+info: Executing: |click | id=jqi_state0_buttonEnregistrer |  |
+info: Executing: |pause | 2000 |  |
+info: Executing: |click | id=jqi_state0_buttonOk |  |
+info: Executing: |openWindow | http://www.testoto.digitick-ppe.com/ext/billetterie5/?site=qatest5 | Billetterie |
+info: Executing: |pause | 6000 |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |selectWindow | Billetterie |  |
+info: Executing: |clickAndWait | css=dl.evenement2 &gt; dd &gt; a.evenementNom &gt; span |  |
+info: Executing: |pause | 2500 |  |
+info: Executing: |select | id=t1041998 | label=regexp:\s1 |
+info: Executing: |select | id=t1041480 | label=regexp:\s1 |
+info: Executing: |select | id=t1257338 | label=regexp:\s1 |
+info: Executing: |click | id=choixAssuranceReponse1 |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |clickAndWait | id=submitFinaliser |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |pause | 1500 |  |
+info: Executing: |verifyTextPresent | Il ne reste que |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |close |  |  |
+info: Executing: |selectWindow | null |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |click | css=#cdv5748 &gt; td.cdvHandled_nbPlace &gt; a &gt; img[alt=&quot;edit&quot;] |  |
+info: Executing: |type | name=nb_place_form[5748][max_transaction][quantite] | 10 |
+info: Executing: |click | id=jqi_state0_buttonEnregistrer |  |
+info: Executing: |click | id=jqi_state0_buttonOk |  |
+info: Executing: |pause | 3000 |  |
+info: Executing: |click | css=#cdv5748 &gt; td.cdvHandled_choixPlace &gt; button[type=&quot;button&quot;] |  |
+info: Executing: |click | id=jqi_state0_buttonEnregistrer |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |click | id=jqi_state0_buttonOk |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |clickAndWait | //div[@id=&apos;menuContent&apos;]/div[4]/a/div[2] |  |
+info: Executing: |type | id=searchField | EVTQA12345 |
+info: Executing: |clickAndWait | css=input.submit01 |  |
+info: Executing: |clickAndWait | css=a.link.nomEvenement |  |
+info: Executing: |clickAndWait | link=Lundi 25 Septembre 2017 Ã  00h00 |  |
+info: Executing: |clickAndWait | link=Modifier |  |
+info: Executing: |type | name=nbPlacesTotal | 300 |
+info: Executing: |clickAndWait | css=input.submit01.noborder |  |
+info: Executing: |clickAndWait | id=headerDeconnecter |  |
+info: Starting test /selenium-server/tests/CA_SC09_2-V%C3%A9rifier_Mise_A_jour_Quota_Restant_Transaction.html
+info: Executing: |open | index.php4?p=5 |  |
+info: Executing: |type | id=authLogin | qatest1 |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |type | name=motPasse | test123456* |
+info: Executing: |clickAndWait | name=Submit |  |
+info: Executing: |clickAndWait | //div[@id=&apos;menuContent&apos;]/div[4]/a/div[2] |  |
+info: Executing: |clickAndWait | //a[@href=&apos;http://admin.testoto.digitick-ppe.com/?p=201&amp;typeEvt=1&apos;] |  |
+info: Executing: |type | id=searchField | EVTQA12345 |
+info: Executing: |clickAndWait | css=input.submit01 |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |clickAndWait | css=a.link.nomEvenement |  |
+info: Executing: |clickAndWait | link=Lundi 25 Septembre 2017 Ã  00h00 |  |
+info: Executing: |clickAndWait | link=Modifier |  |
+info: Executing: |type | id=tarifQuota1041998 | 20 |
+info: Executing: |type | id=tarifQuota1041480 | 20 |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |clickAndWait | css=input.submit01.noborder |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |clickAndWait | //div[@id=&apos;menuContent&apos;]/div[13]/a/div[2] |  |
+info: Executing: |openWindow | http://www.testoto.digitick-ppe.com/ext/billetterie5/?site=qatest5 | Billetterie |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |pause | 2500 |  |
+info: Executing: |selectWindow | Billetterie |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |clickAndWait | css=dl.evenement2 &gt; dd &gt; a.evenementNom &gt; span |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |pause | 2500 |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |select | id=t1041998 | label=regexp:\s2 |
+info: Executing: |select | id=t1041480 | label=regexp:\s2 |
+info: Executing: |click | id=choixAssuranceReponse1 |  |
+info: Executing: |clickAndWait | id=submitFinaliser |  |
+info: Executing: |pause | 4000 |  |
+info: Executing: |type | id=nouveautel | 0688821878 |
+info: Executing: |type | id=nouveaupass | test1234* |
+info: Executing: |type | id=nouveaupassconfirm | test1234* |
+info: Executing: |type | id=nouveaumail | test@test.qa |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |type | id=nouveaunom | test |
+info: Executing: |type | id=nouveauprenom | auto |
+info: Executing: |clickAndWait | xpath=(//input[@id=&apos;formSubmit&apos;])[2] |  |
+info: Executing: |pause | 4000 |  |
+info: Executing: |clickAndWait | name=formEtape2RenommageBilletSubmit |  |
+info: Executing: |type | id=champ0 | 4012001037141112 |
+info: Executing: |type | id=cvvCB | 456 |
+info: Executing: |click | id=cgvCB |  |
+info: Executing: |clickAndWait | name=formSubmit |  |
+info: Executing: |pause | 25000 |  |
+info: Executing: |waitForElementPresent | css=input[type=&quot;submit&quot;] |  |
+info: Executing: |click | css=input[type=&quot;submit&quot;] |  |
+info: Executing: |pause | 30000 |  |
+info: Executing: |click | css=a.identificationDeconnexion &gt; span |  |
+info: Executing: |close |  |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |selectWindow | null |  |
+info: Executing: |clickAndWait | //div[@id=&apos;menuContent&apos;]/div[4]/a/div[2] |  |
+info: Executing: |type | id=searchField | EVTQA12345 |
+info: Executing: |clickAndWait | css=input.submit01 |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |clickAndWait | css=a.link.nomEvenement |  |
+info: Executing: |clickAndWait | link=Lundi 25 Septembre 2017 Ã  00h00 |  |
+info: Executing: |clickAndWait | link=Modifier |  |
+info: Executing: |pause | 2500 |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |verifyText | //div[@id=&apos;tarifDispo1041998&apos;]/span[@class=&apos;colonneTarif6&apos;] | 2 / 0 |
+info: Executing: |verifyText | //div[@id=&apos;tarifDispo1041480&apos;]/span[@class=&apos;colonneTarif6&apos;] | 4 / 0 |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |type | id=tarifQuota1041998 | 0 |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |type | id=tarifQuota1041480 | 0 |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |clickAndWait | css=input.submit01.noborder |  |
+info: Executing: |clickAndWait | id=headerDeconnecter |  |
+</pre></body></html>

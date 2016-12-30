@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://admin.testoto.digitick-ppe.com/" />
+<title>SC01_9_Prio_Abo_depuis_evenement_ChgtPlace_Exclu_Suppr_Man</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">SC01_9_Prio_Abo_depuis_evenement_ChgtPlace_Exclu_Suppr_Man</td></tr>
+</thead><tbody>
+<tr>
+	<td>storeEval</td>
+	<td>new Date().getFullYear()</td>
+	<td>Year</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>new Date().getFullYear()</td>
+	<td>Year1</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>new Date().getMonth()+1</td>
+	<td>Month</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>new Date().getMonth()+1</td>
+	<td>Month1</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>new Date().getDate()</td>
+	<td>Jour</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>new Date().getDate()+1</td>
+	<td>Jour1</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>function goodJour1() {if ((${Jour1}==30)&amp;&amp;((${Month1}==4)||(${Month1}==6)||(${Month1}==9)||(${Month1}==11))){JourSuiv=01;return JourSuiv;}if ((${Jour1}==30)&amp;&amp;(${Month1}==2)){JourSuiv=01;return JourSuiv;} if (${Jour1}==31){JourSuiv=01;return JourSuiv;} if ( ${Jour1}&lt;10) {Jour1='0'+${Jour1}; return Jour1;} else return ${Jour1}; } goodJour1();</td>
+	<td>Jour1</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>function goodJour() { if (${Jour} &lt;10) {Jour='0'+${Jour}; return Jour;} else&nbsp;&nbsp;return ${Jour}; } goodJour();</td>
+	<td>Jour</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>function goodMonth() {if (${Month}&lt;10) {Month='0'+${Month}; return Month} else return ${Month}; } goodMonth();</td>
+	<td>Month</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>function goodMonth1() {if (${Jour1}&lt;${Jour}){MonthSuiv=${Month1}+1;} else MonthSuiv=${Month1}; if (MonthSuiv&lt;10){Month1='0'+MonthSuiv; return Month1} else return MonthSuiv; }goodMonth1();</td>
+	<td>Month1</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>function goodYear1() {if (${Month1}&lt;${Month}) { return ${Year1}+1;} else return ${Year1}; } goodYear1();</td>
+	<td>Year1</td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/index.php4?p=5</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>window.document.domain</td>
+	<td>host</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>reg=/[^admin.][\w\.-]*/;reg.exec('${host}')</td>
+	<td>domain</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=motPasse</td>
+	<td>test123456*</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=authLogin</td>
+	<td>qatest2</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=Submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//a[@href='http://${host}/?p=201&typeEvt=1']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=searchField</td>
+	<td>auto_evt_prio09</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.submit01</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Fiche Représentations</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//ul[@id='leftMenuContent']/li[10]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=newSalePriority</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=salePriorityNew_dateBegin_jma</td>
+	<td>${Jour}/${Month}/${Year}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=salePriorityNew_dateEnd_jma</td>
+	<td>${Jour1}/${Month1}/${Year1}</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=listRepresentationsNew</td>
+	<td>label=2778777 - Auto_Abo_PrioRef</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.addRepresentation.btnAdd</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#blockSalePriorityNew &gt; div.formBloc &gt; div.formRight &gt; span.addRepresentation.btnAdd</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=salePriorityNew_isSeatChange</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=salePriorityNew_isExclusive</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=saveSalesPriorities</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Plan de la salle</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseOver</td>
+	<td>id=roomSection-26244-1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=roomSection-26244-1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>4000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=mapRoom_default-5-MapRoomSection-seatsPrioritySubscriber-seatsPrioritySubscriber</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=mapRoom_default-5-MapRoomSection-seatsPrioritySubscriber-seatsPrioritySubscriber</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>runScript</td>
+	<td>function getMapRoomSection() {&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for (var inst in Map.instances) {&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return Map.instances[inst].plugins.MapRoomSection;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;} function getMapRoomData() {&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for (var inst in Map.instances) {&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return Map.instances[inst].plugins.MapRoomData;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;}&nbsp;&nbsp;function selectFirstSubscribersAvailableSeat() {&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var mapRoomSection = getMapRoomSection();&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var mapRoomData = getMapRoomData();&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for (seatId in mapRoomSection.data.seatsData) {&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var seatData = mapRoomSection.data.seatsData[seatId];&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (!seatData.selectable) continue;&nbsp;&nbsp;	 var seatInfo = mapRoomData.data.seatStates[seatId]; 	 if (typeof(seatInfo.subscribersFirst) == &quot;undefined&quot;) continue; 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mapRoomSection.currentSeatsSelection[seatData.cellId] = true;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mapRoomSection.onSiegeSelEnd();&nbsp;&nbsp;&nbsp;	 mapRoomSection.frmPaint();&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;selectFirstSubscribersAvailableSeat();</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.body.txtCenter &gt; form &gt; button.submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//a[@title='Retour à la fiche de la représentation']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Modifier état</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=input.bt</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=input.bt</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=headerDeconnecter</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

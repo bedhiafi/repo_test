@@ -1,0 +1,626 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://admin.testoto.digitick-ppe.com/" />
+<title>SC02_Planning</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">SC02_Planning</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/index.php4?p=5</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>window.document.domain</td>
+	<td>host</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>Login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=authLogin</td>
+	<td>qatest2</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=motPasse</td>
+	<td>test123456*</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=Submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>Selection Evenement</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//a[@href='http://${host}/?p=201&amp;typeEvt=1']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=searchField</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=searchField</td>
+	<td>auto_evenement_repnon</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.submit01</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>Creation Rep Type</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Fiche Evénement</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Ajouter rep. type</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=nomRepType</td>
+	<td>Auto_Creation_rep_type</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=duree_h</td>
+	<td>label=03</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=debutVente_h</td>
+	<td>label=08</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=nbJoursDeb</td>
+	<td>4</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=_daysId</td>
+	<td>18</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=salleId</td>
+	<td>label=SALLE QUALITE DGT (MARSEILLE)</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=premierePartie</td>
+	<td>Auto_Création_Rep_Type</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=messageOrganisateur</td>
+	<td>Auto_Création_Rep_Type</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=nbPlacesTotal</td>
+	<td>500</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>Selection Tarifs</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=boutonSelectionTarifs</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=boutonSelectionTarifs</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=filtreTarifId</td>
+	<td>2126665</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=btnFiltrer</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#tarifsListe2126665 &gt; span.tarifLibelle</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ajoutTarif</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=filtreTarifId</td>
+	<td>2208675</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=btnFiltrer</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#tarifsListe2208675 &gt; span.tarifLibelle</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ajoutTarif</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=tarifQuota2126665</td>
+	<td>10</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=tarifQuota2208675</td>
+	<td>60</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>Validation de la creation de la rep type</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.submit01.noborder</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=div.menuItemContentSelected</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>Creation journee type</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//a[@href='http://${host}/?p=1107']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Nouvelle journée type</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=jt_templateName</td>
+	<td>Auto_Création_Journée_Type</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=jt_cmtp_full</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=jt_cmtp_monday</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=jt_cmtp_wednesday</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=jt_cmtp_friday</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>Selection evenement et rep type concernes</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>name=jt_evenement</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=jt_evenement</td>
+	<td>label=Auto_Evenement_RepNonPl</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=jt_representationType</td>
+	<td>label=Auto_Creation_rep_type</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=jt_addRepTemplateStartHours</td>
+	<td>10</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=jt_addRepTemplateStartMinutes</td>
+	<td>00</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>Validation de la creation de la journee type</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.submit01</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=submitted</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Auto_Création_Journée_Type</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>Creation Planning</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=div.menuItemContentSelected</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//a[@href='http://${host}/?p=1103']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Nouveau planning</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=planningNom</td>
+	<td>Auto_Création_Planning</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=selectDateDebut</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=selectDateDebut</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#dp-popup &gt; div.dp-nav-next &gt; a.dp-nav-next-month</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#dp-popup &gt; div.dp-nav-next &gt; a.dp-nav-next-month</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#dp-popup &gt; div.dp-nav-next &gt; a.dp-nav-next-month</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#dp-popup &gt; div.dp-nav-next &gt; a.dp-nav-next-month</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#dp-popup &gt; div.dp-nav-next &gt; a.dp-nav-next-month</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#dp-popup &gt; div.dp-nav-next &gt; a.dp-nav-next-month</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='dp-popup']/div[3]/table/tbody/tr[2]/td</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=selectDateFin</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='dp-popup']/div[3]/table/tbody/tr[2]/td[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=jour_2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=jour_4</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=jour_6</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=jour_0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=&gt;</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=&gt;</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=&gt;</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=&gt;</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=&gt;</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeAttribute</td>
+	<td>//table[@class='jCalendar']/tbody/tr[1]/td[7]@id</td>
+	<td>date1</td>
+</tr>
+<tr>
+	<td>storeAttribute</td>
+	<td>//table[@class='jCalendar']/tbody/tr[2]/td[1]@id</td>
+	<td>date2</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${date1}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${date2}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=${date1}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=${date2}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=selectionnerDates</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#liJourneeType1895 &gt; label &gt; span.labelJourneeType</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//label[@for='checkboxJourneeType1895']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=appliquerJourneeType</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=enregistrerPlanning</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=popup_ok</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=miseEnVenteButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>Enregistrement planning</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=enregistrerPlanning</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=enregistrerPlanning</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>verification de la creation via la rep</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=div.menuItemContentSelected</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//a[@href='http://${host}/?p=201&amp;typeEvt=1']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=searchField</td>
+	<td>auto_evenement_repnonpl</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.submit01</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=a.link.nomEvenement</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>10000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>//div[@id='listeRepaVenir']/table/tbody/tr[3]/td/a[@class='link infoRep']</td>
+	<td>rep</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=${rep}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>javascript{ if (parseInt(/[0-9]+/.exec(storedVars['rep'])) &lt; 10)&nbsp;&nbsp;storedVars['rep'].replace(/(\s)/,&quot;$10&quot;); else&nbsp;&nbsp;storedVars['rep'] }</td>
+	<td>rep</td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>${rep}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>Deconnexion</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=headerDeconnecter</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

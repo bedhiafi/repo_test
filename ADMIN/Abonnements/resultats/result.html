@@ -1,0 +1,956 @@
+<html>
+<head><style type='text/css'>
+body, table {
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 12;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+}
+
+a {
+    text-decoration: none;
+}
+
+.title {
+    font-style: italic;
+}
+
+.selected {
+    background-color: #ffffcc;
+}
+
+.status_done {
+    background-color: #eeffee;
+}
+
+.status_passed {
+    background-color: #ccffcc;
+}
+
+.status_failed {
+    background-color: #ffcccc;
+}
+
+.breakpoint {
+    background-color: #cccccc;
+    border: 1px solid black;
+}
+</style><title>Test suite results</title></head>
+<body>
+<h1>Test suite results </h1>
+
+<table>
+<tr>
+<td>result:</td>
+<td>failed</td>
+</tr>
+<tr>
+<td>totalTime:</td>
+<td>25</td>
+</tr>
+<tr>
+<td>numTestTotal:</td>
+<td>4</td>
+</tr>
+<tr>
+<td>numTestPasses:</td>
+<td>2</td>
+</tr>
+<tr>
+<td>numTestFailures:</td>
+<td>2</td>
+</tr>
+<tr>
+<td>numCommandPasses:</td>
+<td>2</td>
+</tr>
+<tr>
+<td>numCommandFailures:</td>
+<td>0</td>
+</tr>
+<tr>
+<td>numCommandErrors:</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Selenium Version:</td>
+<td>2.52</td>
+</tr>
+<tr>
+<td>Selenium Revision:</td>
+<td>.0</td>
+</tr>
+<tr>
+<td>
+<table id="suiteTable" class="selenium" border="1" cellpadding="1" cellspacing="1"><tbody>
+<tr class="title  status_failed"><td><b>Test Suite</b></td></tr>
+<tr class="  status_passed"><td><a href="#testresult0">SC13_1-Creation_Abonnement</a></td></tr>
+<tr class="  status_passed"><td><a href="#testresult1">SC13_2-Ajouter_EVE_Abonnement</a></td></tr>
+<tr class="  status_failed"><td><a href="#testresult2">SC13_3-Creation_Produit_Abonnement</a></td></tr>
+<tr class="  status_failed"><td><a href="#testresult3">SC13_4-Creation_Vente_Abonnement</a></td></tr>
+</tbody></table>
+
+
+</td>
+<td>&nbsp;</td>
+</tr>
+</table><table><tr>
+<td><a name="testresult0">SC13_1-Creation_Abonnement.html</a><br/><div>
+<table border="1" cellpadding="1" cellspacing="1">
+<thead>
+<tr class="title status_passed"><td rowspan="1" colspan="3">SC13_1-Création_Abonnement</td></tr>
+</thead><tbody>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>open</td>
+	<td>index.php4?p=5</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>Login</td>
+	<td>Login</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=authLogin</td>
+	<td>qatest1</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>name=motPasse</td>
+	<td>test123456*</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>name=Submit</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>clic Abonnement</td>
+	<td>clic Abonnement</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>//div[@id='menuContent']/div[9]/a/div[2]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>Ajouter Abonnement</td>
+	<td>Ajouter Abonnement</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>//a[@href='http://admin.testoto.digitick-ppe.com/?p=1803']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>name=nom</td>
+	<td>Auto_Création_Abonnement\@:123?</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=nb_compostages_representation</td>
+	<td>1</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=active_periode</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=a.dp-choose-date &gt; img</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[@id='dp-popup']/div[3]/table/tbody/tr[3]/td[6]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[@id='widgetField']/div[2]/div[3]/a/img</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=&gt;&gt;</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[@id='dp-popup']/div[3]/table/tbody/tr[5]/td[6]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>cocher typeEdition "carte" et "chéquier"</td>
+	<td>cocher typeEdition "carte" et "chéquier"</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=typeEdition0</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=typeEdition1</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>cocher "CP" "Nom" "Prenom"</td>
+	<td>cocher "CP" "Nom" "Prenom"</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=champs_requis_5</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=champs_requis_7</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=champs_requis_8</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>Créer</td>
+	<td>Créer</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>name=save</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyTextPresent</td>
+	<td></td>
+	<td>Auto_Création_Abonnement\@:123?</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>Déco</td>
+	<td>Déco</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>id=headerDeconnecter</td>
+	<td></td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr><tr>
+<td><a name="testresult1">SC13_2-Ajouter_EVE_Abonnement.html</a><br/><div>
+<table border="1" cellpadding="1" cellspacing="1">
+<thead>
+<tr class="title status_passed"><td rowspan="1" colspan="3">SC13_2-Ajouter_EVE_Abonnement</td></tr>
+</thead><tbody>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>open</td>
+	<td>index.php4?p=5</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>Login</td>
+	<td>Login</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=authLogin</td>
+	<td>tcornet</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>name=motPasse</td>
+	<td>1c3KoNeQu!</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>name=Submit</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>css=div.menuItemContentSelected</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=searchField</td>
+	<td>qualité</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>css=input.btOk</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=QUALITE 1 (Ne pas toucher)</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>clic Abonnement</td>
+	<td>clic Abonnement</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>//div[@id='menuContent']/div[9]/a/div[2]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>Modifier Abonnement</td>
+	<td>Modifier Abonnement</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>xpath=(//a[contains(text(),'Modifier')])[15]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>Ajout/Retrait</td>
+	<td>Ajout/Retrait</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>select</td>
+	<td>id=evenements</td>
+	<td>label=239312 - EvtQA1234567890.&amp;é"'(-è_ç�&nbsp;)=~#{[|`\^@]}^$*ù!:;,&lt;&gt;?./§%µ£¨¤/+-�?</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=addAssociation</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=delete_Evt_239312</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertConfirmation</td>
+	<td>�?tes-vous sûr de vouloir supprimer cet événement ou cette représentation ?</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>Save puis Quit</td>
+	<td>Save puis Quit</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>name=save</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>id=headerDeconnecter</td>
+	<td></td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr><tr>
+<td><a name="testresult2">SC13_3-Creation_Produit_Abonnement.html</a><br/><div>
+<table border="1" cellpadding="1" cellspacing="1">
+<thead>
+<tr class="title status_failed"><td rowspan="1" colspan="3">SC13_3-Création_Produit_Abonnement</td></tr>
+</thead><tbody>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>open</td>
+	<td>index.php4?p=5</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>Login</td>
+	<td>Login</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=authLogin</td>
+	<td>qatest1</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>name=motPasse</td>
+	<td>test123456*</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>name=Submit</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>clic sur Ajout ProduitAbo</td>
+	<td>clic sur Ajout ProduitAbo</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>//a[@href='http://admin.testoto.digitick-ppe.com/?p=211&amp;typeEvt=2']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=nomEvenement</td>
+	<td>Auto_Création_Produit_Abonnement\@123:!?</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>select</td>
+	<td>id=idImageEvt</td>
+	<td>label=PoohHunnyPotwinniethepooh19937011024768</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=option[value="192476"]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=infos</td>
+	<td>Auto_Création_Produit_Abonnement\@123:!?</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=infoscomp</td>
+	<td>Auto_Création_Produit_Abonnement\@123:!?</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[@id='blocAdmin']/div[8]/div/div</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>Rendre Obligatoire Nom,Prenom,Civilite Porteur</td>
+	<td>Rendre Obligatoire Nom,Prenom,Civilite Porteur</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>select</td>
+	<td>name=champrequis7</td>
+	<td>label=Obligatoire</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>select</td>
+	<td>name=champrequis8</td>
+	<td>label=Obligatoire</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>select</td>
+	<td>name=champrequis10</td>
+	<td>label=Obligatoire</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>Date Naissance Optionnelle</td>
+	<td>Date Naissance Optionnelle</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>select</td>
+	<td>name=champrequis1</td>
+	<td>label=Optionnel</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>Creer</td>
+	<td>Creer</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>css=input.submit01.noborder</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>clic sur Details</td>
+	<td>clic sur Details</td>
+</tr>
+<tr class="  status_failed" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=Détails</td>
+	<td>Element&nbsp;link=Détails&nbsp;not&nbsp;found</td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>verifyTextPresent</td>
+	<td>Ventes inactives</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>verifyTextPresent</td>
+	<td>Abonnement</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>verifyTextPresent</td>
+	<td>Concert</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>verifyTextPresent</td>
+	<td>Pop Rock</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>echo</td>
+	<td>Déco</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>id=headerDeconnecter</td>
+	<td></td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr><tr>
+<td><a name="testresult3">SC13_4-Creation_Vente_Abonnement.html</a><br/><div>
+<table border="1" cellpadding="1" cellspacing="1">
+<thead>
+<tr class="title status_failed"><td rowspan="1" colspan="3">SC13_4-Création_Vente_Abonnement</td></tr>
+</thead><tbody>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>storeEval</td>
+	<td>new Date().getFullYear()</td>
+	<td>Year</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>open</td>
+	<td>index.php4?p=5</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>Login</td>
+	<td>Login</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=authLogin</td>
+	<td>qatest1</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>name=motPasse</td>
+	<td>test123456*</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>name=Submit</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>Liste Produit Abo</td>
+	<td>Liste Produit Abo</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>//a[@href='http://admin.testoto.digitick-ppe.com/?p=201&amp;typeEvt=2']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=searchField</td>
+	<td>Auto_creation</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>css=input.submit01</td>
+	<td></td>
+</tr>
+<tr class="  status_failed" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>//table[@class='afficheResultat']/tbody/tr[2]/td/a/</td>
+	<td>Element&nbsp;//table[@class='afficheResultat']/tbody/tr[2]/td/a/&nbsp;not&nbsp;found</td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>echo</td>
+	<td>Ajouter Vente Abo</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>//ul[@id='leftMenuContent']/li[8]/a</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=Vente Abo.</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=a.dp-choose-date &gt; img</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=&gt;</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>click</td>
+	<td>//div[@id='dp-popup']/div[3]/table/tbody/tr[2]/td[6]</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=dateDebut_jma</td>
+	<td>29/12/${Year}</td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=dateFinVentes_jma</td>
+	<td>09/12/${Year}</td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=isPlacee</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>select</td>
+	<td>name=planSalleMultipleId</td>
+	<td>label=Palais des Sports Jean-Michel Geoffroy - 1775</td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>select</td>
+	<td>name=modeleCategorie</td>
+	<td>label=Auto - 1465</td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>select</td>
+	<td>name=abonnementId</td>
+	<td>label=abo2</td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>echo</td>
+	<td>Création</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>css=input.submit01.noborder</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>pause</td>
+	<td>1500</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>select</td>
+	<td>id=selectTypeClient-5</td>
+	<td>label=Auto - 14465</td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=option[value="14465"]</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=button.submit01</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=div.tarif-cat-button.isNotSet &gt; button</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>id=baseAmount</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=baseAmount</td>
+	<td>1</td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=form &gt; button.submit01</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=div.tarif-cat-button.isNotSet &gt; button</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>id=baseAmount</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=baseAmount</td>
+	<td>1</td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=form &gt; button.submit01</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=div.tarif-cat-button.isNotSet &gt; button</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>id=baseAmount</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=baseAmount</td>
+	<td>1</td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=form &gt; button.submit01</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=div.tarif-cat-button.isNotSet &gt; button</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>id=baseAmount</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=baseAmount</td>
+	<td>1</td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=form &gt; button.submit01</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=button.submit02</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=Détails</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>verifyTextPresent</td>
+	<td>En création</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>echo</td>
+	<td>Déco</td>
+	<td></td>
+</tr>
+<tr class="" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>id=headerDeconnecter</td>
+	<td></td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr></table><pre>
+info: Starting test /selenium-server/tests/SC13_1-Creation_Abonnement.html
+info: Executing: |open | index.php4?p=5 |  |
+info: Executing: |echo | Login |  |
+info: Executing: |type | id=authLogin | qatest1 |
+info: Executing: |type | name=motPasse | test123456* |
+info: Executing: |clickAndWait | name=Submit |  |
+info: Executing: |echo | clic Abonnement |  |
+info: Executing: |clickAndWait | //div[@id=&apos;menuContent&apos;]/div[9]/a/div[2] |  |
+info: Executing: |echo | Ajouter Abonnement |  |
+info: Executing: |clickAndWait | //a[@href=&apos;http://admin.testoto.digitick-ppe.com/?p=1803&apos;] |  |
+info: Executing: |type | name=nom | Auto_Création_Abonnement\@:123? |
+info: Executing: |type | id=nb_compostages_representation | 1 |
+info: Executing: |click | id=active_periode |  |
+info: Executing: |click | css=a.dp-choose-date &gt; img |  |
+info: Executing: |click | //div[@id=&apos;dp-popup&apos;]/div[3]/table/tbody/tr[3]/td[6] |  |
+info: Executing: |click | //div[@id=&apos;widgetField&apos;]/div[2]/div[3]/a/img |  |
+info: Executing: |click | link=&gt;&gt; |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |click | //div[@id=&apos;dp-popup&apos;]/div[3]/table/tbody/tr[5]/td[6] |  |
+info: Executing: |echo | cocher typeEdition &quot;carte&quot; et &quot;chéquier&quot; |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |click | id=typeEdition0 |  |
+info: Executing: |click | id=typeEdition1 |  |
+info: Executing: |echo | cocher &quot;CP&quot; &quot;Nom&quot; &quot;Prenom&quot; |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |click | id=champs_requis_5 |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |click | id=champs_requis_7 |  |
+info: Executing: |click | id=champs_requis_8 |  |
+info: Executing: |echo | Créer |  |
+info: Executing: |clickAndWait | name=save |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |verifyTextPresent |  | Auto_Création_Abonnement\@:123? |
+info: Executing: |echo | Déco |  |
+info: Executing: |clickAndWait | id=headerDeconnecter |  |
+info: Starting test /selenium-server/tests/SC13_2-Ajouter_EVE_Abonnement.html
+info: Executing: |open | index.php4?p=5 |  |
+info: Executing: |echo | Login |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |type | id=authLogin | tcornet |
+info: Executing: |type | name=motPasse | 1c3KoNeQu! |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |clickAndWait | name=Submit |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |clickAndWait | css=div.menuItemContentSelected |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |type | id=searchField | qualité |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |clickAndWait | css=input.btOk |  |
+info: Executing: |clickAndWait | link=QUALITE 1 (Ne pas toucher) |  |
+info: Executing: |echo | clic Abonnement |  |
+info: Executing: |clickAndWait | //div[@id=&apos;menuContent&apos;]/div[9]/a/div[2] |  |
+info: Executing: |echo | Modifier Abonnement |  |
+info: Executing: |clickAndWait | xpath=(//a[contains(text(),&apos;Modifier&apos;)])[15] |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |echo | Ajout/Retrait |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |select | id=evenements | label=239312 - EvtQA1234567890.&amp;é&quot;&apos;(-è_çà)=~#{[|`\^@]}^$*ù!:;,&lt;&gt;?./§%µ£¨¤/+-�? |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |click | id=addAssociation |  |
+info: Executing: |click | id=delete_Evt_239312 |  |
+info: Executing: |assertConfirmation | �?tes-vous sûr de vouloir supprimer cet événement ou cette représentation ? |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |echo | Save puis Quit |  |
+info: Executing: |click | name=save |  |
+info: Executing: |pause | 2000 |  |
+info: Executing: |clickAndWait | id=headerDeconnecter |  |
+info: Starting test /selenium-server/tests/SC13_3-Creation_Produit_Abonnement.html
+info: Executing: |open | index.php4?p=5 |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |echo | Login |  |
+info: Executing: |type | id=authLogin | qatest1 |
+info: Executing: |type | name=motPasse | test123456* |
+info: Executing: |clickAndWait | name=Submit |  |
+info: Executing: |echo | clic sur Ajout ProduitAbo |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |clickAndWait | //a[@href=&apos;http://admin.testoto.digitick-ppe.com/?p=211&amp;typeEvt=2&apos;] |  |
+info: Executing: |type | id=nomEvenement | Auto_Création_Produit_Abonnement\@123:!? |
+info: Executing: |select | id=idImageEvt | label=PoohHunnyPotwinniethepooh19937011024768 |
+info: Executing: |click | css=option[value=&quot;192476&quot;] |  |
+info: Executing: |type | id=infos | Auto_Création_Produit_Abonnement\@123:!? |
+info: Executing: |type | id=infoscomp | Auto_Création_Produit_Abonnement\@123:!? |
+info: Executing: |click | //div[@id=&apos;blocAdmin&apos;]/div[8]/div/div |  |
+info: Executing: |echo | Rendre Obligatoire Nom,Prenom,Civilite Porteur |  |
+info: Executing: |select | name=champrequis7 | label=Obligatoire |
+info: Executing: |select | name=champrequis8 | label=Obligatoire |
+info: Executing: |select | name=champrequis10 | label=Obligatoire |
+info: Executing: |echo | Date Naissance Optionnelle |  |
+info: Executing: |select | name=champrequis1 | label=Optionnel |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |echo | Creer |  |
+info: Executing: |clickAndWait | css=input.submit01.noborder |  |
+info: Executing: |echo | clic sur Details |  |
+info: Executing: |clickAndWait | link=Détails |  |
+error: Element link=Détails not found
+warn: currentTest.recordFailure: Element link=Détails not found
+info: Starting test /selenium-server/tests/SC13_4-Creation_Vente_Abonnement.html
+info: Executing: |storeEval | new Date().getFullYear() | Year |
+info: script is: new Date().getFullYear()
+info: Executing: |open | index.php4?p=5 |  |
+info: Executing: |echo | Login |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |type | id=authLogin | qatest1 |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |type | name=motPasse | test123456* |
+info: Executing: |clickAndWait | name=Submit |  |
+info: Executing: |echo | Liste Produit Abo |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |clickAndWait | //a[@href=&apos;http://admin.testoto.digitick-ppe.com/?p=201&amp;typeEvt=2&apos;] |  |
+info: Executing: |type | id=searchField | Auto_creation |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |clickAndWait | css=input.submit01 |  |
+info: Executing: |clickAndWait | //table[@class=&apos;afficheResultat&apos;]/tbody/tr[2]/td/a/ |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+error: Element //table[@class=&apos;afficheResultat&apos;]/tbody/tr[2]/td/a/ not found
+warn: currentTest.recordFailure: Element //table[@class=&apos;afficheResultat&apos;]/tbody/tr[2]/td/a/ not found
+</pre></body></html>

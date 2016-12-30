@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://admin.testoto.digitick-ppe.com/" />
+<title>SC10_5-Modifier_un_paiement_GUICHET</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">SC10_5-Modifier_un_paiement_GUICHET</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>index.php4?p=5</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=authLogin</td>
+	<td>tcornet</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=motPasse</td>
+	<td>1c3KoNeQu!</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=Submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//div[@id='menuContent']/div[10]/a/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=recherche</td>
+	<td>34704584</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=selectRecherche</td>
+	<td>label=Id transaction</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=rechercheTransactionId</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=modifier</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=moyenPaiementModification7</td>
+	<td>5</td>
+</tr>
+<tr>
+	<td>keyUp</td>
+	<td>name=moyenPaiementModification7</td>
+	<td>5</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>name=moyenPaiementModification7</td>
+	<td>${KEY_ENTER}</td>
+</tr>
+<tr>
+	<td>assertAlert</td>
+	<td>La somme des montants saisis est différente de celle à rembourser</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//a[contains(text(),'Somme totale')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=formSubmit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.plusDInfo</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=headerDeconnecter</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

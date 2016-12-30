@@ -1,0 +1,385 @@
+<html>
+<head><style type='text/css'>
+body, table {
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 12;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+}
+
+a {
+    text-decoration: none;
+}
+
+.title {
+    font-style: italic;
+}
+
+.selected {
+    background-color: #ffffcc;
+}
+
+.status_done {
+    background-color: #eeffee;
+}
+
+.status_passed {
+    background-color: #ccffcc;
+}
+
+.status_failed {
+    background-color: #ffcccc;
+}
+
+.breakpoint {
+    background-color: #cccccc;
+    border: 1px solid black;
+}
+</style><title>Test suite results</title></head>
+<body>
+<h1>Test suite results </h1>
+
+<table>
+<tr>
+<td>result:</td>
+<td>passed</td>
+</tr>
+<tr>
+<td>totalTime:</td>
+<td>70</td>
+</tr>
+<tr>
+<td>numTestTotal:</td>
+<td>1</td>
+</tr>
+<tr>
+<td>numTestPasses:</td>
+<td>1</td>
+</tr>
+<tr>
+<td>numTestFailures:</td>
+<td>0</td>
+</tr>
+<tr>
+<td>numCommandPasses:</td>
+<td>1</td>
+</tr>
+<tr>
+<td>numCommandFailures:</td>
+<td>0</td>
+</tr>
+<tr>
+<td>numCommandErrors:</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Selenium Version:</td>
+<td>2.40</td>
+</tr>
+<tr>
+<td>Selenium Revision:</td>
+<td>.0</td>
+</tr>
+<tr>
+<td>
+<table id="suiteTable" class="selenium" border="1" cellpadding="1" cellspacing="1"><tbody>
+<tr class="title status_passed"><td><b>Test Suite</b></td></tr>
+<tr class="  status_passed"><td><a href="#testresult0">SC09-1-Ajouter_Mode_diffusion</a></td></tr>
+</tbody></table>
+
+
+</td>
+<td>&nbsp;</td>
+</tr>
+</table><table><tr>
+<td><a name="testresult0">SC09-1-Ajouter_Mode_diffusion.html</a><br/><div>
+<table border="1" cellpadding="1" cellspacing="1">
+<thead>
+<tr class="title status_passed"><td rowspan="1" colspan="3">SC09-1-Ajouter_Mode_diffusion</td></tr>
+</thead><tbody>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>open</td>
+	<td>index.php4?p=5</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>Login</td>
+	<td>Login</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=authLogin</td>
+	<td>tcornet</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>name=motPasse</td>
+	<td>1c3KoNeQu!</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>name=Submit</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>selection orga qualite</td>
+	<td>selection orga qualite</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>css=div.menuItemContentSelected</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=searchField</td>
+	<td>qualité</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>css=input.btOk</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=QUALITE 1 (Ne pas toucher)</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>Onglet Canaux de Vente</td>
+	<td>Onglet Canaux de Vente</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>//div[@id='menuContent']/div[14]/a/div[2]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>Selection css5</td>
+	<td>Selection css5</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=gesion_5748</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>Selection evenement</td>
+	<td>Selection evenement</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>css=select.selectEvt.choix</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>select</td>
+	<td>css=select.selectEvt.choix</td>
+	<td>label=Auto_Evenement_RepNonPl_2</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=lancerFiltre</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=#cdv_evenementBloc-312667 &gt; div.parametrageAffichage &gt; ul.parametrage &gt; li &gt; label</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>Ajout du mode de diffusion</td>
+	<td>Ajout du mode de diffusion</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=addMDD-312667</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>select</td>
+	<td>css=select.changeMDD</td>
+	<td>label=Courrier recommandé</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=select.changeMDD &gt; option[value="3"]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=saveMdd-312667-3</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>verifyTextPresent</td>
+	<td></td>
+	<td>Courrier recommandé</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>Rafraichissement onglet canaux de vente</td>
+	<td>Rafraichissement onglet canaux de vente</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>//div[@id='menuContent']/div[14]/a/div[2]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=gesion_5748</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>select</td>
+	<td>css=select.selectEvt.choix</td>
+	<td>label=Auto_Evenement_RepNonPl_2</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>css=#cdv_evenementBloc-312667 &gt; div.parametrageAffichage &gt; ul.parametrage &gt; li &gt; label</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=#cdv_evenementBloc-312667 &gt; div.parametrageAffichage &gt; ul.parametrage &gt; li &gt; label</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>Suppression du mode de diffusion</td>
+	<td>Suppression du mode de diffusion</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>id=editMdd-312667-3</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=editMdd-312667-3</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=isVisible-312667-3</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=saveMdd-312667-3</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>echo</td>
+	<td>Deconnexion</td>
+	<td>Deconnexion</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>id=headerDeconnecter</td>
+	<td></td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr></table><pre>
+info: Starting test /selenium-server/tests/SC09-1-Ajouter_Mode_diffusion.html
+info: Executing: |open | index.php4?p=5 |  |
+info: Executing: |echo | Login |  |
+info: Executing: |type | id=authLogin | tcornet |
+info: Executing: |type | name=motPasse | 1c3KoNeQu! |
+info: Executing: |clickAndWait | name=Submit |  |
+info: Executing: |echo | selection orga qualite |  |
+info: Executing: |clickAndWait | css=div.menuItemContentSelected |  |
+info: Executing: |type | id=searchField | qualité |
+info: Executing: |clickAndWait | css=input.btOk |  |
+info: Executing: |clickAndWait | link=QUALITE 1 (Ne pas toucher) |  |
+info: Executing: |echo | Onglet Canaux de Vente |  |
+info: Executing: |clickAndWait | //div[@id=&apos;menuContent&apos;]/div[14]/a/div[2] |  |
+info: Executing: |echo | Selection css5 |  |
+info: Executing: |click | id=gesion_5748 |  |
+info: Executing: |pause | 5000 |  |
+info: Executing: |echo | Selection evenement |  |
+info: Executing: |waitForElementPresent | css=select.selectEvt.choix |  |
+info: Executing: |select | css=select.selectEvt.choix | label=Auto_Evenement_RepNonPl_2 |
+info: Executing: |click | id=lancerFiltre |  |
+info: Executing: |pause | 3000 |  |
+info: Executing: |click | css=#cdv_evenementBloc-312667 &gt; div.parametrageAffichage &gt; ul.parametrage &gt; li &gt; label |  |
+info: Executing: |echo | Ajout du mode de diffusion |  |
+info: Executing: |pause | 2000 |  |
+info: Executing: |click | id=addMDD-312667 |  |
+info: Executing: |select | css=select.changeMDD | label=Courrier recommandé |
+info: Executing: |click | css=select.changeMDD &gt; option[value=&quot;3&quot;] |  |
+info: Executing: |click | id=saveMdd-312667-3 |  |
+info: Executing: |pause | 2000 |  |
+info: Executing: |verifyTextPresent |  | Courrier recommandé |
+info: Executing: |echo | Rafraichissement onglet canaux de vente |  |
+info: Executing: |clickAndWait | //div[@id=&apos;menuContent&apos;]/div[14]/a/div[2] |  |
+info: Executing: |click | id=gesion_5748 |  |
+info: Executing: |pause | 5000 |  |
+info: Executing: |select | css=select.selectEvt.choix | label=Auto_Evenement_RepNonPl_2 |
+info: Executing: |waitForElementPresent | css=#cdv_evenementBloc-312667 &gt; div.parametrageAffichage &gt; ul.parametrage &gt; li &gt; label |  |
+info: Executing: |click | css=#cdv_evenementBloc-312667 &gt; div.parametrageAffichage &gt; ul.parametrage &gt; li &gt; label |  |
+info: Executing: |echo | Suppression du mode de diffusion |  |
+info: Executing: |waitForElementPresent | id=editMdd-312667-3 |  |
+info: Executing: |click | id=editMdd-312667-3 |  |
+info: Executing: |pause | 2000 |  |
+info: Executing: |click | id=isVisible-312667-3 |  |
+info: Executing: |click | id=saveMdd-312667-3 |  |
+info: Executing: |pause | 2000 |  |
+info: Executing: |echo | Deconnexion |  |
+info: Executing: |clickAndWait | id=headerDeconnecter |  |
+</pre></body></html>

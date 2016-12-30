@@ -1,0 +1,1659 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <title>Config_Sieges results</title>
+    <style type='text/css'>
+      body, table {
+        font-family: Verdana, Arial, sans-serif;
+        font-size: 12px;
+      }
+
+      table {
+        border-collapse: collapse;
+      }
+
+      th, td {
+        padding-left: 0.3em;
+        padding-right: 0.3em;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      div, pre {
+        display: table;
+        margin: 0;
+      }
+
+      pre {
+        border: 1px solid #ccc;
+      }
+
+      .box, .lbox, .rbox {
+        border: 1px solid #ccc;
+      }
+
+      .lbox {
+        float: left;
+        margin: 0.5em;
+      }
+
+      .rbox {
+        float: right;
+        margin: 0.5em;
+      }
+
+      .lbox th, .rbox th {
+        text-align: right;
+      }
+
+      .command_line {
+        margin: 0.5em;
+      }
+
+      .command_line th {
+        text-align: left;
+      }
+
+      .command_line td {
+        border: 1px solid #ccc;
+        padding: 0.5ex 0.5em;
+        font-family: monospace;
+        line-height: 200%;
+      }
+
+      .arg {
+        white-space: nowrap;
+        border: 1px solid #ccc;
+        padding: 1px;
+        background-color: #efe;
+      }
+
+      .selenium {
+        border: 1px solid black;
+        margin: 0.5em;
+      }
+
+      .selenium th, .selenium td {
+        text-align: left;
+        border: 1px solid black;
+      }
+
+      .title {
+        font-style: italic;
+      }
+
+      .selected {
+        background-color: #ffffcc;
+      }
+
+      .indexh {
+        text-align: center;
+      }
+
+      .index {
+        text-align: right;
+      }
+
+      .status_unexecuted .cmd_status_unexecuted {
+      }
+
+      .status_success {
+        background-color: #ccffcc;
+      }
+
+      .cmd_status_success {
+        background-color: #eeffee;
+      }
+
+      .status_warning, .cmd_status_warning {
+        background-color: #ffcccc;
+      }
+
+      .status_failure, .cmd_status_failure {
+        background-color: #ffcccc;
+      }
+
+      .status_error, .cmd_status_error {
+        background-color: #ffcccc;
+      }
+
+      .breakpoint {
+        background-color: #cccccc;
+        border: 1px solid black;
+      }
+
+      .number {
+        text-align: right;
+      }
+
+      .tabs {
+          position: relative;
+          padding: 0;
+      }
+      
+      .tabs ul {
+          margin: 0;
+          padding: 0;
+      }
+      
+      .tabs li {
+          list-style: none;
+          display: inline-block;
+      }
+      
+      .tabs input[type=radio] {
+          display: none;
+      }
+      
+      .tabs label {
+          z-index: 2;
+          position: absolute;
+          top: 0;
+          display: block;
+          background-color: #999;
+          color: #fff;
+          border-style: solid solid none;
+          border-width: 1px;
+          border-color: black;
+          width: 6em;
+          height: 2.5ex;
+          padding: 0.5ex 0.5em;
+          text-align: center;
+      }
+      
+      .tabs label:hover {
+          cursor: pointer;
+          background-color: #ccc;
+          color: #000;
+      }
+      
+      .tabs input[type=radio]:checked + label {
+          background-color: #fff;
+          color: #000;
+      }
+      
+      .tab_source {
+          left: 0;
+      }
+      
+      .tab_sequence {
+          left: 7.5em;
+      }
+      
+      .tab_log {
+          left: 15em;
+      }
+      
+      .tabs .contents {
+          z-index: 1;
+          display: none;
+          background: #fff;
+          border: solid 1px black;
+          margin-top: 3.5ex;
+          padding: 0.5em;
+          min-width: 22.5em;
+      }
+      
+      .tabs input[type=radio]:checked + label + .contents {
+          display: block;
+      }
+      
+      .tabs p {
+        margin: 0;
+        line-height: 180%;
+      }
+
+      .info {
+        margin-bottom: 0.5ex;
+      }
+
+      .info th {
+        text-align: right;
+      }
+    </style>
+    <script type="text/javascript"><!--
+      // for Safari broken css handling.
+      function selectTab(label) {
+        var selConts = label.parentNode.getElementsByClassName('contents')[0];
+        var forId = label.htmlFor;
+        var tabId = document.getElementById(forId).name;
+        var contents = document.getElementById(tabId).getElementsByClassName('contents');
+        for (var i = 0; i < contents.length; i++) {
+          var c = contents[i];
+          if (c == selConts)
+            c.style.display = 'block';
+          else
+            c.style.display = 'none';
+        }
+      }
+ --></script>
+  </head>
+  <body>
+    <h1>Config_Sieges results</h1>
+
+    <div class="box">
+      <div style="overflow: hidden">
+        <table class="lbox">
+          <tr>
+            <th>Result:</th><td>error</td>
+          </tr>
+          <tr>
+            <th>Start Time:</th><td>2016-06-08 12:35:00.106 +02:00</td>
+          </tr>
+          <tr>
+            <th>Total Time:</th><td>22.295sec</td>
+          </tr>
+          <tr>
+            <th>Number of Test Total:</th><td>2</td>
+          </tr>
+          <tr>
+            <th>Number of Test Passes:</th><td>1</td>
+          </tr>
+          <tr>
+            <th>Number of Test Failures:</th><td>1</td>
+          </tr>
+          <tr>
+            <th>Number of Command Passes:</th><td>35</td>
+          </tr>
+          <tr>
+            <th>Number of Command Failures:</th><td>0</td>
+          </tr>
+          <tr>
+            <th>Number of Command Errors:</th><td>0</td>
+          </tr>
+        </table>
+        <table class="rbox">
+          <tr>
+            <th>Selenese Runner Version:</th><td>2.7.0</td>
+          </tr>
+          <tr>
+            <th>WebDriver Name:</th><td>FirefoxDriver</td>
+          </tr>
+          <tr>
+            <th>Selenium Version:</th><td>2.53.0</td>
+          </tr>
+          <tr>
+            <th>Java Version:</th><td>1.8.0_73</td>
+          </tr>
+          <tr>
+            <th>Java VM Name:</th><td>Java HotSpot(TM) 64-Bit Server VM</td>
+          </tr>
+          <tr>
+            <th>Operating System:</th><td>Windows 7 6.1 (amd64)</td>
+          </tr>
+          <tr>
+            <th>Language:</th><td>en</td>
+          </tr>
+          <tr>
+            <th>Country:</th><td>US</td>
+          </tr>
+          <tr>
+            <th>Time Zone:</th><td>Europe/Paris</td>
+          </tr>
+        </table>
+      </div>
+
+      <div>
+        <table class="command_line">
+          <tr><th>Command Line Arguments:</th></tr>
+          <tr><td><span class="arg">--html-result</span> <span class="arg">resultats&#92;</span> <span class="arg">Config_Sieges.html</span> </td></tr>
+        </table>
+      </div>
+
+      <div>
+        <table id="suiteTable" class="selenium">
+          <tr class="title status_error"><th>Config_Sieges</th></tr>
+
+  
+  
+          <tr class="status_success"><td><a href="#testCase1">1-Paramétrer une configuration de choix de places_via canaux_de_vente</a></td></tr>
+  
+
+  
+  
+          <tr class="status_error"><td><a href="#testCase2">SCO4_2-Param_Config_Choix_Siège_REP</a></td></tr>
+  
+
+        </table>
+      </div>
+    </div>
+
+
+  
+    <br>
+    <div class="tabs" id="tab1">
+      <ul>
+        <li>
+          <input name="tab1" id="tab1_source" type="radio" checked>
+          <label for="tab1_source" class="tab_source" onclick="selectTab(this)"><a name="testCase1">Source</a></label>
+          <div class="contents">
+            <table class="info"><tr><th>Source:</th><td>SC04_1-Param_Config_Choix_Siege_REP.html</td></tr></table>
+            <table cellpadding="1" cellspacing="1" border="1">
+              <thead>
+                <tr class="title status_success"><td class="indexh">#</td><td rowspan="1" colspan="3">1-Paramétrer une configuration de choix de places_via canaux_de_vente</td><td>&Delta;t(ms)</td><td>Screenshot</td></tr>
+              </thead>
+              <tbody>
+    
+                <tr class="cmd_status_success">
+                  <td class="index">1</td>
+      
+                  <td>open</td>
+      
+                  <td>/index.php4?p=5</td>
+      
+                  <td></td>
+      
+                  <td class="number">496</td>
+                  <td></td>
+                </tr>
+    
+                <tr class="cmd_status_success">
+                  <td class="index">2</td>
+      
+                  <td>echo</td>
+      
+                  <td>Login</td>
+      
+                  <td></td>
+      
+                  <td class="number">98</td>
+                  <td></td>
+                </tr>
+    
+                <tr class="cmd_status_success">
+                  <td class="index">3</td>
+      
+                  <td>type</td>
+      
+                  <td>id=authLogin</td>
+      
+                  <td>qatest1</td>
+      
+                  <td class="number">370</td>
+                  <td></td>
+                </tr>
+    
+                <tr class="cmd_status_success">
+                  <td class="index">4</td>
+      
+                  <td>type</td>
+      
+                  <td>name=motPasse</td>
+      
+                  <td>test123456*</td>
+      
+                  <td class="number">436</td>
+                  <td></td>
+                </tr>
+    
+                <tr class="cmd_status_success">
+                  <td class="index">5</td>
+      
+                  <td>clickAndWait</td>
+      
+                  <td>name=Submit</td>
+      
+                  <td></td>
+      
+                  <td class="number">2,565</td>
+                  <td></td>
+                </tr>
+    
+                <tr class="cmd_status_success">
+                  <td class="index">6</td>
+      
+                  <td>echo</td>
+      
+                  <td>Onglet Canaux de Vente</td>
+      
+                  <td></td>
+      
+                  <td class="number">53</td>
+                  <td></td>
+                </tr>
+    
+                <tr class="cmd_status_success">
+                  <td class="index">7</td>
+      
+                  <td>clickAndWait</td>
+      
+                  <td>//div[@id=&#39;menuContent&#39;]/div[13]/a/div[2]</td>
+      
+                  <td></td>
+      
+                  <td class="number">1,685</td>
+                  <td></td>
+                </tr>
+    
+                <tr class="cmd_status_success">
+                  <td class="index">8</td>
+      
+                  <td>echo</td>
+      
+                  <td>Modification du canal Guichet2 QAtest en semi-automatique</td>
+      
+                  <td></td>
+      
+                  <td class="number">37</td>
+                  <td></td>
+                </tr>
+    
+                <tr class="cmd_status_success">
+                  <td class="index">9</td>
+      
+                  <td>click</td>
+      
+                  <td>css=#cdv5766 &gt; td.cdvHandled_choixPlace &gt; button[type=&quot;button&quot;]</td>
+      
+                  <td></td>
+      
+                  <td class="number">242</td>
+                  <td></td>
+                </tr>
+    
+                <tr class="cmd_status_success">
+                  <td class="index">10</td>
+      
+                  <td>select</td>
+      
+                  <td>name=configChoixPlace[5766]</td>
+      
+                  <td>label=Semi-automatique (Bloc)</td>
+      
+                  <td class="number">221</td>
+                  <td></td>
+                </tr>
+    
+                <tr class="cmd_status_success">
+                  <td class="index">11</td>
+      
+                  <td>click</td>
+      
+                  <td>id=jqi_state0_buttonEnregistrer</td>
+      
+                  <td></td>
+      
+                  <td class="number">292</td>
+                  <td></td>
+                </tr>
+    
+                <tr class="cmd_status_success">
+                  <td class="index">12</td>
+      
+                  <td>click</td>
+      
+                  <td>id=jqi_state0_buttonOk</td>
+      
+                  <td></td>
+      
+                  <td class="number">213</td>
+                  <td></td>
+                </tr>
+    
+                <tr class="cmd_status_success">
+                  <td class="index">13</td>
+      
+                  <td>pause</td>
+      
+                  <td>2000</td>
+      
+                  <td></td>
+      
+                  <td class="number">2,054</td>
+                  <td></td>
+                </tr>
+    
+                <tr class="cmd_status_success">
+                  <td class="index">14</td>
+      
+                  <td>verifyText</td>
+      
+                  <td>//tr[@id=&#39;cdv5766&#39;]/td[7]/button/span</td>
+      
+                  <td>Semi-automatique (Bloc)</td>
+      
+                  <td class="number">110</td>
+                  <td></td>
+                </tr>
+    
+                <tr class="cmd_status_success">
+                  <td class="index">15</td>
+      
+                  <td>echo</td>
+      
+                  <td>Deconnexion</td>
+      
+                  <td></td>
+      
+                  <td class="number">38</td>
+                  <td></td>
+                </tr>
+    
+                <tr class="cmd_status_success">
+                  <td class="index">16</td>
+      
+                  <td>clickAndWait</td>
+      
+                  <td>id=headerDeconnecter</td>
+      
+                  <td></td>
+      
+                  <td class="number">977</td>
+                  <td></td>
+                </tr>
+    
+              </tbody>
+            </table>
+          </div><!-- contents -->
+        </li><!-- no white spaces between LI tags.
+     --><li>
+          <input name="tab1" id="tab1_sequence" type="radio">
+          <label for="tab1_sequence" class="tab_sequence" onclick="selectTab(this)">Sequence</label>
+          <div class="contents">
+            <table class="info">
+              <tr><th>Start Time:</th><td>2016-06-08 12:35:00 +02:00</td></tr>
+              <tr><th>End Time:</th><td>2016-06-08 12:35:10 +02:00</td></tr>
+              <tr><th>Duration:</th><td>9,895 ms</td></tr>
+            </table>
+            <table cellpadding="1" cellspacing="1" border="1">
+              <thead>
+                <tr class="title status_success"><td>Time</td><td>&Delta;t(ms)</td><td>Seq.</td><td class="indexh">#</td><td rowspan="1" colspan="3">1-Paramétrer une configuration de choix de places_via canaux_de_vente</td><td>Result</td><td>Screenshot</td></tr>
+              </thead>
+              <tbody>
+    
+                <tr class="cmd_status_success">
+                  <td>12:35:00.153</td>
+                  <td class="number">496</td>
+                  <td>1</td>
+                  <td class="index">1</td>
+      
+                  <td>open</td>
+      
+                  <td>/index.php4?p=5</td>
+      
+                  <td></td>
+      
+                  <td>[Success]</td>
+                  <td></td>
+                </tr>
+    
+                <tr class="cmd_status_success">
+                  <td>12:35:00.649</td>
+                  <td class="number">98</td>
+                  <td>2</td>
+                  <td class="index">2</td>
+      
+                  <td>echo</td>
+      
+                  <td>Login</td>
+      
+                  <td></td>
+      
+                  <td>[Login]</td>
+                  <td></td>
+                </tr>
+    
+                <tr class="cmd_status_success">
+                  <td>12:35:00.747</td>
+                  <td class="number">370</td>
+                  <td>3</td>
+                  <td class="index">3</td>
+      
+                  <td>type</td>
+      
+                  <td>id=authLogin</td>
+      
+                  <td>qatest1</td>
+      
+                  <td>[Success]</td>
+                  <td></td>
+                </tr>
+    
+                <tr class="cmd_status_success">
+                  <td>12:35:01.117</td>
+                  <td class="number">436</td>
+                  <td>4</td>
+                  <td class="index">4</td>
+      
+                  <td>type</td>
+      
+                  <td>name=motPasse</td>
+      
+                  <td>test123456*</td>
+      
+                  <td>[Success]</td>
+                  <td></td>
+                </tr>
+    
+                <tr class="cmd_status_success">
+                  <td>12:35:01.553</td>
+                  <td class="number">2,565</td>
+                  <td>5</td>
+                  <td class="index">5</td>
+      
+                  <td>clickAndWait</td>
+      
+                  <td>name=Submit</td>
+      
+                  <td></td>
+      
+                  <td>[Success]</td>
+                  <td></td>
+                </tr>
+    
+                <tr class="cmd_status_success">
+                  <td>12:35:04.118</td>
+                  <td class="number">53</td>
+                  <td>6</td>
+                  <td class="index">6</td>
+      
+                  <td>echo</td>
+      
+                  <td>Onglet Canaux de Vente</td>
+      
+                  <td></td>
+      
+                  <td>[Onglet Canaux de Vente]</td>
+                  <td></td>
+                </tr>
+    
+                <tr class="cmd_status_success">
+                  <td>12:35:04.171</td>
+                  <td class="number">1,685</td>
+                  <td>7</td>
+                  <td class="index">7</td>
+      
+                  <td>clickAndWait</td>
+      
+                  <td>//div[@id=&#39;menuContent&#39;]/div[13]/a/div[2]</td>
+      
+                  <td></td>
+      
+                  <td>[Success]</td>
+                  <td></td>
+                </tr>
+    
+                <tr class="cmd_status_success">
+                  <td>12:35:05.856</td>
+                  <td class="number">37</td>
+                  <td>8</td>
+                  <td class="index">8</td>
+      
+                  <td>echo</td>
+      
+                  <td>Modification du canal Guichet2 QAtest en semi-automatique</td>
+      
+                  <td></td>
+      
+                  <td>[Modification du canal Guichet2 QAtest en semi-automatique]</td>
+                  <td></td>
+                </tr>
+    
+                <tr class="cmd_status_success">
+                  <td>12:35:05.893</td>
+                  <td class="number">242</td>
+                  <td>9</td>
+                  <td class="index">9</td>
+      
+                  <td>click</td>
+      
+                  <td>css=#cdv5766 &gt; td.cdvHandled_choixPlace &gt; button[type=&quot;button&quot;]</td>
+      
+                  <td></td>
+      
+                  <td>[Success]</td>
+                  <td></td>
+                </tr>
+    
+                <tr class="cmd_status_success">
+                  <td>12:35:06.135</td>
+                  <td class="number">221</td>
+                  <td>10</td>
+                  <td class="index">10</td>
+      
+                  <td>select</td>
+      
+                  <td>name=configChoixPlace[5766]</td>
+      
+                  <td>label=Semi-automatique (Bloc)</td>
+      
+                  <td>[Success]</td>
+                  <td></td>
+                </tr>
+    
+                <tr class="cmd_status_success">
+                  <td>12:35:06.356</td>
+                  <td class="number">292</td>
+                  <td>11</td>
+                  <td class="index">11</td>
+      
+                  <td>click</td>
+      
+                  <td>id=jqi_state0_buttonEnregistrer</td>
+      
+                  <td></td>
+      
+                  <td>[Success]</td>
+                  <td></td>
+                </tr>
+    
+                <tr class="cmd_status_success">
+                  <td>12:35:06.648</td>
+                  <td class="number">213</td>
+                  <td>12</td>
+                  <td class="index">12</td>
+      
+                  <td>click</td>
+      
+                  <td>id=jqi_state0_buttonOk</td>
+      
+                  <td></td>
+      
+                  <td>[Success]</td>
+                  <td></td>
+                </tr>
+    
+                <tr class="cmd_status_success">
+                  <td>12:35:06.861</td>
+                  <td class="number">2,054</td>
+                  <td>13</td>
+                  <td class="index">13</td>
+      
+                  <td>pause</td>
+      
+                  <td>2000</td>
+      
+                  <td></td>
+      
+                  <td>[Success]</td>
+                  <td></td>
+                </tr>
+    
+                <tr class="cmd_status_success">
+                  <td>12:35:08.915</td>
+                  <td class="number">110</td>
+                  <td>14</td>
+                  <td class="index">14</td>
+      
+                  <td>verifyText</td>
+      
+                  <td>//tr[@id=&#39;cdv5766&#39;]/td[7]/button/span</td>
+      
+                  <td>Semi-automatique (Bloc)</td>
+      
+                  <td>[Success]</td>
+                  <td></td>
+                </tr>
+    
+                <tr class="cmd_status_success">
+                  <td>12:35:09.025</td>
+                  <td class="number">38</td>
+                  <td>15</td>
+                  <td class="index">15</td>
+      
+                  <td>echo</td>
+      
+                  <td>Deconnexion</td>
+      
+                  <td></td>
+      
+                  <td>[Deconnexion]</td>
+                  <td></td>
+                </tr>
+    
+                <tr class="cmd_status_success">
+                  <td>12:35:09.063</td>
+                  <td class="number">977</td>
+                  <td>16</td>
+                  <td class="index">16</td>
+      
+                  <td>clickAndWait</td>
+      
+                  <td>id=headerDeconnecter</td>
+      
+                  <td></td>
+      
+                  <td>[Success]</td>
+                  <td></td>
+                </tr>
+    
+              </tbody>
+            </table>
+          </div><!-- contents -->
+        </li><!-- no white spaces between LI tags.
+     --><li>
+          <input name="tab1" id="tab1_log" type="radio">
+          <label for="tab1_log" class="tab_log" onclick="selectTab(this)">Log</label>
+          <div class="contents">
+            <pre>[2016-06-08 12:35:00.145 +02:00] [INFO] Start: TestCase[1-Paramétrer une configuration de choix de places_via canaux_de_vente] (SC04_1-Param_Config_Choix_Siege_REP.html)
+[2016-06-08 12:35:00.145 +02:00] [INFO] baseURL: http://admin.testoto.digitick-ppe.com
+[2016-06-08 12:35:00.166 +02:00] [INFO] &lt;1&gt; Command#1: open(&quot;/index.php4?p=5&quot;)
+[2016-06-08 12:35:00.647 +02:00] [INFO] - [Success] URL: [http://admin.testoto.digitick-ppe.com/index.php4?p=5] / Title: [Administration digitick]
+[2016-06-08 12:35:00.648 +02:00] [INFO] - Cookie: X-Mapping-hanmdofl=[B72B33C3868EB8BDD3CFE390B9DBCB61] (domain=admin.testoto.digitick-ppe.com, path=/, expire=*)
+[2016-06-08 12:35:00.648 +02:00] [INFO] - Cookie: _ga=[GA1.2.634853088.1465382101] (domain=.digitick-ppe.com, path=/, expire=2018-06-08 12:35:00 +02:00)
+[2016-06-08 12:35:00.648 +02:00] [INFO] - Cookie: _gat=[1] (domain=.digitick-ppe.com, path=/, expire=2016-06-08 12:45:00 +02:00)
+[2016-06-08 12:35:00.648 +02:00] [INFO] - Cookie: admin_digitick=[qd7urf1m1b9d07u22uk4bavdr0] (domain=.testoto.digitick-ppe.com, path=/, expire=*)
+[2016-06-08 12:35:00.649 +02:00] [INFO] &lt;2&gt; Command#2: echo(&quot;Login&quot;)
+[2016-06-08 12:35:00.746 +02:00] [INFO] - [Login]
+[2016-06-08 12:35:00.747 +02:00] [INFO] &lt;3&gt; Command#3: type(&quot;id=authLogin&quot;, &quot;qatest1&quot;)
+[2016-06-08 12:35:01.117 +02:00] [INFO] - [Success]
+[2016-06-08 12:35:01.118 +02:00] [INFO] &lt;4&gt; Command#4: type(&quot;name=motPasse&quot;, &quot;test123456*&quot;)
+[2016-06-08 12:35:01.552 +02:00] [INFO] - [Success]
+[2016-06-08 12:35:01.553 +02:00] [INFO] &lt;5&gt; Command#5: clickAndWait(&quot;name=Submit&quot;)
+[2016-06-08 12:35:04.118 +02:00] [INFO] - [Success] URL: [http://admin.testoto.digitick-ppe.com/index.php4?p=201&amp;sid=qd7urf1m1b9d07u22uk4bavdr0] / Title: [Administration digitick]
+[2016-06-08 12:35:04.118 +02:00] [INFO] &lt;6&gt; Command#6: echo(&quot;Onglet Canaux de Vente&quot;)
+[2016-06-08 12:35:04.171 +02:00] [INFO] - [Onglet Canaux de Vente]
+[2016-06-08 12:35:04.171 +02:00] [INFO] &lt;7&gt; Command#7: clickAndWait(&quot;//div[@id=&#39;menuContent&#39;]/div[13]/a/div[2]&quot;)
+[2016-06-08 12:35:05.856 +02:00] [INFO] - [Success] URL: [http://admin.testoto.digitick-ppe.com/index.php4?p=2311] / Title: [Administration digitick]
+[2016-06-08 12:35:05.856 +02:00] [INFO] &lt;8&gt; Command#8: echo(&quot;Modification du canal Guichet2 QAtest en semi-automatique&quot;)
+[2016-06-08 12:35:05.893 +02:00] [INFO] - [Modification du canal Guichet2 QAtest en semi-automatique]
+[2016-06-08 12:35:05.893 +02:00] [INFO] &lt;9&gt; Command#9: click(&quot;css=#cdv5766 &gt; td.cdvHandled_choixPlace &gt; button[type=&#92;&quot;button&#92;&quot;]&quot;)
+[2016-06-08 12:35:06.135 +02:00] [INFO] - [Success]
+[2016-06-08 12:35:06.135 +02:00] [INFO] &lt;10&gt; Command#10: select(&quot;name=configChoixPlace[5766]&quot;, &quot;label=Semi-automatique (Bloc)&quot;)
+[2016-06-08 12:35:06.356 +02:00] [INFO] - [Success]
+[2016-06-08 12:35:06.356 +02:00] [INFO] &lt;11&gt; Command#11: click(&quot;id=jqi_state0_buttonEnregistrer&quot;)
+[2016-06-08 12:35:06.647 +02:00] [INFO] - [Success]
+[2016-06-08 12:35:06.648 +02:00] [INFO] &lt;12&gt; Command#12: click(&quot;id=jqi_state0_buttonOk&quot;)
+[2016-06-08 12:35:06.861 +02:00] [INFO] - [Success]
+[2016-06-08 12:35:06.861 +02:00] [INFO] &lt;13&gt; Command#13: pause(&quot;2000&quot;)
+[2016-06-08 12:35:08.915 +02:00] [INFO] - [Success]
+[2016-06-08 12:35:08.915 +02:00] [INFO] &lt;14&gt; Command#14: verifyText(&quot;//tr[@id=&#39;cdv5766&#39;]/td[7]/button/span&quot;, &quot;Semi-automatique (Bloc)&quot;)
+[2016-06-08 12:35:09.025 +02:00] [INFO] - [Success]
+[2016-06-08 12:35:09.025 +02:00] [INFO] &lt;15&gt; Command#15: echo(&quot;Deconnexion&quot;)
+[2016-06-08 12:35:09.063 +02:00] [INFO] - [Deconnexion]
+[2016-06-08 12:35:09.063 +02:00] [INFO] &lt;16&gt; Command#16: clickAndWait(&quot;id=headerDeconnecter&quot;)
+[2016-06-08 12:35:10.040 +02:00] [INFO] - [Success] URL: [http://admin.testoto.digitick-ppe.com/index.php4?p=5] / Title: [Administration digitick]
+[2016-06-08 12:35:10.042 +02:00] [INFO] End(9.895sec): TestCase[1-Paramétrer une configuration de choix de places_via canaux_de_vente] (SC04_1-Param_Config_Choix_Siege_REP.html)
+</pre>
+  
+          </div>
+        </li>
+      </ul>
+    </div><!-- tabs -->
+    <p>[<a href="#">Top</a>]</p>
+
+  
+    <br>
+    <div class="tabs" id="tab2">
+      <ul>
+        <li>
+          <input name="tab2" id="tab2_source" type="radio" checked>
+          <label for="tab2_source" class="tab_source" onclick="selectTab(this)"><a name="testCase2">Source</a></label>
+          <div class="contents">
+            <table class="info"><tr><th>Source:</th><td>SC04_2-Param_Config_Choix_Siege_REP.html</td></tr></table>
+            <table cellpadding="1" cellspacing="1" border="1">
+              <thead>
+                <tr class="title status_error"><td class="indexh">#</td><td rowspan="1" colspan="3">SCO4_2-Param_Config_Choix_Siège_REP</td><td>&Delta;t(ms)</td><td>Screenshot</td></tr>
+              </thead>
+              <tbody>
+    
+                <tr class="cmd_status_success">
+                  <td class="index">1</td>
+      
+                  <td>open</td>
+      
+                  <td>/index.php4?p=5</td>
+      
+                  <td></td>
+      
+                  <td class="number">277</td>
+                  <td></td>
+                </tr>
+    
+                <tr class="cmd_status_success">
+                  <td class="index">2</td>
+      
+                  <td>echo</td>
+      
+                  <td>Login</td>
+      
+                  <td></td>
+      
+                  <td class="number">39</td>
+                  <td></td>
+                </tr>
+    
+                <tr class="cmd_status_success">
+                  <td class="index">3</td>
+      
+                  <td>type</td>
+      
+                  <td>id=authLogin</td>
+      
+                  <td>qatest1</td>
+      
+                  <td class="number">130</td>
+                  <td></td>
+                </tr>
+    
+                <tr class="cmd_status_success">
+                  <td class="index">4</td>
+      
+                  <td>type</td>
+      
+                  <td>name=motPasse</td>
+      
+                  <td>test123456*</td>
+      
+                  <td class="number">151</td>
+                  <td></td>
+                </tr>
+    
+                <tr class="cmd_status_success">
+                  <td class="index">5</td>
+      
+                  <td>clickAndWait</td>
+      
+                  <td>name=Submit</td>
+      
+                  <td></td>
+      
+                  <td class="number">1,631</td>
+                  <td></td>
+                </tr>
+    
+                <tr class="cmd_status_success">
+                  <td class="index">6</td>
+      
+                  <td>echo</td>
+      
+                  <td>Representation de l&#39;evenement Auto_evenement_reppl</td>
+      
+                  <td></td>
+      
+                  <td class="number">46</td>
+                  <td></td>
+                </tr>
+    
+                <tr class="cmd_status_success">
+                  <td class="index">7</td>
+      
+                  <td>clickAndWait</td>
+      
+                  <td>//a[@href=&#39;http://admin.testoto.digitick-ppe.com/?p=201&amp;typeEvt=1&#39;]</td>
+      
+                  <td></td>
+      
+                  <td class="number">1,180</td>
+                  <td></td>
+                </tr>
+    
+                <tr class="cmd_status_success">
+                  <td class="index">8</td>
+      
+                  <td>waitForElementPresent</td>
+      
+                  <td>id=searchField</td>
+      
+                  <td></td>
+      
+                  <td class="number">49</td>
+                  <td></td>
+                </tr>
+    
+                <tr class="cmd_status_success">
+                  <td class="index">9</td>
+      
+                  <td>type</td>
+      
+                  <td>id=searchField</td>
+      
+                  <td>Auto_evenement_reppl</td>
+      
+                  <td class="number">126</td>
+                  <td></td>
+                </tr>
+    
+                <tr class="cmd_status_success">
+                  <td class="index">10</td>
+      
+                  <td>clickAndWait</td>
+      
+                  <td>css=input.submit01</td>
+      
+                  <td></td>
+      
+                  <td class="number">1,106</td>
+                  <td></td>
+                </tr>
+    
+                <tr class="cmd_status_success">
+                  <td class="index">11</td>
+      
+                  <td>clickAndWait</td>
+      
+                  <td>link=Fiche Représentations</td>
+      
+                  <td></td>
+      
+                  <td class="number">1,183</td>
+                  <td></td>
+                </tr>
+    
+                <tr class="cmd_status_success">
+                  <td class="index">12</td>
+      
+                  <td>clickAndWait</td>
+      
+                  <td>link=Dimanche 13 Août 2017 à 00h00</td>
+      
+                  <td></td>
+      
+                  <td class="number">1,266</td>
+                  <td></td>
+                </tr>
+    
+                <tr class="cmd_status_success">
+                  <td class="index">13</td>
+      
+                  <td>echo</td>
+      
+                  <td>Config Vente</td>
+      
+                  <td></td>
+      
+                  <td class="number">30</td>
+                  <td></td>
+                </tr>
+    
+                <tr class="cmd_status_success">
+                  <td class="index">14</td>
+      
+                  <td>clickAndWait</td>
+      
+                  <td>link=Config. Ventes</td>
+      
+                  <td></td>
+      
+                  <td class="number">1,192</td>
+                  <td></td>
+                </tr>
+    
+                <tr class="cmd_status_success">
+                  <td class="index">15</td>
+      
+                  <td>click</td>
+      
+                  <td>css=button.new</td>
+      
+                  <td></td>
+      
+                  <td class="number">259</td>
+                  <td></td>
+                </tr>
+    
+                <tr class="cmd_status_success">
+                  <td class="index">16</td>
+      
+                  <td>pause</td>
+      
+                  <td>2000</td>
+      
+                  <td></td>
+      
+                  <td class="number">2,044</td>
+                  <td></td>
+                </tr>
+    
+                <tr class="cmd_status_success">
+                  <td class="index">17</td>
+      
+                  <td>select</td>
+      
+                  <td>name=choix_place_form[1][types]</td>
+      
+                  <td>label=Semi-automatique (Bloc)</td>
+      
+                  <td class="number">385</td>
+                  <td></td>
+                </tr>
+    
+                <tr class="cmd_status_success">
+                  <td class="index">18</td>
+      
+                  <td>clickAndWait</td>
+      
+                  <td>css=button.submit01</td>
+      
+                  <td></td>
+      
+                  <td class="number">788</td>
+                  <td></td>
+                </tr>
+    
+                <tr class="cmd_status_warning">
+                  <td class="index">19</td>
+      
+                  <td>verifyTextPresent</td>
+      
+                  <td>Les configurations ont bien été mises à jour</td>
+      
+                  <td></td>
+      
+                  <td class="number">205</td>
+                  <td></td>
+                </tr>
+    
+                <tr class="cmd_status_unexecuted">
+                  <td class="index">20</td>
+      
+                  <td>verifyAttribute</td>
+      
+                  <td>//select[@name=&#39;choix_place_form[0][types]&#39;]/option[@value=&#39;4&#39;]/@selected</td>
+      
+                  <td>selected</td>
+      
+                  <td class="number">271</td>
+                  <td></td>
+                </tr>
+    
+                <tr class="cmd_status_unexecuted">
+                  <td class="index">21</td>
+      
+                  <td>pause</td>
+      
+                  <td>10000</td>
+      
+                  <td></td>
+      
+                  <td class="number"></td>
+                  <td></td>
+                </tr>
+    
+                <tr class="cmd_status_unexecuted">
+                  <td class="index">22</td>
+      
+                  <td>echo</td>
+      
+                  <td>initialisation : nettoyage de la règle dans la config vente</td>
+      
+                  <td></td>
+      
+                  <td class="number"></td>
+                  <td></td>
+                </tr>
+    
+                <tr class="cmd_status_unexecuted">
+                  <td class="index">23</td>
+      
+                  <td>click</td>
+      
+                  <td>xpath=(//button[@type=&#39;button&#39;])[3]</td>
+      
+                  <td></td>
+      
+                  <td class="number"></td>
+                  <td></td>
+                </tr>
+    
+                <tr class="cmd_status_unexecuted">
+                  <td class="index">24</td>
+      
+                  <td>clickAndWait</td>
+      
+                  <td>css=button.submit01</td>
+      
+                  <td></td>
+      
+                  <td class="number"></td>
+                  <td></td>
+                </tr>
+    
+                <tr class="cmd_status_unexecuted">
+                  <td class="index">25</td>
+      
+                  <td>echo</td>
+      
+                  <td>Deconnexion</td>
+      
+                  <td></td>
+      
+                  <td class="number"></td>
+                  <td></td>
+                </tr>
+    
+                <tr class="cmd_status_unexecuted">
+                  <td class="index">26</td>
+      
+                  <td>clickAndWait</td>
+      
+                  <td>id=headerDeconnecter</td>
+      
+                  <td></td>
+      
+                  <td class="number"></td>
+                  <td></td>
+                </tr>
+    
+              </tbody>
+            </table>
+          </div><!-- contents -->
+        </li><!-- no white spaces between LI tags.
+     --><li>
+          <input name="tab2" id="tab2_sequence" type="radio">
+          <label for="tab2_sequence" class="tab_sequence" onclick="selectTab(this)">Sequence</label>
+          <div class="contents">
+            <table class="info">
+              <tr><th>Start Time:</th><td>2016-06-08 12:35:10 +02:00</td></tr>
+              <tr><th>End Time:</th><td>2016-06-08 12:35:22 +02:00</td></tr>
+              <tr><th>Duration:</th><td>12,359 ms</td></tr>
+            </table>
+            <table cellpadding="1" cellspacing="1" border="1">
+              <thead>
+                <tr class="title status_error"><td>Time</td><td>&Delta;t(ms)</td><td>Seq.</td><td class="indexh">#</td><td rowspan="1" colspan="3">SCO4_2-Param_Config_Choix_Siège_REP</td><td>Result</td><td>Screenshot</td></tr>
+              </thead>
+              <tbody>
+    
+                <tr class="cmd_status_success">
+                  <td>12:35:10.042</td>
+                  <td class="number">277</td>
+                  <td>1</td>
+                  <td class="index">1</td>
+      
+                  <td>open</td>
+      
+                  <td>/index.php4?p=5</td>
+      
+                  <td></td>
+      
+                  <td>[Success]</td>
+                  <td></td>
+                </tr>
+    
+                <tr class="cmd_status_success">
+                  <td>12:35:10.319</td>
+                  <td class="number">39</td>
+                  <td>2</td>
+                  <td class="index">2</td>
+      
+                  <td>echo</td>
+      
+                  <td>Login</td>
+      
+                  <td></td>
+      
+                  <td>[Login]</td>
+                  <td></td>
+                </tr>
+    
+                <tr class="cmd_status_success">
+                  <td>12:35:10.358</td>
+                  <td class="number">130</td>
+                  <td>3</td>
+                  <td class="index">3</td>
+      
+                  <td>type</td>
+      
+                  <td>id=authLogin</td>
+      
+                  <td>qatest1</td>
+      
+                  <td>[Success]</td>
+                  <td></td>
+                </tr>
+    
+                <tr class="cmd_status_success">
+                  <td>12:35:10.488</td>
+                  <td class="number">151</td>
+                  <td>4</td>
+                  <td class="index">4</td>
+      
+                  <td>type</td>
+      
+                  <td>name=motPasse</td>
+      
+                  <td>test123456*</td>
+      
+                  <td>[Success]</td>
+                  <td></td>
+                </tr>
+    
+                <tr class="cmd_status_success">
+                  <td>12:35:10.639</td>
+                  <td class="number">1,631</td>
+                  <td>5</td>
+                  <td class="index">5</td>
+      
+                  <td>clickAndWait</td>
+      
+                  <td>name=Submit</td>
+      
+                  <td></td>
+      
+                  <td>[Success]</td>
+                  <td></td>
+                </tr>
+    
+                <tr class="cmd_status_success">
+                  <td>12:35:12.270</td>
+                  <td class="number">46</td>
+                  <td>6</td>
+                  <td class="index">6</td>
+      
+                  <td>echo</td>
+      
+                  <td>Representation de l&#39;evenement Auto_evenement_reppl</td>
+      
+                  <td></td>
+      
+                  <td>[Representation de l'evenement Auto_evenement_reppl]</td>
+                  <td></td>
+                </tr>
+    
+                <tr class="cmd_status_success">
+                  <td>12:35:12.316</td>
+                  <td class="number">1,180</td>
+                  <td>7</td>
+                  <td class="index">7</td>
+      
+                  <td>clickAndWait</td>
+      
+                  <td>//a[@href=&#39;http://admin.testoto.digitick-ppe.com/?p=201&amp;typeEvt=1&#39;]</td>
+      
+                  <td></td>
+      
+                  <td>[Success]</td>
+                  <td></td>
+                </tr>
+    
+                <tr class="cmd_status_success">
+                  <td>12:35:13.496</td>
+                  <td class="number">49</td>
+                  <td>8</td>
+                  <td class="index">8</td>
+      
+                  <td>waitForElementPresent</td>
+      
+                  <td>id=searchField</td>
+      
+                  <td></td>
+      
+                  <td>[Success]</td>
+                  <td></td>
+                </tr>
+    
+                <tr class="cmd_status_success">
+                  <td>12:35:13.545</td>
+                  <td class="number">126</td>
+                  <td>9</td>
+                  <td class="index">9</td>
+      
+                  <td>type</td>
+      
+                  <td>id=searchField</td>
+      
+                  <td>Auto_evenement_reppl</td>
+      
+                  <td>[Success]</td>
+                  <td></td>
+                </tr>
+    
+                <tr class="cmd_status_success">
+                  <td>12:35:13.671</td>
+                  <td class="number">1,106</td>
+                  <td>10</td>
+                  <td class="index">10</td>
+      
+                  <td>clickAndWait</td>
+      
+                  <td>css=input.submit01</td>
+      
+                  <td></td>
+      
+                  <td>[Success]</td>
+                  <td></td>
+                </tr>
+    
+                <tr class="cmd_status_success">
+                  <td>12:35:14.777</td>
+                  <td class="number">1,183</td>
+                  <td>11</td>
+                  <td class="index">11</td>
+      
+                  <td>clickAndWait</td>
+      
+                  <td>link=Fiche Représentations</td>
+      
+                  <td></td>
+      
+                  <td>[Success]</td>
+                  <td></td>
+                </tr>
+    
+                <tr class="cmd_status_success">
+                  <td>12:35:15.960</td>
+                  <td class="number">1,266</td>
+                  <td>12</td>
+                  <td class="index">12</td>
+      
+                  <td>clickAndWait</td>
+      
+                  <td>link=Dimanche 13 Août 2017 à 00h00</td>
+      
+                  <td></td>
+      
+                  <td>[Success]</td>
+                  <td></td>
+                </tr>
+    
+                <tr class="cmd_status_success">
+                  <td>12:35:17.226</td>
+                  <td class="number">30</td>
+                  <td>13</td>
+                  <td class="index">13</td>
+      
+                  <td>echo</td>
+      
+                  <td>Config Vente</td>
+      
+                  <td></td>
+      
+                  <td>[Config Vente]</td>
+                  <td></td>
+                </tr>
+    
+                <tr class="cmd_status_success">
+                  <td>12:35:17.256</td>
+                  <td class="number">1,192</td>
+                  <td>14</td>
+                  <td class="index">14</td>
+      
+                  <td>clickAndWait</td>
+      
+                  <td>link=Config. Ventes</td>
+      
+                  <td></td>
+      
+                  <td>[Success]</td>
+                  <td></td>
+                </tr>
+    
+                <tr class="cmd_status_success">
+                  <td>12:35:18.448</td>
+                  <td class="number">259</td>
+                  <td>15</td>
+                  <td class="index">15</td>
+      
+                  <td>click</td>
+      
+                  <td>css=button.new</td>
+      
+                  <td></td>
+      
+                  <td>[Success]</td>
+                  <td></td>
+                </tr>
+    
+                <tr class="cmd_status_success">
+                  <td>12:35:18.707</td>
+                  <td class="number">2,044</td>
+                  <td>16</td>
+                  <td class="index">16</td>
+      
+                  <td>pause</td>
+      
+                  <td>2000</td>
+      
+                  <td></td>
+      
+                  <td>[Success]</td>
+                  <td></td>
+                </tr>
+    
+                <tr class="cmd_status_success">
+                  <td>12:35:20.751</td>
+                  <td class="number">385</td>
+                  <td>17</td>
+                  <td class="index">17</td>
+      
+                  <td>select</td>
+      
+                  <td>name=choix_place_form[1][types]</td>
+      
+                  <td>label=Semi-automatique (Bloc)</td>
+      
+                  <td>[Success]</td>
+                  <td></td>
+                </tr>
+    
+                <tr class="cmd_status_success">
+                  <td>12:35:21.136</td>
+                  <td class="number">788</td>
+                  <td>18</td>
+                  <td class="index">18</td>
+      
+                  <td>clickAndWait</td>
+      
+                  <td>css=button.submit01</td>
+      
+                  <td></td>
+      
+                  <td>[Success]</td>
+                  <td></td>
+                </tr>
+    
+                <tr class="cmd_status_warning">
+                  <td>12:35:21.924</td>
+                  <td class="number">205</td>
+                  <td>19</td>
+                  <td class="index">19</td>
+      
+                  <td>verifyTextPresent</td>
+      
+                  <td>Les configurations ont bien été mises à jour</td>
+      
+                  <td></td>
+      
+                  <td>[Warning: Assertion failed (Result: [false] / Expected: [true])]</td>
+                  <td></td>
+                </tr>
+    
+                <tr class="cmd_status_error">
+                  <td>12:35:22.129</td>
+                  <td class="number">271</td>
+                  <td>20</td>
+                  <td class="index">20</td>
+      
+                  <td>verifyAttribute</td>
+      
+                  <td>//select[@name=&#39;choix_place_form[0][types]&#39;]/option[@value=&#39;4&#39;]/@selected</td>
+      
+                  <td>selected</td>
+      
+                  <td>[Error: SeleniumException - The given selector //select[@name='choix_place_form[0][types]']/option[@value='4']/ is either invalid or does not result in a WebElement. The following error occurred:
+InvalidSelectorError: Unable to locate an element with the xpath expression //select[@name='choix_place_form[0][types]']/option[@value='4']/ because of the following error:
+SyntaxError: The expression is not a legal expression.
+Command duration or timeout: 39 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
+System info: host: 'selekins', ip: '10.3.26.192', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_73'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 05f389c3-a884-4e3b-bc21-f2322b75fb92
+*** Element info: {Using=xpath, value=//select[@name='choix_place_form[0][types]']/option[@value='4']/} (SeleneseCommand.apply(SeleneseCommand.java:45) / WDCommand.execute(WDCommand.java:39) / Assertion.executeImpl(Assertion.java:112) / AbstractCommand.execute(AbstractCommand.java:145) / CommandList.doCommand(CommandList.java:96) / ScreenshotInterceptor.invoke(ScreenshotInterceptor.java:18) / AbstractDoCommandInterceptor.invoke(AbstractDoCommandInterceptor.java:29) / HighlightInterceptor.invoke(HighlightInterceptor.java:28) / AbstractDoCommandInterceptor.invoke(AbstractDoCommandInterceptor.java:29) / CommandLogInterceptor.invoke(CommandLogInterceptor.java:72) / AbstractDoCommandInterceptor.invoke(AbstractDoCommandInterceptor.java:29) / CommandList.execute(CommandList.java:150) / TestCase.execute(TestCase.java:307) / ExecuteTestCaseInterceptor.invoke(ExecuteTestCaseInterceptor.java:52) / AbstractExecuteTestCaseInterceptor.invoke(AbstractExecuteTestCaseInterceptor.java:29) / TestSuite.execute(TestSuite.java:158) / ExecuteTestSuiteInterceptor.invoke(ExecuteTestSuiteInterceptor.java:49) / AbstractExecuteTestSuiteInterceptor.invoke(AbstractExecuteTestSuiteInterceptor.java:29) / Runner.execute(Runner.java:568) / Runner.run(Runner.java:612) / Main.run(Main.java:83) / Main.main(Main.java:213))]</td>
+                  <td></td>
+                </tr>
+    
+              </tbody>
+            </table>
+          </div><!-- contents -->
+        </li><!-- no white spaces between LI tags.
+     --><li>
+          <input name="tab2" id="tab2_log" type="radio">
+          <label for="tab2_log" class="tab_log" onclick="selectTab(this)">Log</label>
+          <div class="contents">
+            <pre>[2016-06-08 12:35:10.042 +02:00] [INFO] Start: TestCase[SCO4_2-Param_Config_Choix_Siège_REP] (SC04_2-Param_Config_Choix_Siege_REP.html)
+[2016-06-08 12:35:10.042 +02:00] [INFO] baseURL: http://admin.testoto.digitick-ppe.com
+[2016-06-08 12:35:10.043 +02:00] [INFO] &lt;1&gt; Command#1: open(&quot;/index.php4?p=5&quot;)
+[2016-06-08 12:35:10.319 +02:00] [INFO] - [Success]
+[2016-06-08 12:35:10.319 +02:00] [INFO] &lt;2&gt; Command#2: echo(&quot;Login&quot;)
+[2016-06-08 12:35:10.358 +02:00] [INFO] - [Login]
+[2016-06-08 12:35:10.358 +02:00] [INFO] &lt;3&gt; Command#3: type(&quot;id=authLogin&quot;, &quot;qatest1&quot;)
+[2016-06-08 12:35:10.488 +02:00] [INFO] - [Success]
+[2016-06-08 12:35:10.488 +02:00] [INFO] &lt;4&gt; Command#4: type(&quot;name=motPasse&quot;, &quot;test123456*&quot;)
+[2016-06-08 12:35:10.639 +02:00] [INFO] - [Success]
+[2016-06-08 12:35:10.639 +02:00] [INFO] &lt;5&gt; Command#5: clickAndWait(&quot;name=Submit&quot;)
+[2016-06-08 12:35:12.270 +02:00] [INFO] - [Success] URL: [http://admin.testoto.digitick-ppe.com/index.php4?p=201&amp;sid=qd7urf1m1b9d07u22uk4bavdr0] / Title: [Administration digitick]
+[2016-06-08 12:35:12.270 +02:00] [INFO] &lt;6&gt; Command#6: echo(&quot;Representation de l&#39;evenement Auto_evenement_reppl&quot;)
+[2016-06-08 12:35:12.316 +02:00] [INFO] - [Representation de l&#39;evenement Auto_evenement_reppl]
+[2016-06-08 12:35:12.316 +02:00] [INFO] &lt;7&gt; Command#7: clickAndWait(&quot;//a[@href=&#39;http://admin.testoto.digitick-ppe.com/?p=201&amp;typeEvt=1&#39;]&quot;)
+[2016-06-08 12:35:13.496 +02:00] [INFO] - [Success] URL: [http://admin.testoto.digitick-ppe.com/?p=201&amp;typeEvt=1] / Title: [Administration digitick]
+[2016-06-08 12:35:13.496 +02:00] [INFO] &lt;8&gt; Command#8: waitForElementPresent(&quot;id=searchField&quot;)
+[2016-06-08 12:35:13.545 +02:00] [INFO] - [Success]
+[2016-06-08 12:35:13.545 +02:00] [INFO] &lt;9&gt; Command#9: type(&quot;id=searchField&quot;, &quot;Auto_evenement_reppl&quot;)
+[2016-06-08 12:35:13.670 +02:00] [INFO] - [Success]
+[2016-06-08 12:35:13.671 +02:00] [INFO] &lt;10&gt; Command#10: clickAndWait(&quot;css=input.submit01&quot;)
+[2016-06-08 12:35:14.777 +02:00] [INFO] - [Success] URL: [http://admin.testoto.digitick-ppe.com/index.php4] / Title: [Administration digitick]
+[2016-06-08 12:35:14.777 +02:00] [INFO] &lt;11&gt; Command#11: clickAndWait(&quot;link=Fiche Représentations&quot;)
+[2016-06-08 12:35:15.959 +02:00] [INFO] - [Success] URL: [http://admin.testoto.digitick-ppe.com/index.php4?p=391&amp;idRep=2761325] / Title: [Administration digitick]
+[2016-06-08 12:35:15.960 +02:00] [INFO] &lt;12&gt; Command#12: clickAndWait(&quot;link=Dimanche 13 Août 2017 à 00h00&quot;)
+[2016-06-08 12:35:17.226 +02:00] [INFO] - [Success]
+[2016-06-08 12:35:17.226 +02:00] [INFO] &lt;13&gt; Command#13: echo(&quot;Config Vente&quot;)
+[2016-06-08 12:35:17.256 +02:00] [INFO] - [Config Vente]
+[2016-06-08 12:35:17.256 +02:00] [INFO] &lt;14&gt; Command#14: clickAndWait(&quot;link=Config. Ventes&quot;)
+[2016-06-08 12:35:18.448 +02:00] [INFO] - [Success] URL: [http://admin.testoto.digitick-ppe.com/?p=307&amp;idRep=2761325] / Title: [Administration digitick]
+[2016-06-08 12:35:18.448 +02:00] [INFO] &lt;15&gt; Command#15: click(&quot;css=button.new&quot;)
+[2016-06-08 12:35:18.707 +02:00] [INFO] - [Success]
+[2016-06-08 12:35:18.707 +02:00] [INFO] &lt;16&gt; Command#16: pause(&quot;2000&quot;)
+[2016-06-08 12:35:20.751 +02:00] [INFO] - [Success]
+[2016-06-08 12:35:20.751 +02:00] [INFO] &lt;17&gt; Command#17: select(&quot;name=choix_place_form[1][types]&quot;, &quot;label=Semi-automatique (Bloc)&quot;)
+[2016-06-08 12:35:21.136 +02:00] [INFO] - [Success]
+[2016-06-08 12:35:21.136 +02:00] [INFO] &lt;18&gt; Command#18: clickAndWait(&quot;css=button.submit01&quot;)
+[2016-06-08 12:35:21.924 +02:00] [INFO] - [Success]
+[2016-06-08 12:35:21.924 +02:00] [INFO] &lt;19&gt; Command#19: verifyTextPresent(&quot;Les configurations ont bien été mises à jour&quot;)
+[2016-06-08 12:35:22.128 +02:00] [ERROR] Command#19: verifyTextPresent(&quot;Les configurations ont bien été mises à jour&quot;) =&gt; [Warning: Assertion failed (Result: [false] / Expected: [true])]
+[2016-06-08 12:35:22.129 +02:00] [ERROR] - Cookie: X-Mapping-hanmdofl=[B72B33C3868EB8BDD3CFE390B9DBCB61] (domain=admin.testoto.digitick-ppe.com, path=/, expire=*)
+[2016-06-08 12:35:22.129 +02:00] [ERROR] - Cookie: _ga=[GA1.2.634853088.1465382101] (domain=.digitick-ppe.com, path=/, expire=2018-06-08 12:35:17 +02:00)
+[2016-06-08 12:35:22.129 +02:00] [ERROR] - Cookie: _gat=[1] (domain=.digitick-ppe.com, path=/, expire=2016-06-08 12:45:00 +02:00)
+[2016-06-08 12:35:22.129 +02:00] [ERROR] - Cookie: admin_digitick=[qd7urf1m1b9d07u22uk4bavdr0] (domain=.testoto.digitick-ppe.com, path=/, expire=*)
+[2016-06-08 12:35:22.129 +02:00] [INFO] &lt;20&gt; Command#20: verifyAttribute(&quot;//select[@name=&#39;choix_place_form[0][types]&#39;]/option[@value=&#39;4&#39;]/@selected&quot;, &quot;selected&quot;)
+[2016-06-08 12:35:22.399 +02:00] [ERROR] Command#20: verifyAttribute(&quot;//select[@name=&#39;choix_place_form[0][types]&#39;]/option[@value=&#39;4&#39;]/@selected&quot;, &quot;selected&quot;) =&gt; [Error: SeleniumException - The given selector //select[@name=&#39;choix_place_form[0][types]&#39;]/option[@value=&#39;4&#39;]/ is either invalid or does not result in a WebElement. The following error occurred:<br>
+InvalidSelectorError: Unable to locate an element with the xpath expression //select[@name=&#39;choix_place_form[0][types]&#39;]/option[@value=&#39;4&#39;]/ because of the following error:<br>
+SyntaxError: The expression is not a legal expression.<br>
+Command duration or timeout: 39 milliseconds<br>
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html<br>
+Build info: version: &#39;unknown&#39;, revision: &#39;unknown&#39;, time: &#39;unknown&#39;<br>
+System info: host: &#39;selekins&#39;, ip: &#39;10.3.26.192&#39;, os.name: &#39;Windows 7&#39;, os.arch: &#39;amd64&#39;, os.version: &#39;6.1&#39;, java.version: &#39;1.8.0_73&#39;<br>
+Driver info: org.openqa.selenium.firefox.FirefoxDriver<br>
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]<br>
+Session ID: 05f389c3-a884-4e3b-bc21-f2322b75fb92<br>
+*** Element info: {Using=xpath, value=//select[@name=&#39;choix_place_form[0][types]&#39;]/option[@value=&#39;4&#39;]/} (SeleneseCommand.apply(SeleneseCommand.java:45) / WDCommand.execute(WDCommand.java:39) / Assertion.executeImpl(Assertion.java:112) / AbstractCommand.execute(AbstractCommand.java:145) / CommandList.doCommand(CommandList.java:96) / ScreenshotInterceptor.invoke(ScreenshotInterceptor.java:18) / AbstractDoCommandInterceptor.invoke(AbstractDoCommandInterceptor.java:29) / HighlightInterceptor.invoke(HighlightInterceptor.java:28) / AbstractDoCommandInterceptor.invoke(AbstractDoCommandInterceptor.java:29) / CommandLogInterceptor.invoke(CommandLogInterceptor.java:72) / AbstractDoCommandInterceptor.invoke(AbstractDoCommandInterceptor.java:29) / CommandList.execute(CommandList.java:150) / TestCase.execute(TestCase.java:307) / ExecuteTestCaseInterceptor.invoke(ExecuteTestCaseInterceptor.java:52) / AbstractExecuteTestCaseInterceptor.invoke(AbstractExecuteTestCaseInterceptor.java:29) / TestSuite.execute(TestSuite.java:158) / ExecuteTestSuiteInterceptor.invoke(ExecuteTestSuiteInterceptor.java:49) / AbstractExecuteTestSuiteInterceptor.invoke(AbstractExecuteTestSuiteInterceptor.java:29) / Runner.execute(Runner.java:568) / Runner.run(Runner.java:612) / Main.run(Main.java:83) / Main.main(Main.java:213))]
+[2016-06-08 12:35:22.400 +02:00] [ERROR] - Cookie: X-Mapping-hanmdofl=[B72B33C3868EB8BDD3CFE390B9DBCB61] (domain=admin.testoto.digitick-ppe.com, path=/, expire=*)
+[2016-06-08 12:35:22.400 +02:00] [ERROR] - Cookie: _ga=[GA1.2.634853088.1465382101] (domain=.digitick-ppe.com, path=/, expire=2018-06-08 12:35:17 +02:00)
+[2016-06-08 12:35:22.400 +02:00] [ERROR] - Cookie: _gat=[1] (domain=.digitick-ppe.com, path=/, expire=2016-06-08 12:45:00 +02:00)
+[2016-06-08 12:35:22.400 +02:00] [ERROR] - Cookie: admin_digitick=[qd7urf1m1b9d07u22uk4bavdr0] (domain=.testoto.digitick-ppe.com, path=/, expire=*)
+[2016-06-08 12:35:22.401 +02:00] [INFO] End(12.359sec): TestCase[SCO4_2-Param_Config_Choix_Siège_REP] (SC04_2-Param_Config_Choix_Siege_REP.html)
+</pre>
+  
+          </div>
+        </li>
+      </ul>
+    </div><!-- tabs -->
+    <p>[<a href="#">Top</a>]</p>
+
+  </body>
+</html>

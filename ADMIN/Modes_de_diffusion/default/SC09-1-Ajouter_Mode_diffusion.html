@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://admin.testoto.digitick-ppe.com" />
+<title>SC09-1-Ajouter_Mode_diffusion</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">SC09-1-Ajouter_Mode_diffusion</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/index.php4?p=5</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>Login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=authLogin</td>
+	<td>tcornet</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=motPasse</td>
+	<td>1c3KoNeQu!</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=Submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>selection orga qualite</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=div.menuItemContentSelected</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=searchField</td>
+	<td>qualité</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.btOk</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=QUALITE 1 (Ne pas toucher)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>Onglet Canaux de Vente</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//div[@id='menuContent']/div[15]/a/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>Selection css5</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=gesion_5748</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>Selection evenement</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=select.selectEvt.choix</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>css=select.selectEvt.choix</td>
+	<td>label=Auto_Evenement_RepNonPl_2</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=lancerFiltre</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#cdv_evenementBloc-312667 &gt; div.parametrageAffichage &gt; ul.parametrage &gt; li &gt; label</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>Ajout du mode de diffusion</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=addMDD-312667</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>css=select.changeMDD</td>
+	<td>label=Courrier recommandé</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=select.changeMDD &gt; option[value=&quot;3&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=saveMdd-312667-3</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td></td>
+	<td>Courrier recommandé</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>Rafraichissement onglet canaux de vente</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//div[@id='menuContent']/div[15]/a/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=gesion_5748</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>css=select.selectEvt.choix</td>
+	<td>label=Auto_Evenement_RepNonPl_2</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=#cdv_evenementBloc-312667 &gt; div.parametrageAffichage &gt; ul.parametrage &gt; li &gt; label</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#cdv_evenementBloc-312667 &gt; div.parametrageAffichage &gt; ul.parametrage &gt; li &gt; label</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>Suppression du mode de diffusion</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//button[@id='editMdd-312667-3']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button[@id='editMdd-312667-3']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=isVisible-312667-3</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=saveMdd-312667-3</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>Deconnexion</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=headerDeconnecter</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
